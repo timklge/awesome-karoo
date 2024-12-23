@@ -9,6 +9,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [VinHKE](#vinhke)
   - [karoo-kpower](#karoo-kpower)
   - [karoo-kremote](#karoo-kremote)
+  - [karoo-kdoubletype](#karoo-kdoubletype)
   - [karoo-reminder](#karoo-reminder)
   - [karoo-powerbar](#karoo-powerbar)
   - [karoo-headwind](#karoo-headwind)
@@ -65,6 +66,13 @@ To update extensions after you have installed them, long-tap the app icon on the
   - License: Open Source, Apache 2
   - Features:
     - Use ANT+ remotes with the Karoo to swipe screens or trigger a back button press (map zoom etc. depending on current view)
+    
+### karoo-kdoubletype
+- **Extension Name:** [karoo-KDoubleType](https://github.com/lockevod/Karoo-KDoubleType)
+  - Description: This extension for Karoo allows to use custom fields with double types in the same field(HR in right,Power in left,etc).
+  - License: Open Source, Apache 2
+  - Features:
+    - Show fields with two types of data in the same field.
 
 ### karoo-reminder
 - **Extension Name:** [karoo-reminder](https://github.com/timklge/karoo-reminder)
