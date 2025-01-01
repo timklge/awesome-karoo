@@ -62,25 +62,26 @@ To update extensions after you have installed them, long-tap the app icon on the
 
 ### karoo-kremote
 - **Extension Name:** [karoo-kremote](https://github.com/lockevod/Karoo-KRemote)
-  - Description: KRemote allows to use a remote with Karoo and perform some actions with it (swipe screens, etc.)
+  - Description: KRemote allows to use a remote with Karoo and perform some actions with it (swipe screens, etc)
   - License: Open Source, Apache 2
   - Features:
     - Use ANT+ remotes with the Karoo to swipe screens or trigger a back button press (map zoom etc. depending on current view)
     
 ### karoo-kdoubletype
 - **Extension Name:** [karoo-KDoubleType](https://github.com/lockevod/Karoo-KDoubleType)
-  - Description: This extension for Karoo allows to use custom fields with double types in the same field(HR in right,Power in left,etc).
+  - Description: This extension for Karoo allows to use custom fields with double types in the same field(HR in right, Power in left, etc)
   - License: Open Source, Apache 2
   - Features:
     - Show fields with two types of data in the same field.
 
 ### karoo-reminder
 - **Extension Name:** [karoo-reminder](https://github.com/timklge/karoo-reminder)
-  - Description: Karoo extension that shows in-ride alerts every X minutes. 
+  - Description: Shows in-ride alerts based on custom triggers
   - License: Open Source, Apache 2
   - Features:
-    - Set up reminders that are shown in a defined time interval during riding
-    - Reminders can be set up to turn on the screen, play a beep tone and sound over bluetooth, show a custom text and auto-dismiss after a specified duration
+    - Set up reminders that are shown during riding
+    - Reminders can be set to activate after a specific time interval, distance traveled, or when a sensor value is outside a defined range (e.g., heart rate exceeds zone 2)
+    - Reminders can be set to turn on the screen, play a beep tone and sound over bluetooth, show a custom text and auto-dismiss after a specified duration
 
 ### karoo-powerbar
 - **Extension Name:** [karoo-powerbar](https://github.com/timklge/karoo-powerbar)
