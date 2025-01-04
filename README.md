@@ -7,6 +7,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
 - [Introduction](#introduction)
 - [Extensions](#extensions)
   - [VinHKE](#vinhke)
+  - [kxradar](#kxradar)
   - [karoo-kpower](#karoo-kpower)
   - [karoo-kremote](#karoo-kremote)
   - [karoo-kdoubletype](#karoo-kdoubletype)
@@ -52,6 +53,13 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Graphical data fields for power, heart rate
     - Custom alerts based on time, pulse, power, calories burned
     - Pit board
+
+### kxradar
+- **Extension Name:** [kxradar](https://github.com/itxsvv/kxradar)
+  - Description: Hammerhead Karoo extension which allows to configure radar alerts
+  - License: Open Source, Apache 2
+  - Features:
+    - Replace the radar alert sound with a custom beep
 
 ### karoo-kpower
 - **Extension Name:** [karoo-kpower](https://github.com/lockevod/Karoo-KPower)
