@@ -6,6 +6,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
 
 - [Introduction](#introduction)
 - [Extensions](#extensions)
+  - [Ki2](#ki2)
   - [VinHKE](#vinhke)
   - [kxradar](#kxradar)
   - [karoo-kpower](#karoo-kpower)
@@ -41,6 +42,20 @@ If you are using a Karoo 2, you can use manual sideloading:
 To update extensions after you have installed them, long-tap the app icon on the main menu and select "Update" (works on both Karoo 2 and Karoo 3).
 
 ## Extensions
+
+### Ki2
+- **Extension Name:** [Ki2](https://github.com/valterc/ki2)
+  - Description: Ki2 is a companion app for electronic shifting groupsets produced by a Japanese company.
+  - License: Open Source, MIT
+  - Features:
+    - Pair and connect to electronic shifting groupsets
+    - Configure actions for hood 
+    - Change shifting mode
+    - Setup Karoo ride profiles with shifting data elements    
+    - While in a ride, control Karoo from the shifting buttons
+    - Overlay with shifting information while in Ride
+    - Receive notifications when shifting battery is low
+    - Audio alerts before upcoming synchro shift or when reaching shifting limits
 
 ### VinHKE
 - **Extension Name:** [Vin-HkE](https://github.com/maduwatas/Vin-HkE)
