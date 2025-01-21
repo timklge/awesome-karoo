@@ -15,6 +15,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-reminder](#karoo-reminder)
   - [karoo-powerbar](#karoo-powerbar)
   - [karoo-headwind](#karoo-headwind)
+- [Libraries](#libraries)
 - [Resources](#resources)
   - [karoo-ext](#karoo-ext)
 - [Contributing](#contributing)
@@ -123,6 +124,17 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Periodically fetches weather data from [open-meteo.com](https://open-meteo.com)
     - Show current weather conditions and forecasted weather conditions for the next hours in a datafield (precipitation, wind speed, temperature, cloud cover...)
     - Additional data fields for surface pressure, cloud cover etc
+
+## Libraries
+
+### ktor-client-karoo
+
+- **Library Name:** [ktor-client-karoo](https://github.com/jonasfranz/ktor-client-karoo)
+  - Description: Provides a Ktor Http Client Engine implementation for Karoo
+  - License: Open Source, Apache 2
+  - Features:
+    - Simplifies making http request via the Karoo System Service
+    - Works even if the Karoo itself has no wifi connection. (Karoo Companion required)
 
 ## Resources
 
