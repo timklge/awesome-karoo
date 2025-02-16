@@ -134,7 +134,7 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Shows outlines of explored StatsHunters tiles, biggest square, clusters and unexplored tiles
     - Shows an alert if you ride into an unexplored tile
     - Optionally, shows lines of past activities on the map
-    - Data fields for that show the number of explored tiles and recently explored tiles
+    - Data fields that show the number of explored tiles and recently explored tiles
 
 ## Libraries
 
