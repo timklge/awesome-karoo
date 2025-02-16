@@ -15,6 +15,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-reminder](#karoo-reminder)
   - [karoo-powerbar](#karoo-powerbar)
   - [karoo-headwind](#karoo-headwind)
+  - [karoo-tilehunting](#karoo-tilehunting)
 - [Libraries](#libraries)
 - [Resources](#resources)
   - [karoo-ext](#karoo-ext)
@@ -124,6 +125,16 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Periodically fetches weather data from [open-meteo.com](https://open-meteo.com)
     - Show current weather conditions and forecasted weather conditions for the next hours in a datafield (precipitation, wind speed, temperature, cloud cover...)
     - Additional data fields for surface pressure, cloud cover etc
+
+### karoo-tilehunting
+- **Extension Name:** [karoo-tilehunting](https://github.com/timklge/karoo-tilehunting)
+  - Description: Adds a map overlay that shows explored tiles and an alert if you ride into an unexplored one. Connects to [statshunters.com](https://www.statshunters.com).
+  - License: Open Source, Apache 2
+  - Features:
+    - Shows outlines of explored StatsHunters tiles, biggest square, clusters and unexplored tiles
+    - Shows an alert if you ride into an unexplored tile
+    - Optionally, shows lines of past activities on the map
+    - Data fields for that show the number of explored tiles and recently explored tiles
 
 ## Libraries
 
