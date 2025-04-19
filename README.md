@@ -12,6 +12,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-kpower](#karoo-kpower)
   - [karoo-kremote](#karoo-kremote)
   - [karoo-kdoubletype](#karoo-kdoubletype)
+  - [karoo-kactions](#karoo-kactions)
   - [karoo-reminder](#karoo-reminder)
   - [karoo-powerbar](#karoo-powerbar)
   - [karoo-headwind](#karoo-headwind)
@@ -97,7 +98,17 @@ To update extensions after you have installed them, long-tap the app icon on the
   - Description: This extension for Karoo allows to use custom fields with double types in the same field(HR in right, Power in left, etc)
   - License: Open Source, Apache 2
   - Features:
-    - Show fields with two types of data in the same field.
+    - Show fields with two types of data in the same field
+   
+### karoo-kactions
+- **Extension Name:** [karoo-KActions](https://github.com/lockevod/Karoo-KActions)
+  - Description: KActions allows to execute webhooks and send automated messages (whatsapp or sms with live tracking) when you start, stop, your activity in a karoo GPS 
+  - License: Open Source, MIT
+  - Features
+    - Send automated notifications when you start or finish a bike ride. Now compatible with multiple messaging providers
+    - Execute automated actions (webhook)
+    - Execute custom custom action (webhook) from custom datafield
+    - Send custom messages directly from a button (custom datafield)
 
 ### karoo-reminder
 - **Extension Name:** [karoo-reminder](https://github.com/timklge/karoo-reminder)
