@@ -16,6 +16,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-powerbar](#karoo-powerbar)
   - [karoo-headwind](#karoo-headwind)
   - [karoo-tilehunting](#karoo-tilehunting)
+  - [karoo-routegraph](#karoo-routegraph)
 - [Libraries](#libraries)
 - [Resources](#resources)
   - [karoo-ext](#karoo-ext)
@@ -135,6 +136,15 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Shows an alert if you ride into an unexplored tile
     - Optionally, shows lines of past activities on the map
     - Data fields that show the number of explored tiles and recently explored tiles
+
+### karoo-routegraph
+- **Extension Name:** [karoo-routegraph](https://github.com/timklge/karoo-routegraph)
+  - Description: Adds an alternative route elevation profile data field that includes POIs and climbs
+  - License: Open Source, Apache 2
+  - Features:
+    - Colorized route elevation profile with climbs and markers for POIs
+    - Vertical / flipped route elevation profile that shows climbs and POIs with their names and remaining distance
+    - Data fields that show the remaining elevation and distance to the next POI on the route
 
 ## Libraries
 
