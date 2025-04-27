@@ -18,6 +18,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-headwind](#karoo-headwind)
   - [karoo-tilehunting](#karoo-tilehunting)
   - [karoo-routegraph](#karoo-routegraph)
+  - [Waypoints](#waypoints)
 - [Libraries](#libraries)
 - [Resources](#resources)
   - [karoo-ext](#karoo-ext)
@@ -156,6 +157,17 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Colorized route elevation profile with climbs and markers for POIs
     - Vertical / flipped route elevation profile that shows climbs and POIs with their names and remaining distance
     - Data fields that show the remaining elevation and distance to the next POI on the route
+   
+### Waypoints
+- **Extension Name:** [Waypoints](https://github.com/dimskiy/WaypointsKaroo)
+  - Description: Waypoints is the extension app improving the navigation convenience: POI online search & offline storage, click-to-navigate.
+  - License: Open Source, Apache-2.0
+  - Features:
+    - Search online for restaurants, shops, cafes etc
+    - Open the location of found POIs in the native Karoo navigation app
+    - Perform search of spots nearby using device location
+    - Support for device-installed SIM cards to perform search with no Wi-Fi available
+    - Save POIs for offline use
 
 ## Libraries
 
