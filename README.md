@@ -19,6 +19,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-tilehunting](#karoo-tilehunting)
   - [karoo-routegraph](#karoo-routegraph)
   - [Waypoints](#waypoints)
+  - [karoo-notepad](#karoo-notepad)
 - [Libraries](#libraries)
 - [Resources](#resources)
   - [karoo-ext](#karoo-ext)
@@ -168,6 +169,15 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Perform search of spots nearby using device location
     - Support for device-installed SIM cards to perform search with no Wi-Fi available
     - Save POIs for offline use
+
+### karoo-notepad
+- **Extension Name:** [karoo-notepad](https://github.com/timklge/karoo-notepad)
+  - Description: Minimalistic extension that provides a datafield you can put your own text on
+  - License: Open Source, Apache 2
+  - Features:
+    - Open the extension from the menu to input some custom text
+    - Datafield that displays the custom text during riding
+    - Additional datafield that can be clicked to open the text editor   
 
 ## Libraries
 
