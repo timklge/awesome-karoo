@@ -159,6 +159,9 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Colorized route elevation profile with climbs and markers for POIs
     - Vertical / flipped route elevation profile that shows climbs and POIs with their names and remaining distance
     - Data fields that show the remaining elevation and distance to the next POI on the route
+    - Minimap datafield that can be added to any data page
+    - Traffic incident reporting on loaded route (requires [HERE maps](https://www.here.com/platform) API key)
+    - Look up nearby POIs of selected categories (e. g. supermarkets) or ahead on route and initiate navigation 
    
 ### Waypoints
 - **Extension Name:** [Waypoints](https://github.com/dimskiy/WaypointsKaroo)
