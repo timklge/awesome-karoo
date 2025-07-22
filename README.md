@@ -5,10 +5,10 @@ A community-driven list of known extensions and resources for the Karoo cycling 
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Extensions](#extensions)
-  - [Ki2](#ki2)
+- [Installation of extensions on your device](#installation-of-extensions-on-your-device)
+  - [Sideloading](#sideloading)
+- [Extensions featured in the Hammerhead library](#extensions-featured-in-the-hammerhead-library)
   - [VinHKE](#vinhke)
-  - [kxradar](#kxradar)
   - [karoo-kpower](#karoo-kpower)
   - [karoo-kremote](#karoo-kremote)
   - [karoo-kdoubletype](#karoo-kdoubletype)
@@ -17,11 +17,15 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-powerbar](#karoo-powerbar)
   - [karoo-headwind](#karoo-headwind)
   - [karoo-tilehunting](#karoo-tilehunting)
+- [Other extensions](#other-extensions)
+  - [Ki2](#ki2)
+  - [kxradar](#kxradar)
   - [karoo-routegraph](#karoo-routegraph)
   - [Waypoints](#waypoints)
   - [karoo-notepad](#karoo-notepad)
   - [karoo-spintunes](#karoo-spintunes)
 - [Libraries](#libraries)
+  - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
   - [karoo-ext](#karoo-ext)
 - [Contributing](#contributing)
@@ -32,6 +36,12 @@ A community-driven list of known extensions and resources for the Karoo cycling 
 Recently, hammerhead has published a new SDK that enables the development of extensions for Karoo cycling computers. This repository aims to compile a comprehensive list of extensions.
 
 ## Installation of extensions on your device
+
+A growing number of extensions featured on this list are also available in Hammerhead's official extension library. Installing these extensions is as simple as opening the "Extensions" library from the main menu on your Karoo and selecting the extension you want to install. More information is available [here](https://support.hammerhead.io/hc/en-us/articles/34676015530907-Karoo-OS-Extensions-Library).
+
+Extensions that are not part of Hammerhead's library can be installed via Sideloading.
+
+### Sideloading
 
 If you are using a Karoo 3, you can use [Hammerhead's sideloading procedure](https://support.hammerhead.io/hc/en-us/articles/31576497036827-Companion-App-Sideloading) to install extensions.
 
@@ -48,21 +58,7 @@ If you are using a Karoo 2, you can use manual sideloading:
 
 To update extensions after you have installed them, long-tap the app icon on the main menu and select "Update" (works on both Karoo 2 and Karoo 3).
 
-## Extensions
-
-### Ki2
-- **Extension Name:** [Ki2](https://github.com/valterc/ki2)
-  - Description: Ki2 is a companion app for electronic shifting groupsets produced by a Japanese company.
-  - License: Open Source, MIT
-  - Features:
-    - Pair and connect to electronic shifting groupsets
-    - Configure actions for hood 
-    - Change shifting mode
-    - Setup Karoo ride profiles with shifting data elements    
-    - While in a ride, control Karoo from the shifting buttons
-    - Overlay with shifting information while in Ride
-    - Receive notifications when shifting battery is low
-    - Audio alerts before upcoming synchro shift or when reaching shifting limits
+## Extensions featured in the Hammerhead library
 
 ### VinHKE
 - **Extension Name:** [Vin-HkE](https://github.com/maduwatas/Vin-HkE)
@@ -75,14 +71,7 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Graphical data fields for power, heart rate
     - Custom alerts based on time, pulse, power, calories burned
     - Pit board
-
-### kxradar
-- **Extension Name:** [kxradar](https://github.com/itxsvv/kxradar)
-  - Description: Hammerhead Karoo extension which allows to configure radar alerts
-  - License: Open Source, Apache 2
-  - Features:
-    - Replace the radar alert sound with a custom beep
-
+   
 ### karoo-kpower
 - **Extension Name:** [karoo-kpower](https://github.com/lockevod/Karoo-KPower)
   - Description: Adds a virtual power meter device
@@ -151,6 +140,29 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Optionally, shows lines of past activities on the map
     - Data fields that show the number of explored tiles and recently explored tiles
 
+## Other extensions
+
+### Ki2
+- **Extension Name:** [Ki2](https://github.com/valterc/ki2)
+  - Description: Ki2 is a companion app for electronic shifting groupsets produced by a Japanese company.
+  - License: Open Source, MIT
+  - Features:
+    - Pair and connect to electronic shifting groupsets
+    - Configure actions for hood 
+    - Change shifting mode
+    - Setup Karoo ride profiles with shifting data elements    
+    - While in a ride, control Karoo from the shifting buttons
+    - Overlay with shifting information while in Ride
+    - Receive notifications when shifting battery is low
+    - Audio alerts before upcoming synchro shift or when reaching shifting limits
+
+### kxradar
+- **Extension Name:** [kxradar](https://github.com/itxsvv/kxradar)
+  - Description: Hammerhead Karoo extension which allows to configure radar alerts
+  - License: Open Source, Apache 2
+  - Features:
+    - Replace the radar alert sound with a custom beep
+
 ### karoo-routegraph
 - **Extension Name:** [karoo-routegraph](https://github.com/timklge/karoo-routegraph)
   - Description: Adds an alternative route elevation profile data field that includes POIs and climbs
@@ -161,7 +173,7 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Data fields that show the remaining elevation and distance to the next POI on the route
     - Minimap datafield that can be added to any data page
     - Traffic incident reporting on loaded route (requires [HERE maps](https://www.here.com/platform) API key)
-    - Look up nearby POIs of selected categories (e. g. supermarkets) or ahead on route and initiate navigation 
+    - Look up nearby POIs of selected categories (e.g., supermarkets) in your proximity or ahead on your route, and initiate navigation to them
    
 ### Waypoints
 - **Extension Name:** [Waypoints](https://github.com/dimskiy/WaypointsKaroo)
