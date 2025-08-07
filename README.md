@@ -24,6 +24,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waypoints](#waypoints)
   - [karoo-notepad](#karoo-notepad)
   - [karoo-spintunes](#karoo-spintunes)
+  - [karoo-wprimebalance](#karoo-wprimebalance)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -204,6 +205,18 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Thumbnails for currently played track and playlists
     - Remote control the Spotify app running on your phone (or computer)
     - Offline mode if Spotify is sideloaded on your Karoo (including volume control, automatic volume control based on ride speed)
+
+### karoo-wprimebalance
+- **Extension Name:** [karoo-wprimebalance](https://github.com/currand/karoo-wprimebalance)
+  - Description: Karoo datafield displaying metrics related to W' Balance
+  - License: Open Source, Apache 2
+  - Features:
+    - Calculate W' Balance based on Skiba et. al. method optimized for real-time computation
+    - Raw W' Balance remaining in Joules
+    - W' Balance as a percentage of reaming capacity
+    - Time to exhaust
+    - In-ride computation of values if you are unsure or have not tested recently
+    - Display of newly computed values post-ride
 
 ## Libraries
 
