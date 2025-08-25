@@ -17,13 +17,13 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-powerbar](#karoo-powerbar)
   - [karoo-headwind](#karoo-headwind)
   - [karoo-tilehunting](#karoo-tilehunting)
+  - [karoo-spintunes](#karoo-spintunes)
 - [Other extensions](#other-extensions)
   - [Ki2](#ki2)
   - [kxradar](#kxradar)
   - [karoo-routegraph](#karoo-routegraph)
   - [Waypoints](#waypoints)
   - [karoo-notepad](#karoo-notepad)
-  - [karoo-spintunes](#karoo-spintunes)
   - [karoo-wprimebalance](#karoo-wprimebalance)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
@@ -140,6 +140,16 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Shows an alert if you ride into an unexplored tile
     - Optionally, shows lines of past activities on the map
     - Data fields that show the number of explored tiles and recently explored tiles
+   
+### karoo-spintunes
+- **Extension Name:** [karoo-spintunes](https://github.com/timklge/karoo-spintunes)
+  - Description: Karoo datafield with media controls for Spotify
+  - License: Open Source, Apache 2
+  - Features:
+    - Play/pause, skip forward, skip backward, shuffle, repeat, add to queue, view and play playlist, view queue
+    - Thumbnails for currently played track and playlists
+    - Remote control the Spotify app running on your phone (or computer)
+    - Offline mode if Spotify is sideloaded on your Karoo (including volume control, automatic volume control based on ride speed)
 
 ## Other extensions
 
@@ -195,16 +205,6 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Open the extension from the menu to input some custom text
     - Datafield that displays the custom text during riding
     - Additional datafield that can be clicked to open the text editor   
-
-### karoo-spintunes
-- **Extension Name:** [karoo-spintunes](https://github.com/timklge/karoo-spintunes)
-  - Description: Karoo datafield with media controls for Spotify
-  - License: Open Source, Apache 2
-  - Features:
-    - Play/pause, skip forward, skip backward, shuffle, repeat, add to queue, view and play playlist, view queue
-    - Thumbnails for currently played track and playlists
-    - Remote control the Spotify app running on your phone (or computer)
-    - Offline mode if Spotify is sideloaded on your Karoo (including volume control, automatic volume control based on ride speed)
 
 ### karoo-wprimebalance
 - **Extension Name:** [karoo-wprimebalance](https://github.com/currand/karoo-wprimebalance)
