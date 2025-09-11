@@ -25,6 +25,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waypoints](#waypoints)
   - [karoo-notepad](#karoo-notepad)
   - [karoo-wprimebalance](#karoo-wprimebalance)
+  - [karoo-colorspeed](#karoo-colorspeed)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -217,6 +218,17 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Time to exhaust
     - In-ride computation of values if you are unsure or have not tested recently
     - Display of newly computed values post-ride
+   
+### karoo-colorspeed
+- **Extension Name:** [karoo-colorspeed](https://github.com/currand/karoo-colorspeed)
+  - Description: A Hammerhead Karoo extension to display speed with a colored background and icons
+  - License: Open Source, Apache 2
+  - Features:
+    - Current vs. ride average
+    - Current vs. last lap average
+    - Current lap average vs. last lap average
+    - Current speed vs. target speed
+    - Lap speed vs. target speed
 
 ## Libraries
 
