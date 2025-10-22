@@ -30,6 +30,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
   - [karoo-ext](#karoo-ext)
+  - [Karoo Map Style – MTB Optimized](#Karoo Map Style – MTB Optimized)
 - [Contributing](#contributing)
 - [License](#license)
 
