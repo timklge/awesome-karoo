@@ -17,7 +17,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-powerbar](#karoo-powerbar)
   - [karoo-headwind](#karoo-headwind)
   - [karoo-tilehunting](#karoo-tilehunting)
-  - [karoo-spintunes](#karoo-spintunes)
+  - [karoo-spintunes](#karoo-spintunes)e
 - [Other extensions](#other-extensions)
   - [Ki2](#ki2)
   - [kxradar](#kxradar)
@@ -30,7 +30,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
   - [karoo-ext](#karoo-ext)
-  - [Karoo Map Style – MTB Optimized](#karoo-custom-mapstyle)
+  - [karoo-custom-mapstyle](#karoo-custom-mapstyle)
 - [Contributing](#contributing)
 - [License](#license)
 
