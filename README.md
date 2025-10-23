@@ -17,7 +17,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-powerbar](#karoo-powerbar)
   - [karoo-headwind](#karoo-headwind)
   - [karoo-tilehunting](#karoo-tilehunting)
-  - [karoo-spintunes](#karoo-spintunes)e
+  - [karoo-spintunes](#karoo-spintunes)
 - [Other extensions](#other-extensions)
   - [Ki2](#ki2)
   - [kxradar](#kxradar)
