@@ -30,6 +30,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
   - [karoo-ext](#karoo-ext)
+  - [karoo-custom-mapstyle](#karoo-custom-mapstyle)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -246,6 +247,10 @@ To update extensions after you have installed them, long-tap the app icon on the
 ### karoo-ext
 
 The new SDK to develop extensions is maintained by Hammerhead at https://github.com/hammerheadnav/karoo-ext.
+
+### karoo-custom-mapstyle
+
+This custom map style for the Hammerhead Karoo improves clarity, visibility, and usability for mountain biking. Check it out at [dansoft-ch/karoo-custom-mapstyle](https://github.com/dansoft-ch/karoo-custom-mapstyle)
 
 ## Contributing
 
