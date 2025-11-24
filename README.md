@@ -20,6 +20,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-spintunes](#karoo-spintunes)
 - [Other extensions](#other-extensions)
   - [Ki2](#ki2)
+  - [KarooFlightRadar](#KarooFlightRadar)
   - [kxradar](#kxradar)
   - [karoo-routegraph](#karoo-routegraph)
   - [Waypoints](#waypoints)
@@ -168,6 +169,16 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Overlay with shifting information while in Ride
     - Receive notifications when shifting battery is low
     - Audio alerts before upcoming synchro shift or when reaching shifting limits
+
+### KarooFlightRadar
+- **Extension Name:** [KarooFlightRadar](https://github.com/KiloDeltaApps/KarooFlightRadar)
+  - Description: Flight radar data field for the karoo
+  - Features:
+    - Real-Time Aircraft Tracking: Displays nearby aircraft using open-source flight data APIs
+    - Customizable Radar Display: Supports North-Up and Track-Up (Bearing-Up) orientation modes
+    - Adjustable Range: Configure the maximum display range while cycling using the notification
+    - Customizable Labels: Toggle display of Call sign, Aircraft Type, Registration, Altitude, Ground Speed, and Vertical Speed
+    - Filter based on altitude, speed and elevation above horizon.
 
 ### kxradar
 - **Extension Name:** [kxradar](https://github.com/itxsvv/kxradar)
