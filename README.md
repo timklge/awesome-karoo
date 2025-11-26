@@ -173,6 +173,7 @@ To update extensions after you have installed them, long-tap the app icon on the
 ### KarooFlightRadar
 - **Extension Name:** [KarooFlightRadar](https://github.com/KiloDeltaApps/KarooFlightRadar)
   - Description: Flight radar data field for the karoo
+  - License: Open Source, Apache 2
   - Features:
     - Real-Time Aircraft Tracking: Displays nearby aircraft using open-source flight data APIs
     - Customizable Radar Display: Supports North-Up and Track-Up (Bearing-Up) orientation modes
