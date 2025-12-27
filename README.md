@@ -27,6 +27,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-notepad](#karoo-notepad)
   - [karoo-wprimebalance](#karoo-wprimebalance)
   - [karoo-colorspeed](#karoo-colorspeed)
+  - [Wattramp](#wattramp)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -242,6 +243,15 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Current lap average vs. last lap average
     - Current speed vs. target speed
     - Lap speed vs. target speed
+
+### wattramp
+- **Extension Name:** [Wattramp](https://github.com/yrkan/wattramp)
+  - Description: Free FTP testing extension for Hammerhead Karoo cycling computers. No subscriptions, no accounts, works completely offline.
+  - License: Open Source, MIT
+  - Features:
+    - WattRamp lets you perform FTP tests directly on your Karoo with real-time data fields during your ride
+    - Test Protocols: Ramp Test (~ 20 min), 20 minute test (~ 60 min), 2x8 minute test (~ 50 min)
+    - Data fields for current interval, target power, test progress, power zone and more
 
 ## Libraries
 
