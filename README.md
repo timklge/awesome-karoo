@@ -26,6 +26,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waypoints](#waypoints)
   - [karoo-notepad](#karoo-notepad)
   - [karoo-wprimebalance](#karoo-wprimebalance)
+  - [WPrimeKarooExtension](#WPrimeKarooExtension)
   - [karoo-colorspeed](#karoo-colorspeed)
   - [Wattramp](#wattramp)
 - [Libraries](#libraries)
@@ -232,6 +233,16 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Time to exhaust
     - In-ride computation of values if you are unsure or have not tested recently
     - Display of newly computed values post-ride
+
+### WPrimeKarooExtension
+- **Extension Name:** [WPrimeKarooExtension](https://github.com/apopovsky/WPrimeKarooExtension)
+  - Description: Track your anaerobic capacity in real-time and never blow up on climbs or sprints again
+  - License: Open Source, Apache 2
+  - Features:
+    - This extension brings W Prime (W') balance tracking to your Karoo 3 cycling computer
+    - W Prime represents your finite anaerobic energy reserve (think of it as a battery that depletes when you push hard above your threshold and recharges when you ease off)
+    - Six scientific algorithms - Choose the model that fits your training style
+    - Real-time tracking - Updated every second during your ride
    
 ### karoo-colorspeed
 - **Extension Name:** [karoo-colorspeed](https://github.com/currand/karoo-colorspeed)
