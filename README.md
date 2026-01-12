@@ -29,6 +29,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [WPrimeKarooExtension](#WPrimeKarooExtension)
   - [karoo-colorspeed](#karoo-colorspeed)
   - [Wattramp](#wattramp)
+  - [CupRoute](#cuproute)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -124,7 +125,7 @@ To update extensions after you have installed them, long-tap the app icon on the
   - License: Open Source, Apache 2
   - Features:
     - Show colored bars at the top or bottom of the screen that are filled depending on current power output or heart rate
-    - Bars are always displayed on top of  apps (i. e. the ride app)
+    - Bars are always displayed on top of apps (i. e. the ride app)
 
 ### karoo-headwind
 - **Extension Name:** [karoo-headwind](https://github.com/timklge/karoo-headwind)
