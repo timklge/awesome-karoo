@@ -29,6 +29,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [WPrimeKarooExtension](#WPrimeKarooExtension)
   - [karoo-colorspeed](#karoo-colorspeed)
   - [Wattramp](#wattramp)
+  - [CupRoute](#cuproute)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -124,7 +125,7 @@ To update extensions after you have installed them, long-tap the app icon on the
   - License: Open Source, Apache 2
   - Features:
     - Show colored bars at the top or bottom of the screen that are filled depending on current power output or heart rate
-    - Bars are always displayed on top of other apps (i. e. the ride app)
+    - Bars are always displayed on top of apps (i. e. the ride app)
 
 ### karoo-headwind
 - **Extension Name:** [karoo-headwind](https://github.com/timklge/karoo-headwind)
@@ -263,6 +264,17 @@ To update extensions after you have installed them, long-tap the app icon on the
     - WattRamp lets you perform FTP tests directly on your Karoo with real-time data fields during your ride
     - Test Protocols: Ramp Test (~ 20 min), 20 minute test (~ 60 min), 2x8 minute test (~ 50 min)
     - Data fields for current interval, target power, test progress, power zone and more
+
+### cuproute
+- **Extension Name:** [CupRoute](https://github.com/nairdam88/cuproute)
+  - Description: Offline, curated specialty coffee shop finder for cyclists using Hammerhead Karoo devices.
+  - License: Closed Source, Freeware
+  - Features:
+    - Offline database of specialty coffee shops in Europe
+    - Search by name or city
+    - Sort locations by distance using your current location
+    - Filter locations that are open now
+    - Open locations directly in the native Karoo navigation app
 
 ## Libraries
 
