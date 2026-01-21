@@ -29,7 +29,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [WPrimeKarooExtension](#WPrimeKarooExtension)
   - [karoo-colorspeed](#karoo-colorspeed)
   - [Wattramp](#wattramp)
-  - [CupRoute](#cuproute)
+  - [CupRoute](#CupRoute)
   - [KPedal](#KPedal)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
