@@ -30,6 +30,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-colorspeed](#karoo-colorspeed)
   - [Wattramp](#wattramp)
   - [CupRoute](#cuproute)
+  - [KPedal](#KPedal)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -265,7 +266,7 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Test Protocols: Ramp Test (~ 20 min), 20 minute test (~ 60 min), 2x8 minute test (~ 50 min)
     - Data fields for current interval, target power, test progress, power zone and more
 
-### cuproute
+### CupRoute
 - **Extension Name:** [CupRoute](https://github.com/nairdam88/cuproute)
   - Description: Offline, curated specialty coffee shop finder for cyclists using Hammerhead Karoo devices.
   - License: Closed Source, Freeware
@@ -275,6 +276,15 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Sort locations by distance using your current location
     - Filter locations that are open now
     - Open locations directly in the native Karoo navigation app
+
+## KPedal
+- **Extension Name:** [KPedal](https://github.com/yrkan/KPedal)
+  - Description: Real-time pedaling efficiency extension for Hammerhead Karoo 2/3. Displays Balance, Torque Effectiveness, and Pedal Smoothness metrics from ANT+ Cycling Dynamics power meter pedals
+  - License: Open Source, MIT
+  - Features:
+    - KPedal provides cyclists with real-time feedback on pedaling technique during rides
+    - Data fields on Karoo ride screens
+    - Companion app for training drills, ride history, analytics, and achievement tracking
 
 ## Libraries
 
