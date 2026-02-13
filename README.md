@@ -32,6 +32,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [CupRoute](#CupRoute)
   - [KPedal](#KPedal)
   - [eiRadar](#eiRadar)
+  - [7climb](#7climb)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -295,7 +296,16 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Provides sound, vibration, and visual alerts when vehicles approach from behind
     - Configurable distance thresholds, smart cooldowns, automatic night mode, and speed gate filtering
     - Works with any ANT+ radar
-    - Free, offline, open-source. 
+    - Free, offline, open-source.
+   
+### 7climb
+- **Extension Name:** [7climb](https://github.com/yrkan/7climb)
+  - Description: Smart climbing assistant for Hammerhead Karoo that helps riders make better decisions on climbs through real-time pacing
+  - License: Open Source, MIT
+  - Features:
+    - W′ balance analysis
+    - Power targets
+    - Tactical terrain insights
 
 ## Libraries
 
