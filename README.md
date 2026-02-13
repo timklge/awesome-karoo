@@ -278,7 +278,7 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Filter locations that are open now
     - Open locations directly in the native Karoo navigation app
 
-## KPedal
+### KPedal
 - **Extension Name:** [KPedal](https://github.com/yrkan/KPedal)
   - Description: Real-time pedaling efficiency extension for Hammerhead Karoo 2/3. Displays Balance, Torque Effectiveness, and Pedal Smoothness metrics from ANT+ Cycling Dynamics power meter pedals
   - License: Open Source, MIT
@@ -287,7 +287,7 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Data fields on Karoo ride screens
     - Companion app for training drills, ride history, analytics, and achievement tracking
 
-## eiRadar
+### eiRadar
 - **Extension Name:** [eiRadar](https://github.com/yrkan/eiradar)
   - Description: Smart rear radar extension for Hammerhead Karoo
   - License: Open Source, MIT
