@@ -31,6 +31,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Wattramp](#wattramp)
   - [CupRoute](#CupRoute)
   - [KPedal](#KPedal)
+  - [eiRadar](#eiRadar)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -277,7 +278,7 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Filter locations that are open now
     - Open locations directly in the native Karoo navigation app
 
-## KPedal
+### KPedal
 - **Extension Name:** [KPedal](https://github.com/yrkan/KPedal)
   - Description: Real-time pedaling efficiency extension for Hammerhead Karoo 2/3. Displays Balance, Torque Effectiveness, and Pedal Smoothness metrics from ANT+ Cycling Dynamics power meter pedals
   - License: Open Source, MIT
@@ -285,6 +286,16 @@ To update extensions after you have installed them, long-tap the app icon on the
     - KPedal provides cyclists with real-time feedback on pedaling technique during rides
     - Data fields on Karoo ride screens
     - Companion app for training drills, ride history, analytics, and achievement tracking
+
+### eiRadar
+- **Extension Name:** [eiRadar](https://github.com/yrkan/eiradar)
+  - Description: Smart rear radar extension for Hammerhead Karoo
+  - License: Open Source, MIT
+  - Features:
+    - Provides sound, vibration, and visual alerts when vehicles approach from behind
+    - Configurable distance thresholds, smart cooldowns, automatic night mode, and speed gate filtering
+    - Works with any ANT+ radar
+    - Free, offline, open-source. 
 
 ## Libraries
 
