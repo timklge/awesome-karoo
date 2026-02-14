@@ -33,6 +33,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [KPedal](#KPedal)
   - [eiRadar](#eiRadar)
   - [7climb](#7climb)
+  - [karoo-wattspeed](#karoo-wattspeed)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -306,6 +307,13 @@ To update extensions after you have installed them, long-tap the app icon on the
     - W′ balance analysis
     - Power targets
     - Tactical terrain insights
+
+### karoo-wattspeed
+- **Extension Name:** [karoo-wattspeed](https://github.com/timklge/karoo-wattspeed)
+  - Description: Provides speed values based on power when riding indoors
+  - License: Open Source, Apache 2
+  - Features:
+    - Provides a virtual speedometer that calculates speed from power independently of flywheel speed and gearing on smart trainers
 
 ## Libraries
 
