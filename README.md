@@ -317,7 +317,7 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Provides a virtual speedometer that calculates speed from power independently of flywheel speed and gearing on smart trainers
 
 ### k-breathe
-- **Extension Name:** [kbreathe](https://github.com/gloscherrybomb/k-breathe)
+- **Extension Name:** [k-breathe](https://github.com/gloscherrybomb/k-breathe)
   - Description: Hammerhead Karoo application for Tymewear Vitalpro Breathing sensor
   - License: Open Source, MIT
   - Features:
