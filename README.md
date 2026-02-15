@@ -34,6 +34,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [eiRadar](#eiRadar)
   - [7climb](#7climb)
   - [karoo-wattspeed](#karoo-wattspeed)
+  - [k-breathe](#k-breathe)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -314,6 +315,14 @@ To update extensions after you have installed them, long-tap the app icon on the
   - License: Open Source, Apache 2
   - Features:
     - Provides a virtual speedometer that calculates speed from power independently of flywheel speed and gearing on smart trainers
+
+### k-breathe
+- **Extension Name:** [k-breathe](https://github.com/gloscherrybomb/k-breathe)
+  - Description: Hammerhead Karoo application for Tymewear Vitalpro Breathing sensor
+  - License: Open Source, MIT
+  - Features:
+    - Display live breathing metrics
+    - Record metrics to fit file
 
 ## Libraries
 
