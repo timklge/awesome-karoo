@@ -18,6 +18,8 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-headwind](#karoo-headwind)
   - [karoo-tilehunting](#karoo-tilehunting)
   - [karoo-spintunes](#karoo-spintunes)
+  - [Wattramp](#wattramp)
+  - [KPedal](#KPedal)
 - [Other extensions](#other-extensions)
   - [Ki2](#ki2)
   - [KarooFlightRadar](#KarooFlightRadar)
@@ -28,13 +30,12 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-wprimebalance](#karoo-wprimebalance)
   - [WPrimeKarooExtension](#WPrimeKarooExtension)
   - [karoo-colorspeed](#karoo-colorspeed)
-  - [Wattramp](#wattramp)
   - [CupRoute](#CupRoute)
-  - [KPedal](#KPedal)
   - [eiRadar](#eiRadar)
   - [7climb](#7climb)
   - [karoo-wattspeed](#karoo-wattspeed)
   - [k-breathe](#k-breathe)
+  - [nomride](#nomride)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -162,6 +163,24 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Remote control the Spotify app running on your phone (or computer)
     - Offline mode if Spotify is sideloaded on your Karoo (including volume control, automatic volume control based on ride speed)
 
+### KPedal
+- **Extension Name:** [KPedal](https://github.com/yrkan/KPedal)
+  - Description: Real-time pedaling efficiency extension for Hammerhead Karoo 2/3. Displays Balance, Torque Effectiveness, and Pedal Smoothness metrics from ANT+ Cycling Dynamics power meter pedals
+  - License: Open Source, MIT
+  - Features:
+    - KPedal provides cyclists with real-time feedback on pedaling technique during rides
+    - Data fields on Karoo ride screens
+    - Companion app for training drills, ride history, analytics, and achievement tracking
+
+### Wattramp
+- **Extension Name:** [Wattramp](https://github.com/yrkan/wattramp)
+  - Description: Free FTP testing extension for Hammerhead Karoo cycling computers. No subscriptions, no accounts, works completely offline.
+  - License: Open Source, MIT
+  - Features:
+    - WattRamp lets you perform FTP tests directly on your Karoo with real-time data fields during your ride
+    - Test Protocols: Ramp Test (~ 20 min), 20 minute test (~ 60 min), 2x8 minute test (~ 50 min)
+    - Data fields for current interval, target power, test progress, power zone and more
+
 ## Other extensions
 
 ### Ki2
@@ -261,15 +280,6 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Current speed vs. target speed
     - Lap speed vs. target speed
 
-### wattramp
-- **Extension Name:** [Wattramp](https://github.com/yrkan/wattramp)
-  - Description: Free FTP testing extension for Hammerhead Karoo cycling computers. No subscriptions, no accounts, works completely offline.
-  - License: Open Source, MIT
-  - Features:
-    - WattRamp lets you perform FTP tests directly on your Karoo with real-time data fields during your ride
-    - Test Protocols: Ramp Test (~ 20 min), 20 minute test (~ 60 min), 2x8 minute test (~ 50 min)
-    - Data fields for current interval, target power, test progress, power zone and more
-
 ### CupRoute
 - **Extension Name:** [CupRoute](https://github.com/nairdam88/cuproute)
   - Description: Offline, curated specialty coffee shop finder for cyclists using Hammerhead Karoo devices.
@@ -280,15 +290,6 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Sort locations by distance using your current location
     - Filter locations that are open now
     - Open locations directly in the native Karoo navigation app
-
-### KPedal
-- **Extension Name:** [KPedal](https://github.com/yrkan/KPedal)
-  - Description: Real-time pedaling efficiency extension for Hammerhead Karoo 2/3. Displays Balance, Torque Effectiveness, and Pedal Smoothness metrics from ANT+ Cycling Dynamics power meter pedals
-  - License: Open Source, MIT
-  - Features:
-    - KPedal provides cyclists with real-time feedback on pedaling technique during rides
-    - Data fields on Karoo ride screens
-    - Companion app for training drills, ride history, analytics, and achievement tracking
 
 ### eiRadar
 - **Extension Name:** [eiRadar](https://github.com/yrkan/eiradar)
@@ -323,6 +324,18 @@ To update extensions after you have installed them, long-tap the app icon on the
   - Features:
     - Display live breathing metrics
     - Record metrics to fit file
+
+### nomride
+- **Extension Name**: [nomride](https://github.com/yrkan/nomride)
+  - Description: Track carb balance, burn rate, hydration, and get eat/drink reminders during rides — all directly on your Karoo screen
+  - License: Open Source, MIT
+  - Features:
+    - Real-time balance of carbs eaten vs burned, based on power/FTP zones
+    - Water intake logging with rate (ml/h) and sip count
+    - Configurable reminders based on time intervals
+    - Log food and water via bonus actions or tap
+    - Carb data written to FIT files for post-ride analysis
+    - Pre-configured food items (gels, bars, bananas, etc.)
 
 ## Libraries
 
