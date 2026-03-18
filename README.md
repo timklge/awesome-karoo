@@ -36,6 +36,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-wattspeed](#karoo-wattspeed)
   - [k-breathe](#k-breathe)
   - [nomride](#nomride)
+  - [karoo-metrics-overlay](#karoo-metrics-overlay)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -336,6 +337,14 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Log food and water via bonus actions or tap
     - Carb data written to FIT files for post-ride analysis
     - Pre-configured food items (gels, bars, bananas, etc.)
+
+### karoo-metrics-overlay
+- **Extension Name**: [karoo-metrics-overlay](https://github.com/zenpeartree/karoo-metrics-overlay)
+  - Description: Karoo bike computer app that streams live ride metrics as a browser overlay for OBS live streaming
+  - License: Open Source, Apache 2
+  - Features:
+    - Streams live ride metrics over WiFi as a browser overlay
+    - Designed for live streaming with OBS Studio, Streamlabs, or any tool that supports browser sources.
 
 ## Libraries
 
