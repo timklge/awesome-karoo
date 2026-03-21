@@ -37,6 +37,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [k-breathe](#k-breathe)
   - [nomride](#nomride)
   - [karoo-metrics-overlay](#karoo-metrics-overlay)
+  - [Barberfish](#barberfish)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -346,6 +347,16 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Streams live ride metrics over WiFi as a browser overlay
     - Designed for live streaming with OBS Studio, Streamlabs, or any tool that supports browser sources.
 
+### Barberfish
+- **Extension Name**: [Barberfish](https://github.com/jpweytjens/barberfish)
+  - Description: Barberfishes keeps Hammerheads sharp, in the ocean and on your bike. Native-feeling data field enhancements for the Hammerhead Karoo.
+  - License: Open Source, Apache 2
+  - Features:
+    - A three-column HUD shows speed, heart rate, and power side by side with zone coloring
+    - Zone coloring supports both background-fill and text-color styles across four palettes
+    - Time fields use a consistent, unambiguous format across all durations
+    - Average speed fields support a single target or a min/max range with threshold coloring
+    
 ## Libraries
 
 ### ktor-client-karoo
