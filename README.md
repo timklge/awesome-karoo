@@ -39,6 +39,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-metrics-overlay](#karoo-metrics-overlay)
   - [Barberfish](#barberfish)
   - [WaxWatch](#WaxWatch)
+  - [velovigil](#velovigil)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -369,7 +370,21 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Surface Multipliers: Apply different wear rates based on the typical terrain for each profile
     - Automatic Background Tracking
     - Rewax Alerts
-    
+
+### velovigil
+- **veloVigil:** [veloVigil](https://github.com/velovigil/velovigil-karoo)
+  - Description: Data-sovereign cycling intelligence with Polar H10 HRV and crash detection. Streams HR to Karoo as native sensor, computes real-time RMSSD/SDNN/pNN50 from RR intervals, detects crashes via filtered accelerometer data. Telemetry syncs to rider's own Cloudflare backend for AI-powered coaching via their own Claude instance. Your ride. Your data. Your AI.
+  - License: Open Source, MIT
+  - Features:
+    - Polar H10 BLE connection with HR streaming to Karoo display
+    - Real-time HRV computation (RMSSD, SDNN, pNN50) from RR intervals
+    - Crash detection with filtered g-force (4g+ sustained, strap bounce filtering)
+    - Jump/airborne detection with hang time calculation
+    - Adaptive nutrition and hydration alerts (kJ-based, not timers)
+    - Offline-first telemetry buffering with automatic sync
+    - Fleet dashboard for coaches (multi-rider live monitoring)
+    - AI coaching via user's own Claude instance — data never leaves rider's control
+
 ## Libraries
 
 ### ktor-client-karoo
