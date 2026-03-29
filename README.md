@@ -38,6 +38,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [nomride](#nomride)
   - [karoo-metrics-overlay](#karoo-metrics-overlay)
   - [Barberfish](#barberfish)
+  - [WaxWatch](#WaxWatch)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -356,6 +357,18 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Zone coloring supports both background-fill and text-color styles across four palettes
     - Time fields use a consistent, unambiguous format across all durations
     - Average speed fields support a single target or a min/max range with threshold coloring
+
+### WaxWatch
+- **Extension Name**: [WaxWatch](https://github.com/shinytoaster/WaxWatch)
+  - Description: WaxWatch is a Hammerhead Karoo extension designed to help cyclists track their chain wax life across multiple Activity Profiles. By considering the rider's weight and the surface type ridden on, it calculates a dynamic remaining lifespan for your chain wax, ensuring you re-wax your chain at the optimal time.
+  - License: GPL 3
+  - Features:
+    - Profile-Specific Tracking: Maps wax life independently to every user-defined Activity Profile on your Karoo.
+    - Wax Type Selector: Choose from popular chain waxes (Generic Paraffin, CeramicSpeed UFO, Silca Secret, etc.) to establish an absolute manufacturer baseline distance.
+    - Dynamic Weight Algorithm: Adjusts the chosen wax baseline symmetrically from a 75kg benchmark — lighter riders get more life, heavier riders get less (reflecting real-world drivetrain wear differences).
+    - Surface Multipliers: Apply different wear rates based on the typical terrain for each profile
+    - Automatic Background Tracking
+    - Rewax Alerts
     
 ## Libraries
 
