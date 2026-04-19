@@ -40,6 +40,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Barberfish](#barberfish)
   - [WaxWatch](#WaxWatch)
   - [velovigil](#velovigil)
+  - [sk0711-graph](#sk0711-graph)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -384,6 +385,16 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Offline-first telemetry buffering with automatic sync
     - Fleet dashboard for coaches (multi-rider live monitoring)
     - AI coaching via user's own Claude instance — data never leaves rider's control
+
+### sk0711-graph
+- **sk0711-graph:** [sk0711-graph](https://github.com/svenk0711/sk0711-graph)
+  - Description: A Hammerhead Karoo extension that adds two graphical data fields showing the recent history of heart rate and power as a zone-colored curve.
+  - License: Open Source, Apache2
+  - Features:
+    - HR Zone Graph and Power Zone Graph as separate graphical data fields.
+    - Curve color follows the Karoo zone of each sample (5 HR zones, 7 power zones).
+    - Current value, average, and max shown alongside the curve.
+    - Tap a field to cycle its time window: 1 min → 5 min → Full ride. Each field keeps its own window.
 
 ## Libraries
 
