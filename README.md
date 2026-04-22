@@ -227,7 +227,7 @@ To update extensions after you have installed them, long-tap the app icon on the
   - Description: Hammerhead Karoo extension which allows to change basic map colors
   - License: Open Source, Apache 2
   - Features:
-    - Edit basic map colors
+    - Customize map colors
 
 ### karoo-routegraph
 - **Extension Name:** [karoo-routegraph](https://github.com/timklge/karoo-routegraph)
