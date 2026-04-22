@@ -24,6 +24,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Ki2](#ki2)
   - [KarooFlightRadar](#KarooFlightRadar)
   - [kxradar](#kxradar)
+  - [kxtheme](#kxtheme)
   - [karoo-routegraph](#karoo-routegraph)
   - [Waypoints](#waypoints)
   - [karoo-notepad](#karoo-notepad)
@@ -219,6 +220,14 @@ To update extensions after you have installed them, long-tap the app icon on the
   - License: Open Source, Apache 2
   - Features:
     - Replace the radar alert sound with a custom beep
+    - Control the radar light based on passing vehicles to save battery
+
+### kxtheme
+- **Extension Name:** [kxtheme](https://github.com/itxsvv/kxtheme)
+  - Description: Hammerhead Karoo extension which allows to change basic map colors
+  - License: Open Source, Apache 2
+  - Features:
+    - Customize map colors
 
 ### karoo-routegraph
 - **Extension Name:** [karoo-routegraph](https://github.com/timklge/karoo-routegraph)
