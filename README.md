@@ -115,7 +115,7 @@ To update extensions after you have installed them, long-tap the app icon on the
    
 ### karoo-kactions
 - **Extension Name:** [karoo-KActions](https://github.com/lockevod/Karoo-KActions)
-  - You can use [karoo-ksafe](#karoo-safe) (new app with more features)
+  - You can use [karoo-ksafe](#karoo-ksafe) (new app with more features)
   - Description: KActions allows to execute webhooks and send automated messages (whatsapp or sms with live tracking) when you start, stop, your activity in a karoo GPS 
   - License: Open Source, MIT
   - Features
