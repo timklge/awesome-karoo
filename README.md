@@ -42,6 +42,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [WaxWatch](#WaxWatch)
   - [velovigil](#velovigil)
   - [sk0711-graph](#sk0711-graph)
+  - [karoo-ksafe](#karoo-ksafe)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -114,6 +115,7 @@ To update extensions after you have installed them, long-tap the app icon on the
    
 ### karoo-kactions
 - **Extension Name:** [karoo-KActions](https://github.com/lockevod/Karoo-KActions)
+  - You can use [karoo-ksafe](#karoo-safe) (new app with more features)
   - Description: KActions allows to execute webhooks and send automated messages (whatsapp or sms with live tracking) when you start, stop, your activity in a karoo GPS 
   - License: Open Source, MIT
   - Features
@@ -404,6 +406,14 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Curve color follows the Karoo zone of each sample (5 HR zones, 7 power zones).
     - Current value, average, and max shown alongside the curve.
     - Tap a field to cycle its time window: 1 min → 5 min → Full ride. Each field keeps its own window.
+### karoo-ksafe
+- **Extension Name:** [karoo-KSafe](https://github.com/lockevod/Karoo-KSafe)
+  - Description: KSafe is a free, open-source safety extension for Karoo. It monitors your ride and automatically alerts your emergency contacts if something goes wrong — crash detected, no check-in, or speed suddenly drops — and allows you to manually trigger an SOS from your ride screen and custom messages!
+  - License: Open Source, MIT
+  - Features
+    - Detect crashes and sent notifications to your contacts
+    - Send automated notifications when you start or finish a bike ride. Now compatible with multiple messaging providers
+    - Send custom messages directly from a button (custom datafield)
 
 ## Libraries
 
