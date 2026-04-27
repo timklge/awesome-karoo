@@ -43,6 +43,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [velovigil](#velovigil)
   - [sk0711-graph](#sk0711-graph)
   - [karoo-ksafe](#karoo-ksafe)
+  - [karoo-gearbeeper](#karoo-gearbeeper)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -414,6 +415,17 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Detect crashes and sent notifications to your contacts
     - Send automated notifications when you start or finish a bike ride. Now compatible with multiple messaging providers
     - Send custom messages directly from a button (custom datafield)
+
+### karoo-gearbeeper
+- **Extension Name:** [karoo-gearbeeper](https://portcity.tech/karoo-gearbeeper/)
+  - Description: Beeps when you reach either end of your cassette on SRAM AXS drivetrains, so you always know when you're out of gears without looking down.
+  - License: Closed Source, Freeware
+  - Features:
+    - Audible alert when shifting to the physical small or large cog
+    - Cross-chain awareness — recognizes SRAM's blocked combinations (e.g. 35×11 on a 48/35 with 10-33 cassette) as effective cassette ends and alerts there too
+    - Distinct beep patterns: double beep for physical ends, triple beep for cross-chain-blocked ends; descending pitch for small cog, ascending for large cog
+    - Alert resets when you shift away from an endpoint — no repeated beeps while sitting on an end gear
+    - Supports Road 2x, Road 1x, MTB (Eagle AXS), and Gravel SRAM AXS drivetrain configurations
 
 ## Libraries
 
