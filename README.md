@@ -25,6 +25,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [KarooFlightRadar](#KarooFlightRadar)
   - [kxradar](#kxradar)
   - [kxtheme](#kxtheme)
+  - [kxgear](#kxgear)
   - [karoo-routegraph](#karoo-routegraph)
   - [Waypoints](#waypoints)
   - [karoo-notepad](#karoo-notepad)
@@ -231,6 +232,14 @@ To update extensions after you have installed them, long-tap the app icon on the
   - License: Open Source, Apache 2
   - Features:
     - Customize map colors
+
+### kxgear
+- **Extension Name:** [kxgear](https://github.com/itxsvv/kxgear)
+  - Description: Bike parts mileage tracker
+  - License: Open Source, Apache 2
+  - Features:
+    - Track mileage for chains, cassettes, tires, and other bike components automatically after rides.
+    - Set custom mileage alerts for each part and manage multiple bikes with local offline storage.
 
 ### karoo-routegraph
 - **Extension Name:** [karoo-routegraph](https://github.com/timklge/karoo-routegraph)
