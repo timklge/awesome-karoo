@@ -45,6 +45,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [sk0711-graph](#sk0711-graph)
   - [karoo-ksafe](#karoo-ksafe)
   - [karoo-gearbeeper](#karoo-gearbeeper)
+  - [WaterMelonControl](#watermeloncontrol)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -435,6 +436,15 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Distinct beep patterns: double beep for physical ends, triple beep for cross-chain-blocked ends; descending pitch for small cog, ascending for large cog
     - Alert resets when you shift away from an endpoint — no repeated beeps while sitting on an end gear
     - Supports Road 2x, Road 1x, MTB (Eagle AXS), and Gravel SRAM AXS drivetrain configurations
+
+### WaterMelonControl
+- **Extension Name:** [WaterMelonControl](https://github.com/sksense/karoo-WaterMelonControl)
+  - Description: Karoo extension with media playback and volume control widgets for sideloaded music apps.
+  - License: Open Source, Apache 2
+  - Features:
+    - PLAYING widget shows the current track and artist and opens the active media app
+    - MEDIA widget provides play/pause, next, and previous controls
+    - VOLUME widget adjusts device music volume from a Karoo data page
 
 ## Libraries
 
