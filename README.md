@@ -467,6 +467,10 @@ The new SDK to develop extensions is maintained by Hammerhead at https://github.
 
 This custom map style for the Hammerhead Karoo improves clarity, visibility, and usability for mountain biking. Check it out at [dansoft-ch/karoo-custom-mapstyle](https://github.com/dansoft-ch/karoo-custom-mapstyle)
 
+### karoo-bulk-exporter
+
+A PowerShell-based bulk exporter for routes from the Hammerhead dashboard. [dansoft-ch/karoo-gpx-bulk-exporter](https://github.com/dansoft-ch/karoo-gpx-bulk-exporter)
+
 ## Contributing
 
 We welcome contributions to this repository! If you have developed an extension or resource that you believe would be beneficial to others, please follow these steps:
