@@ -51,6 +51,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
 - [Resources](#resources)
   - [karoo-ext](#karoo-ext)
   - [karoo-custom-mapstyle](#karoo-custom-mapstyle)
+  - [karoo-bulk-exporter](#karoo-bulk-exporter)
 - [Contributing](#contributing)
 - [License](#license)
 
