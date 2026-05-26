@@ -46,6 +46,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-ksafe](#karoo-ksafe)
   - [karoo-gearbeeper](#karoo-gearbeeper)
   - [WaterMelonControl](#watermeloncontrol)
+  - [karoo-ride-replay](#karoo-ride-replay)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -446,6 +447,16 @@ To update extensions after you have installed them, long-tap the app icon on the
     - PLAYING widget shows the current track and artist and opens the active media app
     - MEDIA widget provides play/pause, next, and previous controls
     - VOLUME widget adjusts device music volume from a Karoo data page
+
+### karoo-ride-replay
+- **Extension Name:** [karoo-ride-replay](https://github.com/lgangitano/karoo-ride-replay)
+  - Description: Ride simulator for Karoo extension developers — replays a recorded FIT file as mock GPS plus virtual sensor data, so other extensions run as if a real ride were happening, without leaving home
+  - License: Open Source, Apache 2
+  - Features:
+    - Replays the rider's own recorded FIT files from the Karoo's `FitFiles/` folder
+    - Mock GPS injection via Android `LocationManager` — Karoo OS sees position move along the recorded route
+    - Virtual sensor devices for Power, Heart Rate, Cadence, Speed via the `karoo-ext` Device API
+    - Variable playback speed (1× / 2× / 5× / 10×) and start-time offset for fast iteration
 
 ## Libraries
 
