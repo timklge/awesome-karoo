@@ -47,6 +47,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-gearbeeper](#karoo-gearbeeper)
   - [WaterMelonControl](#watermeloncontrol)
   - [karoo-ride-replay](#karoo-ride-replay)
+  - [Maverick HUD](#maverick-hud)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -457,6 +458,19 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Mock GPS injection via Android `LocationManager` — Karoo OS sees position move along the recorded route
     - Virtual sensor devices for Power, Heart Rate, Cadence, Speed via the `karoo-ext` Device API
     - Variable playback speed (1× / 2× / 5× / 10×) and start-time offset for fast iteration
+
+### Maverick HUD
+- **Extension Name:** [Maverick HUD](https://github.com/eideroliveira/karoo-maverick-hud)
+  - Description: Mirrors your Karoo ride data onto EverySight Maverick smart glasses as a heads-up display, so you never look down. Includes a Karoo-native settings app to pair the glasses and configure pages, fields, training zones and your drivetrain.
+  - License: Open Source, Apache 2
+  - Features:
+    - Renders your chosen data fields on the Maverick glasses HUD — two edge columns, corner layout, 2–3 rows, with the centre kept clear for the road
+    - Zone-coloured power (7-band, incl. a sub-recovery zone), heart rate and cadence with editable FTP/HR zones, plus an under-gear warning when you grind a big gear
+    - Wide field set: live, average, max, lap and last-lap power/HR/cadence/speed/distance; NP, IF, VI, TSS; ride/lap/last-lap/interval timers; L/R balance; and gears
+    - Gear field shows the engaged teeth (e.g. 50/14), resolved from a built-in drivetrain datasheet (SRAM AXS/XPLR/Eagle, Shimano) when the sensor reports only gear positions
+    - Auto workout page when a structured workout is loaded — power and cadence vs target, interval normalized power and time remaining
+    - Karoo-native settings with a WYSIWYG page editor and glasses controls (brightness, IPD), plus a live preview pushed to the glasses while you edit
+    - Temple-pad gestures (switch pages, adjust brightness) and an on-Karoo data field that mirrors the HUD
 
 ## Libraries
 
