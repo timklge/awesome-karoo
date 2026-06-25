@@ -31,6 +31,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-notepad](#karoo-notepad)
   - [karoo-wprimebalance](#karoo-wprimebalance)
   - [WPrimeKarooExtension](#WPrimeKarooExtension)
+  - [W′ Race](#w-race)
   - [karoo-colorspeed](#karoo-colorspeed)
   - [CupRoute](#CupRoute)
   - [eiRadar](#eiRadar)
@@ -298,6 +299,17 @@ To update extensions after you have installed them, long-tap the app icon on the
     - W Prime represents your finite anaerobic energy reserve (think of it as a battery that depletes when you push hard above your threshold and recharges when you ease off)
     - Six scientific algorithms - Choose the model that fits your training style
     - Real-time tracking - Updated every second during your ride
+
+### W′ Race
+- **Extension Name:** [W′ Race](https://github.com/j4m1eb/Karoo-Wprime-Race)
+  - Description: Race-focused W′ pacing fields for time trials and criteriums on Hammerhead Karoo
+  - License: Open Source, MIT
+  - Features:
+    - W′ TT field compares current W′ balance against a linear target curve
+    - W′ Crit field compares W′ balance against configurable race-phase floors
+    - Shows usable W′ above the current phase floor
+    - Time-to-floor and time-to-empty fields based on current 3s power
+    - Supports multiple W′ recovery models and configurable trend arrows
    
 ### karoo-colorspeed
 - **Extension Name:** [karoo-colorspeed](https://github.com/currand/karoo-colorspeed)
