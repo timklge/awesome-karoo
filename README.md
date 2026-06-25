@@ -33,6 +33,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [WPrimeKarooExtension](#WPrimeKarooExtension)
   - [W′ Race](#w-race)
   - [karoo-colorspeed](#karoo-colorspeed)
+  - [Average Speed Colour](#average-speed-colour)
   - [CupRoute](#CupRoute)
   - [eiRadar](#eiRadar)
   - [7climb](#7climb)
@@ -321,6 +322,15 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Current lap average vs. last lap average
     - Current speed vs. target speed
     - Lap speed vs. target speed
+
+### Average Speed Colour
+- **Extension Name:** [Average Speed Colour](https://github.com/j4m1eb/Karoo-Average-speed-colour)
+  - Description: An alternative colour-coded speed extension with configurable layout and display settings
+  - License: Open Source, Apache 2
+  - Features:
+    - Current speed vs. ride average, last lap average, or target speed
+    - Current lap average vs. last lap average or target speed
+    - Configurable target speed, colour palette, icons, and value positions
 
 ### CupRoute
 - **Extension Name:** [CupRoute](https://github.com/nairdam88/cuproute)
