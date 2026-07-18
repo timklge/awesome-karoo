@@ -50,6 +50,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [WaterMelonControl](#watermeloncontrol)
   - [karoo-ride-replay](#karoo-ride-replay)
   - [Maverick HUD](#maverick-hud)
+  - [karoo-tbt-beep](#karoo-tbt-beep)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -494,6 +495,15 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Karoo-native Compose settings (hub + detail) with a WYSIWYG page editor and live glasses controls (display, brightness, IPD), plus a preview pushed to the glasses while you edit
     - Page modes (auto-cycle / follow the Karoo page / manual), metric or imperial units, and optional field icons
     - Temple-pad gestures (switch pages, adjust brightness) and an on-Karoo data field that mirrors the HUD
+
+### karoo-tbt-beep
+- **Extension Name:** [karoo-tbt-beep](https://github.com/RyTiXz/karoo-tbt-beep)
+  - Description: Quiet, configurable turn-by-turn beeps replacing the loud stock TBT alert sound
+  - License: Open Source, Apache 2
+  - Features:
+    - Up to three distance-based alerts (early / approach / at-turn), each fully configurable
+    - Tone patterns (single, double, triple, rising, falling, custom sequences) and a frequency slider
+    - Speed-based beep timing so alerts land right on the configured distance
 
 ## Libraries
 
