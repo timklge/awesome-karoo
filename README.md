@@ -51,6 +51,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-ride-replay](#karoo-ride-replay)
   - [Maverick HUD](#maverick-hud)
   - [karoo-tbt-beep](#karoo-tbt-beep)
+  - [karoo-pedalons](#karoo-pedalons)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -504,6 +505,16 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Up to three distance-based alerts (early / approach / at-turn), each fully configurable
     - Tone patterns (single, double, triple, rising, falling, custom sequences) and a frequency slider
     - Speed-based beep timing so alerts land right on the configured distance
+
+### karoo-pedalons
+- **Extension Name:** [Pédalons Karoo Extension](https://github.com/glandais/tribly/tree/develop/karoo)
+  - Description: Syncs routes from Pédalons directly to your Karoo device
+  - License: Source-available, PolyForm Noncommercial 1.0.0
+  - Features:
+    - Browse routes from your [Pédalons](https://pedalons.fr) teams
+    - One-tap sync to Karoo
+    - Device code authentication (no typing on Karoo)
+    - Automatic token refresh
 
 ## Libraries
 
