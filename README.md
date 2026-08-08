@@ -52,6 +52,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Maverick HUD](#maverick-hud)
   - [karoo-tbt-beep](#karoo-tbt-beep)
   - [karoo-pedalons](#karoo-pedalons)
+  - [karoo-b54](#karoo-b54)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -515,6 +516,15 @@ To update extensions after you have installed them, long-tap the app icon on the
     - One-tap sync to Karoo
     - Device code authentication (no typing on Karoo)
     - Automatic token refresh
+
+
+### karoo-b54
+- **Extension Name:** [KarooB54](https://github.com/GitGeshizzle/KarooB54)
+  - Description: Pairs Supernova B54 light and provides battery information / data fields
+  - License: Open Source, MIT
+  - Features:
+    - Remaining duration until battery runs out
+    - Percentage of battery
 
 ## Libraries
 
