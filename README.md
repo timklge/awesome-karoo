@@ -53,6 +53,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-tbt-beep](#karoo-tbt-beep)
   - [karoo-pedalons](#karoo-pedalons)
   - [karoo-b54](#karoo-b54)
+  - [karoo-hass-companion](#karoo-hass-companion)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -525,6 +526,16 @@ To update extensions after you have installed them, long-tap the app icon on the
   - Features:
     - Remaining duration until battery runs out
     - Percentage of battery
+
+### karoo-hass-companion
+- **Extension Name:** [Karoo Home Assistant Companion](https://github.com/michalchecinski/karoo-hass-companion)
+  - Description: A focused Home Assistant remote for the Hammerhead Karoo bike computer.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Run scripts and control locks, covers, lights, and switches
+    - Choose Wi-Fi-only access or allow the paired phone to provide network access
+    - Protect the app or selected controls with a PIN
+    - Confirm important actions before unlocking a door or opening a gate
 
 ## Libraries
 
