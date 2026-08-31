@@ -55,6 +55,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-b54](#karoo-b54)
   - [karoo-hass-companion](#karoo-hass-companion)
   - [BigNum](#bignum)
+  - [KStack](#kstack)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -551,6 +552,21 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Power smoothing variants: 3s, 5s, 10s, 30s, 20m, 1hr, lap average, normalized power
     - Derived fields: W/kg, TSS, calories, VAM, % of max HR, % of HRR, distance and elevation to top of climb
     - Respects the metric/imperial preference from your Karoo profile
+
+### KStack
+- **Extension Name:** [KStack](https://github.com/antmordel/karoo-kstack)
+  - Description: Garmin-style stacked data fields. Each field draws a metric's current value large with its ride average and maximum small underneath, so one field carries three numbers where a stock field carries one.
+  - License: Open Source, Apache 2
+  - Features:
+    - Six fields: heart rate, heart rate as a percentage of max HR, speed, power, cadence and lap time
+    - The smaller values are Karoo's own AVERAGE_* and MAX_* data types, so they match the stock fields exactly and follow the same pause and reset behaviour
+    - Text scales to whatever grid size the field is placed in, by width as well as height, so a value with a decimal point or a colon fits the same box a three-digit number does
+    - Optional heart rate and power zone colouring, per field: off, the metric icon in the zone colour, or the whole field filled with the zone colour and the text picked for contrast. The colours are the ones on the Karoo's own zone settings screens, five for heart rate and seven for power
+    - The smaller values can be shown side by side or stacked one per row, per field
+    - Rows resolve independently, so a sensor that is not connected shows -- on its own row while the others keep updating
+    - Respects the metric/imperial preference from your Karoo profile
+    - Updates in place from the main menu
+    - Karoo 2 and Karoo 3
 
 ## Libraries
 
