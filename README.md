@@ -56,6 +56,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-hass-companion](#karoo-hass-companion)
   - [BigNum](#bignum)
   - [KStack](#kstack)
+  - [RadarCount](#radarcount)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -565,6 +566,21 @@ To update extensions after you have installed them, long-tap the app icon on the
     - The smaller values can be shown side by side or stacked one per row, per field
     - Rows resolve independently, so a sensor that is not connected shows -- on its own row while the others keep updating
     - Respects the metric/imperial preference from your Karoo profile
+    - Updates in place from the main menu
+    - Karoo 2 and Karoo 3
+
+### RadarCount
+- **Extension Name:** [RadarCount for Karoo](https://github.com/Aryeh95/RadarCount-Karoo)
+  - Description: Counts the vehicles that pass you and records radar data to the ride's FIT file in the same format as the Garmin MyBikeTraffic app, so Karoo rides can be uploaded to [mybiketraffic.com](https://www.mybiketraffic.com) for traffic statistics.
+  - License: Open Source, MIT
+  - Features:
+    - Data fields styled like the Karoo's own: Vehicles (pass count), Vehicles per Hour, Vehicle Speed, Vehicle Distance, and a combined Radar field with count, speed and distance
+    - Tracks each radar target individually, so cars in clusters are counted separately; ignores cars that follow at your speed and cars that go straight on when you turn
+    - Vehicle speed shown as closing speed or absolute speed, per setting, with units
+    - FIT developer fields match the Garmin MyBikeTraffic Connect IQ app (radar ranges, speeds, passing speed, ride total), so the files import on mybiketraffic.com
+    - Radar streams are only opened while a ride is recording or a field is on screen
+    - Respects the metric/imperial preference from your Karoo profile, with a manual override
+    - Works with any ANT+ radar the Karoo pairs with; no alerts, no network access
     - Updates in place from the main menu
     - Karoo 2 and Karoo 3
 
