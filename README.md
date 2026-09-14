@@ -57,6 +57,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [BigNum](#bignum)
   - [KStack](#kstack)
   - [RadarCount](#radarcount)
+  - [karoo-forumslader](#karoo-forumslader)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -582,6 +583,15 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Respects the metric/imperial preference from your Karoo profile, with a manual override
     - Works with any ANT+ radar the Karoo pairs with; no alerts, no network access
     - Updates in place from the main menu
+    - Karoo 2 and Karoo 3
+
+### karoo-forumslader
+- **Extension Name:** [Karoo Forumslader Extension](https://github.com/fezu54/karoo-forumslader)
+  - Description: Connects to a BLE-enabled [Forumslader dynamo-USB-charger model](https://www.forumslader.de/) and displays live sensor data in data fields.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Device Discovery: connect to the charger from the sensors menu
+    - Real-time Data Streaming: Battery Level, Speed, Voltage, Charge/discharge status, etc.
     - Karoo 2 and Karoo 3
 
 ## Libraries
