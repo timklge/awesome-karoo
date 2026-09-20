@@ -58,6 +58,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [KStack](#kstack)
   - [RadarCount](#radarcount)
   - [karoo-forumslader](#karoo-forumslader)
+  - [GluKaMon](#glukamon)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -593,6 +594,22 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Device Discovery: connect to the charger from the sensors menu
     - Real-time Data Streaming: Battery Level, Speed, Voltage, Charge/discharge status, etc.
     - Karoo 2 and Karoo 3
+
+### GluKaMon
+- **Extension Name:** [GluKaMon](https://github.com/brennancarley/GluKaMonAPK)
+  - Description: GluKaMon is a Hammerhead Karoo extension that displays your continuous glucose monitor (CGM) data on the Karoo cycling computer screen — so you can keep your eyes on the road and not on your phone. Real-time readings, trend arrows, zone-based audio/visual notices, and FIT-file recording for post-ride analysis.
+  - License: Closed Source, Freeware
+  - Features:
+    - 48 customizable data tiles across eleven categories — pick which ones fit your ride pages
+    - Four CGM providers supported — Dexcom Share, FreeStyle Libre (via LibreLinkUp), Nightscout, and xDrip/Juggluco (local connection)
+    - Three time periods — most tile families come in 1-minute, 5-minute, and 15-minute views (value, change, zone, dots, rainbow, and combined tiles; the standalone Trend tiles and the Graphs are period-independent)
+    - Configurable glucose zones — set your own Very Low / Low / Target / High / Very High thresholds
+    - Visual and audible notices — when your glucose enters a new zone, with tones tuned to both Karoo 2 and Karoo 3 speakers
+    - Dark and light mode — follows your Karoo's system theme automatically
+    - mg/dL or mmol/L — pick your preferred unit
+    - FIT-file recording — glucose values embedded in your ride file for post-ride analysis in tools like Intervals.icu
+    - 10 languages — English, German, Spanish, French, Italian, Japanese, Korean, Portuguese, Simplified Chinese, Traditional Chinese
+    - Battery-aware design — three polling modes (1 minute, 5 minutes, or Dynamic, which starts at 1 minute and silently adapts to 5 minutes when the source is slower); Dexcom always stays at 5 minutes; smart back-off on network errors
 
 ## Libraries
 
