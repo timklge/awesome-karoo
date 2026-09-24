@@ -59,6 +59,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [RadarCount](#radarcount)
   - [karoo-forumslader](#karoo-forumslader)
   - [GluKaMon](#glukamon)
+  - [Miefquirl](#miefquirl)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -610,6 +611,14 @@ To update extensions after you have installed them, long-tap the app icon on the
     - FIT-file recording — glucose values embedded in your ride file for post-ride analysis in tools like Intervals.icu
     - 10 languages — English, German, Spanish, French, Italian, Japanese, Korean, Portuguese, Simplified Chinese, Traditional Chinese
     - Battery-aware design — three polling modes (1 minute, 5 minutes, or Dynamic, which starts at 1 minute and silently adapts to 5 minutes when the source is slower); Dexcom always stays at 5 minutes; smart back-off on network errors
+
+### Miefquirl
+- **Extension Name:** [Miefquirl](https://github.com/hamann/karoo-miefquirl)
+  - Description: Controls a Wahoo KICKR Headwind fan from a tappable data field, so you can change fan speed mid-effort without reaching for the fan or picking up a phone.
+  - License: Open Source, Apache 2
+  - Features:
+    - Data field with `−` and `+` zones to step the fan by 10%, and a tap on the value to switch it off and back on at your previous speed
+    - Brief in-ride alert on each change
 
 ## Libraries
 
