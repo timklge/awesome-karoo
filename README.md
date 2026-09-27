@@ -60,6 +60,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-forumslader](#karoo-forumslader)
   - [GluKaMon](#glukamon)
   - [Miefquirl](#miefquirl)
+  - [Light Control for iGPSPORT](#light-control-for-igpsport)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -619,6 +620,21 @@ To update extensions after you have installed them, long-tap the app icon on the
   - Features:
     - Data field with `−` and `+` zones to step the fan by 10%, and a tap on the value to switch it off and back on at your previous speed
     - Brief in-ride alert on each change
+
+### Light Control for iGPSPORT
+- **Extension Name:** [Light Control for iGPSPORT](https://github.com/tiagodias00/igpsport-karoo)
+  - Description: Controls an iGPSPORT VS-series bike light (tested on the VS1200S) over Bluetooth from a tappable data field and an app page, and can switch the light on and off with your rides.
+  - License: Open Source, MIT
+  - Features:
+    - Data field in three sizes (regular, slim, compact) with SOLID / FLASH / AUTO / OFF buttons; tap again to cycle levels; shows the light's battery and remaining run time
+    - Pair the light from the Karoo's sensors menu; reconnects by itself after the light's motion sleep
+    - Switches for the light's own features: auto light, auto sleep, auto dim when stopped, low-battery saving
+    - Turn the light on in a chosen mode when a ride starts, and off when it ends; OFF stays off when the bike is moved
+    - Custom light-mode editor: steady or flash, brightness, flash cycle and on-time
+    - Bonus / hardware button actions: next mode, solid, flash, auto, light off, open controls
+    - Low-battery alerts at 20% and 10%
+    - No network access; updates in place from the extension list
+    - Tested on Karoo 3
 
 ## Libraries
 
