@@ -61,6 +61,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [GluKaMon](#glukamon)
   - [Miefquirl](#miefquirl)
   - [Light Control for iGPSPORT](#light-control-for-igpsport)
+  - [CORE Heat](#core-heat)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -635,6 +636,17 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Low-battery alerts at 20% and 10%
     - No network access; updates in place from the extension list
     - Tested on Karoo 3
+
+### CORE Heat
+- **Extension Name:** [CORE Heat](https://github.com/angkyria/karoo-core)
+  - Description: Heat training data fields for the CORE body temperature sensor: core and skin temperature, Heat Strain Index, heat zone, heat training load and adaptation.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Six data fields: Core Temp, Skin Temp, Strain Index, Zone, Training Load and Adaptation
+    - Heat Strain Index read straight from the CORE sensor over Bluetooth (firmware 0.8.7 or later), estimated from core and skin temperature until connected; only your own sensor is used, never a riding partner's
+    - Heat data in the FIT file: heat strain index and zone every second, plus training load, adaptation score, average and max index and time in each heat zone in the ride summary
+    - Heat colors on the number or the whole field background, and optional raised decimals
+    - Karoo 2 and Karoo 3
 
 ## Libraries
 
