@@ -35,6 +35,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-colorspeed](#karoo-colorspeed)
   - [Average Speed Colour](#average-speed-colour)
   - [CupRoute](#CupRoute)
+  - [Resupply](#resupply)
   - [eiRadar](#eiRadar)
   - [7climb](#7climb)
   - [karoo-wattspeed](#karoo-wattspeed)
@@ -354,6 +355,15 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Sort locations by distance using your current location
     - Filter locations that are open now
     - Open locations directly in the native Karoo navigation app
+
+### Resupply
+- **Extension Name:** [Resupply](https://github.com/patricebender/resupply-karoo)
+  - Description: Finds food, water, coffee, bike shops, and fuel along a loaded route or around your current location, with offline POI search.
+  - License: Open Source, GPL-3.0
+  - Features:
+    - Searches offline POIs along a route or near your current location
+    - Configure detour distance and POI categories
+    - Browse results as map pins or in a distance-ordered list
 
 ### eiRadar
 - **Extension Name:** [eiRadar](https://github.com/yrkan/eiradar)
