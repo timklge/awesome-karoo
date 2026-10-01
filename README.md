@@ -63,6 +63,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Miefquirl](#miefquirl)
   - [Light Control for iGPSPORT](#light-control-for-igpsport)
   - [CORE Heat](#core-heat)
+  - [Waybook](#waybook)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -657,6 +658,19 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Heat data in the FIT file: heat strain index and zone every second, plus training load, adaptation score, average and max index and time in each heat zone in the ride summary
     - Heat colors on the number or the whole field background, and optional raised decimals
     - Karoo 2 and Karoo 3
+
+### Waybook
+- **Extension Name:** [Waybook](https://github.com/jakubfoglar/waybook-karoo)
+  - Description: Discover the places worth stopping at along your route: cafés, viewpoints, castles, villages and more, each with a photo and a short story of what it is and why to stop.
+  - License: Closed Source, Freeware
+  - Features:
+    - Build a waybook for any loaded route: every place along it in order, with distance ahead and opening hours
+    - Works offline once built
+    - Rich descriptions of each place: what it is and why it's worth a stop
+    - Google Maps ratings, reviews, photos and opening hours right in the app
+    - Nearby mode scans around you in real time for coffee, food and sights
+    - Places appear as pins on the Karoo map; navigate to any of them in one tap
+    - Data fields that show the next places ahead on your ride screen
 
 ## Libraries
 
