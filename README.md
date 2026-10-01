@@ -661,15 +661,14 @@ To update extensions after you have installed them, long-tap the app icon on the
 
 ### Waybook
 - **Extension Name:** [Waybook](https://github.com/jakubfoglar/waybook-karoo)
-  - Description: Discover the places worth stopping at along your route: cafés, viewpoints, castles, villages and more, each with a photo and a short story of what it is and why to stop.
+  - Description: Automatically finds places worth stopping at along your route, and why: cafés, restaurants, water, iconic viewpoints, castles and more. Places have rich info: a short summary of the place, photos, practical info, and a "why to stop there".
   - License: Closed Source, Freeware
   - Features:
-    - Build a waybook for any loaded route: every place along it in order, with distance ahead and opening hours
-    - Works offline once built
-    - Rich descriptions of each place: what it is and why it's worth a stop
-    - Google Maps ratings, reviews, photos and opening hours right in the app
-    - Nearby mode scans around you in real time for coffee, food and sights
-    - Places appear as pins on the Karoo map; navigate to any of them in one tap
+    - Find places around the currently loaded route, then follow them as you ride.
+    - Places appear as pins on the Karoo map, works offline once built
+    - Places have rich info: photos, what it is, why it's worth a stop, practical info, special offering, etc.
+    - Google Maps ratings, reviews and photos right on the Karoo
+    - Nearby mode scans around you in real time
     - Data fields that show the next places ahead on your ride screen
 
 ## Libraries
