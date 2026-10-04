@@ -64,6 +64,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Light Control for iGPSPORT](#light-control-for-igpsport)
   - [CORE Heat](#core-heat)
   - [Waybook](#waybook)
+  - [Workout+](#workout)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
 - [Resources](#resources)
@@ -670,6 +671,20 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Google Maps ratings, reviews and photos right on the Karoo
     - Nearby mode scans around you in real time
     - Data fields that show the next places ahead on your ride screen
+
+### Workout+
+- **Extension Name:** [Workout+](https://github.com/angkyria/karoo-workout-plus)
+  - Description: Brings the new Karoo OS workout layout to the Karoo 2: target bar, interval countdown and interval graph replace the old workout page while a structured workout runs.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Primary target in the native style: a bar with your value sliding along it, green in range, blue below, red above; tap for the numeric style; ramps hold you to the ramp's current value
+    - Secondary target (power, heart rate or cadence) as a compact row
+    - Interval and workout in one block: interval number, workout time left, a large interval countdown and a graph of the intervals ridden so far, colored by your power or heart rate zones
+    - Up to four data fields of your choice, plus time in range for the interval and the workout; set a field to None and the rest of the page grows
+    - Optional CORE row with core temperature, Heat Strain Index and skin temperature, using [CORE Heat](#core-heat) when it's installed
+    - Three page modes: replace the workout page (default), cover every ride page, or a minimized chip that opens a drawer; hardware buttons keep their native actions
+    - Needs the "draw over other apps" permission (a Grant button in the app, or one adb command)
+    - Tested on Karoo 2
 
 ## Libraries
 
