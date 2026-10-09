@@ -67,6 +67,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Workout+](#workout)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
+  - [karoo-ext-testing](#karoo-ext-testing)
 - [Resources](#resources)
   - [karoo-ext](#karoo-ext)
   - [karoo-custom-mapstyle](#karoo-custom-mapstyle)
@@ -696,6 +697,16 @@ To update extensions after you have installed them, long-tap the app icon on the
   - Features:
     - Simplifies making http request via the Karoo System Service
     - Works even if the Karoo itself has no wifi connection. (Karoo Companion required)
+
+### karoo-ext-testing
+
+- **Library Name:** [karoo-ext-testing](https://github.com/nikosavola/karoo-ext-testing)
+  - Description: Test doubles for the Karoo system side of karoo-ext, to test extensions on the JVM or an emulator without a Karoo
+  - License: Open Source, Apache 2
+  - Features:
+    - Fake `KarooSystemService` for Robolectric and emulator tests: data streams, location, ride state, navigation, HTTP, FIT, views and map effects
+    - Fake Bluetooth LE sensors and lights, with assertions for cleanup and ride restarts
+    - Test and debug tooling only, not for release APKs
 
 ## Resources
 
