@@ -65,6 +65,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [CORE Heat](#core-heat)
   - [Waybook](#waybook)
   - [Workout+](#workout)
+  - [Squadrats Overlay](#squadrats-overlay)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -686,6 +687,18 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Three page modes: replace the workout page (default), cover every ride page, or a minimized chip that opens a drawer; hardware buttons keep their native actions
     - Needs the "draw over other apps" permission (a Grant button in the app, or one adb command)
     - Tested on Karoo 2
+
+### Squadrats Overlay
+
+- **Extension Name:** [Squadrats Overlay](https://github.com/leoschweizer/karoo-squadrats)
+  - Description: Displays uncollected Squadrats as colored grid outlines on the Karoo map during your rides.
+  - License: Open Source, MIT
+  - Features:
+    - Outlines of uncollected Squadrats and Squadratinhos on map pages
+    - Uses your personal Squadrats token; tile data is synced for a chosen center and radius
+    - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
+    - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
+    - Unofficial community project, not affiliated with Hammerhead or Squadrats
 
 ## Libraries
 
