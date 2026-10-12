@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [KogSense](#kogsense)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,19 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### KogSense
+
+- **Extension Name:** [KogSense](https://github.com/jcro001/KogSense)
+  - Description: Beeps when an electronic drivetrain reaches its mechanical limits, supporting SRAM AXS directly and Shimano Di2 through the Ki2 extension.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - End of range beeps on reaching the first or last cassette gear
+    - Pre-shift warning before an automatic synchronised front shift, with an ascending tone for upshifts and a descending tone for downshifts
+    - Learns synchronised shift boundary cogs while riding, filtering false positives from manual front shifts
+    - Settings, cassette sizes and boundaries are remembered separately for each connected bike
+    - Handles cross-chain blocked combinations, such as the locked small-small on SRAM 2x
+    - Tested on SRAM AXS 2x12 and Shimano Di2 2x12, on Karoo 2 and Karoo 3
 
 ## Libraries
 
