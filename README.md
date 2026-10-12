@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [Player Zero](#player-zero)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,19 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### Player Zero
+
+- **Extension Name:** [Player Zero for Karoo](https://github.com/NorthwoodsSentinel/player-zero-karoo)
+  - Description: Connects to a Onewheel GT or GT-S over Bluetooth and shows the board's battery, motor temperature, safety headroom, amps and speed as data fields. Nothing leaves the Karoo.
+  - License: Open Source, MIT
+  - Features:
+    - Data fields for board battery, motor temperature, safety headroom, board amps and board speed
+    - Connects directly over Bluetooth using the board's Polaris token, with a repeated setup burst to keep the session alive
+    - Battery reads as --% until the board accepts the token, so a real percentage confirms the connection
+    - Configure the board's Bluetooth name and token on the device, or push a config file with adb
+    - Settings page shows a live connection status line
+    - Karoo 2 and Karoo 3; v0.1.0 was verified on a Karoo 2
 
 ## Libraries
 
