@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [Ride Namer](#ride-namer)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,21 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### Ride Namer
+
+- **Extension Name:** [Ride Namer](https://github.com/duncanbottrill/karoo-ride-namer)
+  - Description: Gives every finished ride a name generated from its weather, distance, elevation, speed, intensity and location, and can rename the matching Strava activity. The name generator runs offline.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Fetches weather once per ride from Open-Meteo at the first GPS fix, and names the ride by its midpoint rather than its start
+    - Collects distance, ascent, average and maximum speed, average and maximum heart rate, average power and intensity factor
+    - Reverse geocodes the ride midpoint to a place name, skipping it when offline
+    - Four name styles: funny, descriptive, minimal and random
+    - Shows a notification with the name and keeps a history in the app
+    - Optional Strava auto-rename, connected by scanning a QR code, which matches the uploaded activity by start time
+    - Adds no in-ride data fields, as it only acts at the end of a ride
+    - Karoo 3
 
 ## Libraries
 
