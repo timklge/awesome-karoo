@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [karoo-decoupling](#karoo-decoupling)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,19 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### karoo-decoupling
+
+- **Extension Name:** [karoo-decoupling](https://github.com/schaefer-dev/karoo-decoupling)
+  - Description: Shows aerobic decoupling (Pa:Hr drift) as a live data field, comparing the efficiency factor of the first half of the ride against the second half.
+  - License: Not specified in the repository
+  - Features:
+    - Samples power and heart rate once per second of moving time, excluding stopped time
+    - Splits the ride at the midpoint of moving time and shows the drift percentage
+    - After the first two minutes it shows a running preview of what the final drift would be if the ride ended now
+    - Keeps the last known heart rate and power values when a sensor drops out, and resets after a stop to start transition
+    - Release builds repaint every 30 seconds as a battery optimisation, while the calculation still uses every sample
+    - Karoo 2 and Karoo 3; build from source
 
 ## Libraries
 
