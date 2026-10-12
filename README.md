@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [Stock Tracker](#stock-tracker)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,18 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### Stock Tracker
+
+- **Extension Name:** [Stock Tracker for Karoo](https://github.com/gingerr6/stock-tracker)
+  - Description: Shows live stock, crypto, index and futures prices from Yahoo Finance on the ride screen.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Ten configurable slots, accepting any Yahoo Finance symbol, including stocks, crypto pairs, indices and futures
+    - A dedicated field per slot, plus a ticker field that cycles through all configured symbols every 5 seconds
+    - Each field shows the symbol, the price coloured by the daily change, the change percentage with an arrow, and an intraday sparkline
+    - Refreshes every 5 minutes over the Karoo's HTTP system, keeping the last known price on screen if a refresh fails
+    - Symbols are configured in the app on the device
 
 ## Libraries
 
