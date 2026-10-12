@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [WearTracker](#weartracker)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,20 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### WearTracker
+
+- **Extension Name:** [WearTracker](https://github.com/wjakob/WearTracker)
+  - Description: Tracks wear and mileage on drivetrain components, brake pads and tyres for each bike, calculated from the bike odometer against a stored offset per component.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Detects the bikes configured on the Karoo and tracks each independently
+    - Covers the chain, chainring, cassette and both derailleurs, front and rear brake pad distance, front and rear tyre distance, and sealant age
+    - Shows the Karoo's total non-resettable odometer as a frame mileage field
+    - When a chain is replaced it records the longest chain used, to help decide when to replace the cassette, chainring and derailleurs
+    - Eleven custom data types in km or miles, following the Karoo's unit preference
+    - Front derailleur wear only appears on bikes with more than one front gear
+    - Build from source
 
 ## Libraries
 
