@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [Pinion Smart.Shift](#pinion-smartshift)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,20 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### Pinion Smart.Shift
+
+- **Extension Name:** [Pinion Smart.Shift](https://github.com/madooroy/pinion-karoo-extension)
+  - Description: Shows the current gear and battery level of a Pinion Smart.Shift gearbox as Karoo data fields. Read only, it does not change gearbox settings.
+  - License: Open Source, GPL-3.0
+  - Features:
+    - Pinion Gear and Pinion Battery data fields for any ride page
+    - Gear arrives as a Bluetooth notification on every shift, while battery, gear count and the rest are read on request
+    - Remembers the first gearbox it finds, with a "Forget gearbox" option in the on-device app
+    - Reads gear and battery once a minute to keep the gearbox awake, which otherwise powers off eight minutes after the last shift, and alerts if the connection drops mid-ride
+    - Only scans while a ride profile with a Pinion field on a page is active, so other profiles cost no battery
+    - Requires a Bluetooth capable Smart.Shift box; the protocol is undocumented by Pinion and was reverse engineered
+    - Tested on Karoo 2; Karoo 3 support is implemented but untested
 
 ## Libraries
 
