@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [SendPin](#sendpin)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,19 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### SendPin
+
+- **Extension Name:** [SendPin](https://github.com/albertjfoo/sendpin)
+  - Description: Sends a location pin shared from Apple Maps on an iPhone to a Karoo 2 over Bluetooth, which then opens its native map pin screen. No cloud, account or internet connection is needed.
+  - License: Open Source, MIT
+  - Features:
+    - The iPhone share sheet passes the pin to the phone app, which broadcasts the coordinates as roughly 72 bytes of JSON on a custom Bluetooth service
+    - The Karoo extension picks up the pin, connects, reads the coordinates and disconnects in about two seconds, then hands the destination to the Karoo's own navigation
+    - The phone stops broadcasting once the Karoo has taken the destination, so you never leave Apple Maps
+    - The Karoo pairs to the first phone it hears, so a second SendPin user nearby cannot land pins on the wrong device
+    - Pin updates are installed on the Karoo itself with a long press and Update, without a cable
+    - Tested on Karoo 2; the destination needs a GPS fix and the relevant offline map region
 
 ## Libraries
 
