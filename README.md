@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [ALTGRAPH](#altgraph)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,20 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### ALTGRAPH
+
+- **Extension Name:** [ALTGRAPH](https://github.com/DAVOE75/AltGraph)
+  - Description: Altimetry and climbing extension with several elevation profile models, a radar style overlay of the upcoming terrain on the navigation map, and climb pacing cues.
+  - License: Open Source, MIT
+  - Features:
+    - Six switchable altimetry models, including a 3D profile, an isometric horizon, and a wireframe built from the GPS track coordinates
+    - Altimetry Radar superimposes the upcoming terrain on the Karoo navigation map, with zoom down to 50 m blocks, horizontal pan and a live rider marker
+    - TV Profile data field that fills the ridden part of a grand tour style elevation profile in real time
+    - Power Guide calculates target watts for each climb section from FTP and shows live cues during the climb
+    - Climb detection with a categorised climb list, and a fatigue grade climb index derived from APM algorithms
+    - Fifteen segment gradient scale in an eleven band colour table, plus a gradient zone histogram data field
+    - Karoo 2 and Karoo 3
 
 ## Libraries
 
