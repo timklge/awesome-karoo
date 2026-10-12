@@ -20,6 +20,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-spintunes](#karoo-spintunes)
   - [KPedal](#KPedal)
   - [Wattramp](#wattramp)
+  - [Moxy](#moxy)
 - [Other extensions](#other-extensions)
   - [Ki2](#ki2)
   - [KarooFlightRadar](#KarooFlightRadar)
@@ -213,6 +214,17 @@ To update extensions after you have installed them, long-tap the app icon on the
     - WattRamp lets you perform FTP tests directly on your Karoo with real-time data fields during your ride
     - Test Protocols: Ramp Test (~ 20 min), 20 minute test (~ 60 min), 2x8 minute test (~ 50 min)
     - Data fields for current interval, target power, test progress, power zone and more
+
+### Moxy
+
+- **Extension Name:** [Karoo MoxyMonitor Extension](https://github.com/Moxy-Monitor/moxy-karoo-extension)
+  - Description: Data fields for muscle oxygen saturation and total hemoglobin from Moxy Monitor sensors.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - SMO2 and total hemoglobin (THb) data fields for any data screen
+    - Pairs up to four Moxy Monitor sensors through a normal Karoo sensor scan
+    - Sensor location is configurable per device and is included in the FIT recording
+    - Karoo 2 and Karoo 3
 
 ## Other extensions
 
