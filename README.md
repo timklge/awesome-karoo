@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [Pitstop](#pitstop)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,19 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### Pitstop
+
+- **Extension Name:** [Pitstop](https://github.com/rutgerg/karoo-pitstop)
+  - Description: Shows the nearest service that is currently open along a planned route in eleven categories, and routes you there in two taps with the Karoo's own navigation.
+  - License: Open Source, MIT
+  - Features:
+    - One data tile per category: restaurant, supermarket, fuel, cafe, hotel, doctor, pharmacy, bike shop, ATM, train station and water refill
+    - Samples the planned route every 2 km and queries OpenStreetMap Overpass with a 10 km buffer, caching the results locally and retrying automatically once Wi-Fi is available
+    - Refreshes a 10 km radius around the rider every 20 minutes
+    - Tiles show the nearest open place with its distance, name and opening hours, and filter out the closed ones
+    - Tapping a tile opens the native pin screen with Navigate or Save as POI
+    - Chevron buttons step through the next nearest alternatives in each category
 
 ## Libraries
 
