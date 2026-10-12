@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [Maps Bridge](#maps-bridge)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,20 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### Maps Bridge
+
+- **Extension Name:** [Maps Bridge](https://github.com/Carlolius/karoo-maps-bridge)
+  - Description: Sends places and routes shared from Google Maps and other map apps on an Android phone to the Karoo's native navigation, over a small HTTP server the phone runs. No account or cloud service is involved.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Share a Google Maps place or dropped pin to the Karoo; tapping the point opens the native navigate to or save as POI screen
+    - Shared directions can be sent as ordered stops, or turned into a bike route with BRouter, with up to four alternatives for each of three profiles
+    - Route alternatives are shown on a map with distance, climbing, time, surface breakdown and cycle lane share, and can be uploaded as a GPX route through the Hammerhead Companion app
+    - Accepts geo: links, coordinates and map links from WhatsApp, Apple Maps, Waze, OsmAnd, Organic Maps, MAPS.ME and others, and geocodes plain addresses
+    - The phone is found by IP, by the network gateway, or from the last five phones that answered
+    - The server stops itself ten minutes after the Karoo has fetched the data
+    - Tested on Karoo 2
 
 ## Libraries
 
