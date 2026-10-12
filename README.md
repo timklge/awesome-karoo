@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [MTB Dynamics](#mtb-dynamics)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,21 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### MTB Dynamics
+
+- **Extension Name:** [MTB Dynamics](https://github.com/angkyria/karoo-mtb)
+  - Description: Garmin style MTB metrics for the Karoo: grit, flow, jumps and cornering, computed from the Karoo's accelerometer and gyroscope together with the speed, grade and GPS streams.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Grit trail difficulty, Flow braking loss per 100 m, jump detection with airtime, distance, height, landing g and rotations, and cornering analysis from the gyroscope
+    - MTB score, and trail segments that split the ride into climbs, descents and flats with every metric per segment
+    - Trails are recognised across rides, with timed runs, ranks and personal bests
+    - Suspension and drivetrain data joined with the terrain, including RockShox Flight Attendant states, gear use per terrain and shift logging
+    - Service tracker for fork and shock hours, drivetrain kilometres and cog hours, with configurable intervals and reminders
+    - Writes per second mtb_* developer fields and a large session summary to the FIT file, optionally using Garmin's native grit, flow and jump count fields
+    - Ride end summary sent to your phone over ntfy, and optionally written into the Intervals.icu activity
+    - Karoo 2 and Karoo 3; the repository marks the current builds as testing releases
 
 ## Libraries
 
