@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [Climber+](#climber)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,19 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### Climber+
+
+- **Extension Name:** [Climber+](https://github.com/hazzus/karoo-climber-plus)
+  - Description: A floating climb overlay for the Karoo, like the built-in Climber but shown over any ride page.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Permanent chip while a route is loaded, showing climbs completed, a countdown to the next climb, and the live grade and distance to the top while climbing
+    - Climb drawer opens before each climb with a grade coloured elevation profile in 100 m chunks, an approach progress bar and a strip of the next 500 m split into five grade tiles
+    - Display modes cycled by tapping the profile: full climb, remaining only, or a preview window of the next 2, 5 or 10 km
+    - Full screen view with four configurable data fields, which can show any karoo-ext data stream, and a scrollable list of upcoming climbs
+    - Six grade palettes, metric or imperial units, and configurable overlay position, height and opacity
+    - Karoo 2 and Karoo 3
 
 ## Libraries
 
