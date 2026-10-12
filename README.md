@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [HeartKaroo](#heartkaroo)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,20 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### HeartKaroo
+
+- **Extension Name:** [HeartKaroo](https://github.com/inqu-lab/HeartKaroo)
+  - Description: A bundle of physiology data fields computed on the device, with heart rate variability metrics read from a Polar chest strap over Bluetooth.
+  - License: Not specified in the repository
+  - Features:
+    - Aerobic and power decoupling over a rolling 30 minute window, efficiency factor, cardiac cost and W' balance (Skiba)
+    - Power analytics: variability index, intensity factor, live TSS, kilojoules, coasting percentage, Coggan quadrant analysis and best 5 s to 60 min power
+    - HRV from a Polar strap: RMSSD, SDNN, pNN50, Poincare SD1/SD2, DFA alpha1, respiratory rate and an irregular beat rate
+    - Exposes the strap as a Karoo sensor named "<strap> (HR+HRV)" alongside the standard heart rate data point
+    - Writes HRV values, alpha1, respiratory rate and an aerobic threshold estimate into the FIT file, per record and in the ride summary
+    - Pre-ride two minute resting RMSSD readiness measurement with a seven day trend
+    - No network access; all metrics are computed on the device
 
 ## Libraries
 
