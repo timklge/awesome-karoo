@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [Karoo DFA alpha1](#karoo-dfa-alpha1)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,20 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### Karoo DFA alpha1
+
+- **Extension Name:** [Karoo DFA alpha1 Extension](https://github.com/Lemonchic/karoo-dfa-extension)
+  - Description: Calculates DFA alpha1 in real time from an HR strap's raw beat stream, and records it to the ride's FIT file for analysis on Intervals.icu and Runalyze.
+  - License: Not specified in the repository
+  - Features:
+    - Live DFA alpha1 data field with a background colour that reflects the configured LT1 (default 0.75) and LT2 (default 0.50) thresholds
+    - Separate artifact percentage field showing the share of corrected beats, coloured by data quality
+    - Writes Alpha1 and Artifacts developer fields to the FIT activity, which Intervals.icu and Runalyze read on upload
+    - Kubios style artifact filtering with absolute RR limits and relative median filters, corrected by natural cubic spline interpolation
+    - Recalculates every 15 seconds to save battery, and stops writing values when the artifact rate exceeds a configurable tolerance
+    - Thresholds and artifact tolerance are configurable on the device
+    - Tested on Karoo 2
 
 ## Libraries
 
