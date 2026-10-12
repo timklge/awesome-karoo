@@ -20,6 +20,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-spintunes](#karoo-spintunes)
   - [KPedal](#KPedal)
   - [Wattramp](#wattramp)
+  - [Magicshine Controls](#magicshine-controls)
 - [Other extensions](#other-extensions)
   - [Ki2](#ki2)
   - [KarooFlightRadar](#KarooFlightRadar)
@@ -213,6 +214,18 @@ To update extensions after you have installed them, long-tap the app icon on the
     - WattRamp lets you perform FTP tests directly on your Karoo with real-time data fields during your ride
     - Test Protocols: Ramp Test (~ 20 min), 20 minute test (~ 60 min), 2x8 minute test (~ 50 min)
     - Data fields for current interval, target power, test progress, power zone and more
+
+### Magicshine Controls
+
+- **Extension Name:** [Magicshine Controls](https://github.com/lenne0815/karoo-magicshine-controls)
+  - Description: Karoo app and ride field for controlling supported Magicshine lights over Bluetooth.
+  - License: Open Source, MIT
+  - Features:
+    - Control screen with LOW, HIGH and OFF output, 25/50/75/100 brightness, SOS and continuous flash modes, and connect/disconnect
+    - Ride field in four segments: light state toggle, a two second flash that restores the previous state, battery, and a shortcut into the app
+    - Battery and temperature polled every 30 seconds while connected
+    - The ride field connects and disconnects with the ride screen
+    - Tuned to the tested EVO 1700, and shows high, mid or low battery on firmware that reports discrete values
 
 ## Other extensions
 
