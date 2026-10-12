@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [PartnerRide](#partnerride)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,20 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### PartnerRide
+
+- **Extension Name:** [PartnerRide](https://github.com/bb-generation/PartnerRide)
+  - Description: Shows the distance to a partner's Karoo in a Partner Gap data field, with the two devices exchanging positions directly over Bluetooth. No phone, internet or account is involved.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Partner Gap field showing the distance to the partner's Karoo with an ahead or behind arrow, updated about once per second
+    - The two Karoos exchange position, speed and heading directly over Bluetooth at a range of roughly 50 to 150 m
+    - Pairing uses a shared six digit code, with no Bluetooth pairing step, and the code persists between rides
+    - The gap is colour coded green up to 15 m, yellow to 50 m and red beyond, with status messages for no GPS, no signal or no code
+    - Optional gap alert with a configurable threshold, 100 m by default, which beeps and flashes when it is first exceeded
+    - Corrects for GPS lag by dead reckoning the older position and averaging recent readings
+    - Karoo 2 and Karoo 3
 
 ## Libraries
 
