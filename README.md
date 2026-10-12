@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [Saftladen](#saftladen)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,17 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### Saftladen
+- **Extension Name:** [Saftladen](https://github.com/hamann/karoo-saftladen)
+  - Description: Reports the battery status of every paired sensor, and of the Karoo itself, as JSON to a URL you configure whenever a ride ends — so you find out a sensor needs charging at home rather than at the roadside.
+  - License: Open Source, Apache 2
+  - Features:
+    - One report per ride covering every saved sensor — ANT+, BLE and extension-provided alike — including ones that dropped out mid-ride, plus the head unit's own charge as a real percentage
+    - Reports are buffered on the device and retried until the endpoint accepts them, so a ride that ends out of network range is not lost
+    - Uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app); the app holds no internet permission of its own
+    - Configurable endpoint URL and one optional request header, with a test button and a bonus action for reporting on demand
+    - Documented JSON format, and a Home Assistant webhook setup that turns each sensor into a battery entity
 
 ## Libraries
 
