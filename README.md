@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [Gear Helper](#gear-helper)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,20 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### Gear Helper
+
+- **Extension Name:** [Gear Helper](https://github.com/futureshape/karoo-gear-helper)
+  - Description: Shows the current front and rear gear briefly after every shift, and plays configurable beeps at the rear derailleur's easiest and hardest gear.
+  - License: Open Source, MIT
+  - Features:
+    - Gear popup over any ride page, the map and the drawer, with front and rear gear indices and optional tooth counts
+    - Automatic 1x detection hides the redundant front gear
+    - Popup duration and position are configurable
+    - Rear limit alert modes: off, single, double, ascending or descending, at three intensities, with separate beeper tuning for Karoo 2 and newer hardware
+    - Optional muting of the Karoo's audio alerts and buzzer while a ride is paused
+    - Reads the shifting sensor already paired with the Karoo, rather than connecting to the drivetrain itself
+    - Karoo 2 and newer Karoo running KOS 1.613.2351 or later
 
 ## Libraries
 
