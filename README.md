@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [KarooFireFly](#karoofirefly)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,20 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### KarooFireFly
+
+- **Extension Name:** [KarooFireFly](https://github.com/derstrassi/karoofirefly)
+  - Description: Controls ANT+ and Bluetooth bike lights from a Karoo 3, switching light modes by time of day and ambient light instead of only turning them on and off with the ride.
+  - License: Open Source, MIT
+  - Features:
+    - ANT+ lights (Garmin Varia RTL 515/516, Magene L508) controlled through the Karoo's own pairing, and Magicshine BLE lights (Hori 1300, EVO 1300/1700) directly over Bluetooth
+    - Automatic Day and Night mode switching from sunrise and sunset times with configurable offsets, from the Karoo 3's ambient light sensor, or from both together
+    - Radar Warn Flash option for rear lights, which flashes the light when the radar reports an approaching vehicle while the light is off
+    - Per light configuration with a front or rear role and a mode list read from each connected light
+    - Bonus Actions to toggle the lights or cycle Off, Day and Night, which can be mapped to AXS shift buttons or Karoo hardware buttons
+    - Battery level and temperature readout for Magicshine BLE lights, and notifications when the light changes zone
+    - ANT+ control uses an undocumented internal Karoo API, so it is used at your own risk
 
 ## Libraries
 
