@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [ClipRide](#clipride)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,20 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### ClipRide
+
+- **Extension Name:** [ClipRide](https://github.com/yrkan/clipride)
+  - Description: Connects to GoPro cameras over Bluetooth to control recording from the Karoo, including automatic recording and highlight markers tied to ride events.
+  - License: Open Source, MIT
+  - Features:
+    - Start and stop recording, HiLight markers, Video/Photo/Timelapse mode switching, quick photo and camera sleep or wake
+    - Six ride screen data fields (status, battery, recording, power, mode and photo) and three Bonus Actions, with tap actions on the fields
+    - Auto-Record on ride start with an optional delay, stop on pause or end, and optionally continue through auto-pause
+    - Auto-Highlights on the lap button, peak power, max speed, climb summit, heart rate zone 5, steep descents and ride start and end, each with its own cooldown
+    - Alerts for low battery, an SD card with under five minutes left, overheating and cold temperature
+    - Video settings (resolution, frame rate, field of view, stabilisation) are applied on each connection, using the Open GoPro BLE specification
+    - Supports the GoPro MAX 2 and the HERO 9 to 13, including the 11 Mini
 
 ## Libraries
 
