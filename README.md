@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [Karoo Dynamic Headphones](#karoo-dynamic-headphones)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,19 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### Karoo Dynamic Headphones
+
+- **Extension Name:** [Karoo Dynamic Headphones](https://github.com/lenne0815/Karoo-dynamic-Headphones)
+  - Description: Controls music playback over Bluetooth headphones based on riding speed, pausing when you stop and raising the volume as you go faster.
+  - License: Open Source, MIT
+  - Features:
+    - Pauses music when speed drops below a configurable threshold, 0.5 km/h by default
+    - Scales the volume with speed, with configurable minimum and maximum volumes
+    - Takes speed from an ANT+ or BLE speed sensor, falling back to GPS speed
+    - Works with any media app that exposes a MediaSession, and adjusts the system volume
+    - A normal mode switches off the auto-pause and uses a fixed volume
+    - Karoo 3
 
 ## Libraries
 
