@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [karoo-pace](#karoo-pace)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,18 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### karoo-pace
+
+- **Extension Name:** [karoo-pace](https://github.com/markhaines/karoo-pace)
+  - Description: A drop-in replacement for the native speed card that colours it by how the current speed compares to the ride average.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Five colour bands relative to the ride average: 115% and above green, 105 to 115% light green, 95 to 105% neutral, 85 to 95% orange and below 85% red, with chevron indicators
+    - Bands are percentages rather than fixed speeds, and no colour is shown below 5 km/h or before the ride average has been established
+    - The colour follows a 3 second smoothed speed while the number shows raw speed, so the value reacts immediately without the colour strobing on GPS noise
+    - Replicates the native card's fonts and layout, so it replaces the stock speed field without looking out of place
+    - Karoo 3, firmware 1.527 or later
 
 ## Libraries
 
