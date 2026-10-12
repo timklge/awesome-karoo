@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [PhoneStatus](#phonestatus)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,19 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### PhoneStatus
+
+- **Extension Name:** [Phone Status](https://github.com/alifib/karoo-phonestatus)
+  - Description: Shows the phone connection as a native looking phone icon in the status bar, which becomes a red slashed phone when the connection is lost.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Draws the indicator into the status bar as an overlay, since Karoo OS has no way to add status icons
+    - Reads the phone state from the Karoo's private phone service
+    - The icon tint adapts to the screen behind it, and the icon repositions itself to follow the other status icons
+    - Runs automatically on every boot once the overlay and accessibility permissions are granted, with no configuration
+    - Read only; it monitors the status bar and ride app and transmits no data
+    - Karoo 2 and Karoo 3
 
 ## Libraries
 
