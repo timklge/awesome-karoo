@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [Karoo Camera Control](#karoo-camera-control)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,18 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### Karoo Camera Control
+
+- **Extension Name:** [karoo-camera-control](https://github.com/michalchecinski/karoo-camera-control)
+  - Description: Controls GoPro action cameras over Bluetooth from the Karoo.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Connect and manage several cameras
+    - Start and stop recording and monitor the recording time
+    - Switch between Video, Photo and Timelapse modes and pick a preset within a mode
+    - Show battery level and remaining storage
+    - Karoo 2 and Karoo 3
 
 ## Libraries
 
