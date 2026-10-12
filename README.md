@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [Quiver Odometer](#quiver-odometer)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,18 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### Quiver Odometer
+
+- **Extension Name:** [Quiver Odometer](https://github.com/pdkane/quiver-karoo)
+  - Description: Syncs the mileage of finished rides from the Karoo to a [Quiver](https://quiver.fyi) garage, so component maintenance and service clocks stay current.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Pairs once with a code from the Quiver settings page, then syncs every finished ride automatically
+    - One tap backfill of the entire Karoo ride history
+    - Keeps maintenance, wear and service clocks current without manual logging
+    - Declares its release manifest, so the Karoo offers an in-device update when a new version is published
+    - Karoo 2 and Karoo 3; this repository hosts built releases only
 
 ## Libraries
 
