@@ -66,6 +66,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Waybook](#waybook)
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
+  - [Auto Loop](#auto-loop)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -699,6 +700,19 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Pre-cached data works offline during the ride; re-sync at home to drop squares you have collected
     - Sync uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app)
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
+
+### Auto Loop
+
+- **Extension Name:** [Auto Loop Karoo](https://github.com/anpaiss/AutoLoopKaroo)
+  - Description: Scrolls through the ride data pages of the active profile automatically at a configurable interval, and switches to the map page around navigation turns.
+  - License: Open Source, MIT
+  - Features:
+    - Cycles through all pages of the active ride profile, with a configurable dwell time per page; a page set to 0 seconds is skipped
+    - Starts when recording begins and stops when the ride is paused or ended
+    - Switches to the map page a configurable distance before a turn (10 to 250 m, 25 m by default) and resumes scrolling after it
+    - Toggle it from the app settings or through Control Center bonus actions, so it can be triggered from SRAM AXS buttons or ANT+ controllers
+    - Beep and on screen alert when auto-scroll is toggled, and changes take effect without a restart
+    - Karoo 3
 
 ## Libraries
 
