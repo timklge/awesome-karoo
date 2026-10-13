@@ -20,6 +20,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [karoo-spintunes](#karoo-spintunes)
   - [KPedal](#KPedal)
   - [Wattramp](#wattramp)
+  - [Karoo Radar](#karoo-radar)
 - [Other extensions](#other-extensions)
   - [Ki2](#ki2)
   - [KarooFlightRadar](#KarooFlightRadar)
@@ -214,6 +215,18 @@ To update extensions after you have installed them, long-tap the app icon on the
     - WattRamp lets you perform FTP tests directly on your Karoo with real-time data fields during your ride
     - Test Protocols: Ramp Test (~ 20 min), 20 minute test (~ 60 min), 2x8 minute test (~ 50 min)
     - Data fields for current interval, target power, test progress, power zone and more
+
+### Karoo Radar
+
+- **Extension Name:** [Karoo Radar](https://github.com/ukabu/karoo-radar-ext)
+  - Description: Adds numerical radar data fields for rear vehicle detection, and records the radar data to the ride's FIT file.
+  - License: Open Source, MIT
+  - Features:
+    - Vehicle Count, Closest Distance, Relative Speed and Absolute Speed data fields
+    - Background colour follows the threat level: neutral when clear, yellow when approaching, orange for a warning and red for critical
+    - Writes radar_vehicles, radar_nearest_distance_m, radar_relative_speed_kmh and radar_absolute_speed_kmh to the FIT file every second
+    - Field layout adapts to whatever grid size the field is placed in
+    - Targets the Karoo 3
 
 ## Other extensions
 
