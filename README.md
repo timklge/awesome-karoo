@@ -67,6 +67,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
   - [Saftladen](#saftladen)
+  - [XM Headphones](#xm-headphones)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -711,6 +712,16 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app); the app holds no internet permission of its own
     - Configurable endpoint URL and one optional request header, with a test button and a bonus action for reporting on demand
     - Documented JSON format, and a Home Assistant webhook setup that turns each sensor into a battery entity
+
+### XM Headphones
+- **Extension Name:** [XM Headphones](https://github.com/nikosavola/karoo-xm-headphones)
+  - Description: Controls Sony headphones over classic Bluetooth from the Karoo, bringing the noise cancelling and ambient sound controls of Sony's Sound Connect app to the ride screen.
+  - License: Open Source, Apache 2
+  - Features:
+    - Switches between noise cancelling, ambient sound (with level and focus on voice) and off
+    - Ride fields for headset battery and ambient level, plus a noise cancelling field that cycles modes when tapped
+    - Controller action for a Karoo button, and a control screen with the headset's model, firmware and protocol details
+    - Works over classic RFCOMM with no Google services needed
 
 ## Libraries
 
