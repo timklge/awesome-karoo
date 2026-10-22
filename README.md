@@ -68,6 +68,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Squadrats Overlay](#squadrats-overlay)
   - [Saftladen](#saftladen)
   - [WaxLog](#waxlog)
+  - [karoo-wahoo-headwind](#karoo-wahoo-headwind)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -724,6 +725,16 @@ To update extensions after you have installed them, long-tap the app icon on the
     - History per chain, editable, with the chain's total distance kept across waxings
     - Automatic backups and transfer to a new Karoo over Wi-Fi (QR code)
     - Updates itself, never during a ride; km or miles, English or German
+
+### karoo-wahoo-headwind
+- **Extension Name:** [karoo-wahoo-headwind](https://github.com/vvrnv/karoo-wahoo-headwind)
+  - Description: Controls a Wahoo KICKR Headwind fan from the Karoo over Bluetooth.
+  - License: Open Source, MIT
+  - Features:
+    - Manual wind with a slider, ±1% steps and 25 / 50 / 75 / 100 presets
+    - Heart rate and speed modes from the sensors paired to the Karoo. The fan stays off until a sample arrives
+    - On/off toggle that restores the previous fan speed
+    - Ride-page data field with the same controls
 
 ## Libraries
 
