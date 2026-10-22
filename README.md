@@ -67,6 +67,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
   - [Saftladen](#saftladen)
+  - [WaxLog](#waxlog)
   - [karoo-wahoo-headwind](#karoo-wahoo-headwind)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
@@ -712,6 +713,18 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app); the app holds no internet permission of its own
     - Configurable endpoint URL and one optional request header, with a test button and a bonus action for reporting on demand
     - Documented JSON format, and a Home Assistant webhook setup that turns each sensor into a battery entity
+
+### WaxLog
+- **Extension Name:** [WaxLog](https://github.com/Zalvato/Karoo-WaxLog)
+  - Description: Tracks the distance on your waxed chains – and your chain rotation. Every ride is credited to the chain that's on the bike; a data field shows how close it is to its wax limit, and alerts tell you when it's due soon and when it's due.
+  - License: Closed Source, Freeware
+  - Features:
+    - Chain rotation: a chain set per bike – swap with one tap, mark chains as waxed, see at a glance which one is ready to go on
+    - Data field in three variants and any size; large fields add this ride's distance and roughly how many rides the chain still lasts
+    - Alerts (popup and beep) from an adjustable "due soon" threshold and at the limit; green, yellow and red in the field and the app
+    - History per chain, editable, with the chain's total distance kept across waxings
+    - Automatic backups and transfer to a new Karoo over Wi-Fi (QR code)
+    - Updates itself, never during a ride; km or miles, English or German
 
 ### karoo-wahoo-headwind
 - **Extension Name:** [karoo-wahoo-headwind](https://github.com/vvrnv/karoo-wahoo-headwind)
