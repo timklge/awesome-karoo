@@ -70,6 +70,11 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [WaxLog](#waxlog)
   - [karoo-wahoo-headwind](#karoo-wahoo-headwind)
   - [ALTGRAPH](#altgraph)
+  - [KarooTopoMaps](#karootopomaps)
+  - [Karoo Sentinel](#karoo-sentinel)
+  - [Karoo BBrakers](#karoo-bbrakers)
+  - [Aero Tracker](#aero-tracker)
+  - [GravelShock](#gravelshock)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -750,6 +755,60 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Voice co-pilot with attack alerts (ELITE)
     - Altimetric radar bar with ruler, alerts and ghost (ELITE)
     - Available in English, Spanish, French, Italian, German and Portuguese
+
+### KarooTopoMaps
+- **Extension Name:** [KarooTopoMaps](https://github.com/DAVOE75/KarooTopoMaps)
+  - Description: Map theme suite for the Karoo that replaces the standard map look with nine professional cartographic styles designed for transflective screens.
+  - License: Open Source, MIT. The nine classic themes are free; the advanced Custom Map Studio PRO is intended to require a license (closed beta).
+  - Features:
+    - Nine professional map themes (IGN and topographic styles)
+    - One-tap discipline profiles for road, MTB, gravel and night riding
+    - Extreme-sunlight booster with thicker, higher-contrast lines
+    - Drinking-water radar with prominent map icons
+    - IMBA-based trail difficulty colouring
+    - Visibility, line-pattern, typography and dual map source controls
+
+### Karoo Sentinel
+- **Extension Name:** [Karoo Sentinel](https://github.com/DAVOE75/KarooSentinel)
+  - Description: Security and anti-theft extension that detects unauthorised movement of the parked Karoo and raises an alarm with Telegram alerts.
+  - License: Open Source
+  - Features:
+    - Accelerometer-based movement and vibration detection with adjustable sensitivity
+    - GPS geofencing (20 m movement threshold) and live location tracking through Telegram
+    - Anti-jammer and sensor-disconnection alerts
+    - Anti-shutdown protection with siren and last known location
+    - Hardware beeper and silent trap modes, PIN protection
+
+### Karoo BBrakers
+- **Extension Name:** [Karoo BBrakers](https://github.com/DAVOE75/KarooBBrakers)
+  - Description: Braking telemetry and safety extension for Karoo 2 and Karoo 3 that analyses braking efficiency, cornering, energy loss and brake temperature.
+  - License: Open Source, MIT
+  - Features:
+    - Braking detection with stationary lockout and gravity-pitch decoupling on steep climbs
+    - Corner radar and apex speed retention
+    - Predictive braking warnings based on stopping distance
+    - Grip margin and washout alarms based on the Kamm friction circle
+    - Peloton Smoothness Index, Descent Efficiency Score, brake load distribution, pad service odometer and thermal warnings
+
+### Aero Tracker
+- **Extension Name:** [Aero Tracker](https://github.com/DAVOE75/Aero-Tracker)
+  - Description: Virtual wind tunnel for the Karoo 2 and Karoo 3 that estimates your aerodynamic drag area (CdA) in real time from power, speed and gradient. Also available in Hammerhead's extension library.
+  - License: Open Source, MIT
+  - Features:
+    - Live CdA calculation with a 5-second smoothed value
+    - "Watts saved" comparison against a baseline CdA
+    - Aerodynamic power percentage and riding posture classification
+    - Configurable rider and bike mass, rolling resistance and smoothing
+
+### GravelShock
+- **Extension Name:** [GravelShock](https://github.com/DAVOE75/GravelShock)
+  - Description: Analyses and classifies terrain roughness in real time using the Karoo's built-in accelerometer, for gravel, MTB and road riders.
+  - License: Open Source, MIT
+  - Features:
+    - Live terrain classification: smooth tarmac, gravel, cobbles and rough / MTB
+    - Real-time vibration fatigue and stress meter
+    - Percentage bar with the time spent on each terrain type
+    - English and Spanish
 
 ## Libraries
 
