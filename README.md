@@ -759,7 +759,7 @@ To update extensions after you have installed them, long-tap the app icon on the
 ### KarooTopoMaps
 - **Extension Name:** [KarooTopoMaps](https://github.com/DAVOE75/KarooTopoMaps)
   - Description: Map theme suite for the Karoo that replaces the standard map look with nine professional cartographic styles designed for transflective screens.
-  - License: Open Source, MIT. The nine classic themes are free; the advanced Custom Map Studio PRO is intended to require a license (closed beta).
+  - License: Closed Source, All rights reserved (permission required to use the code). The nine classic themes are free; the advanced Custom Map Studio PRO is intended to require a license (closed beta).
   - Features:
     - Nine professional map themes (IGN and topographic styles)
     - One-tap discipline profiles for road, MTB, gravel and night riding
