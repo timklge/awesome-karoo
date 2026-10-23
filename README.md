@@ -757,6 +757,20 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Fake Bluetooth LE sensors and lights, with assertions for cleanup and ride restarts
     - Test and debug tooling only, not for release APKs
 
+### ALTGRAPH
+- **Extension Name:** [ALTGRAPH](https://github.com/DAVOE75/ALTGRAPH)
+  - Description: 3D relief altimetry, climb viewer and voice co-pilot for the Karoo. Shows the route ahead as a 3D profile with a beacon on your position, grade colours, and pacing tools for climbs.
+  - License: Closed Source, All rights reserved (permission required to use the code). Free core features; ELITE features are free for now and will become a paid subscription.
+  - Features:
+    - 3D elevation profile data field (global route view and sliding window), with a rider beacon and a finish flag
+    - Climb viewer for categorized climbs, including custom climbs defined by Start and Summit POIs, with colour-coded route overlay on the map (off / climbs only / whole route)
+    - TV route profile (2D) with a climb list: name, category, start km, length, average and max grade
+    - Gear recommendation synced to the rider's position on the route
+    - Grade zones, grade trend, fatigue grade and climb pacing data fields
+    - Voice co-pilot with attack alerts (ELITE)
+    - Altimetric radar bar with ruler, alerts and ghost (ELITE)
+    - Available in English, Spanish, French, Italian, German and Portuguese
+
 ## Resources
 
 ### karoo-ext
