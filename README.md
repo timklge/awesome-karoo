@@ -69,6 +69,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Saftladen](#saftladen)
   - [WaxLog](#waxlog)
   - [karoo-wahoo-headwind](#karoo-wahoo-headwind)
+  - [PinionKarooExtension](#pinionkarooextension)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -735,6 +736,18 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Heart rate and speed modes from the sensors paired to the Karoo. The fan stays off until a sample arrives
     - On/off toggle that restores the previous fan speed
     - Ride-page data field with the same controls
+
+### PinionKarooExtension
+- **Extension Name:** [PinionKarooExtension](https://github.com/madooroy/PinionKarooExtension)
+  - Description: Shows the current gear and battery level of a Pinion Smart.Shift gearbox on the Karoo, read over Bluetooth.
+  - License: Open Source, GPL-3.0
+  - Features:
+    - Pinion Gear and Pinion Battery data fields that look and behave like the built-in ones
+    - Battery alerts at 20 %, 10 % and 5 %, matching the gearbox's own LED warnings, so the gear field alone is enough on a crowded page
+    - Remembers the first gearbox found and reconnects by itself; a single shift wakes a sleeping gearbox
+    - Keeps the gearbox awake during the ride and only scans while the active ride profile has a Pinion field
+    - Read-only: never changes gearbox settings. Tested on a Karoo 2 with a real gearbox; Karoo 3 supported but untested
+    - Unofficial community project, not affiliated with Pinion or Hammerhead
 
 ## Libraries
 
