@@ -817,6 +817,8 @@ To update extensions after you have installed them, long-tap the app icon on the
   - License: Open Source, GPL-3.0
   - Features:
     - Pinion Gear and Pinion Battery data fields that look and behave like the built-in ones
+    - Split fields that put the gear beside cadence, power, heart rate, speed or battery in one cell, plus a Shifts + Avg Gear field for the ride's totals
+    - Gear, shift count and average gear are saved in the ride's FIT file, so sites such as intervals.icu can chart them
     - Battery alerts at 20 %, 10 % and 5 %, matching the gearbox's own LED warnings, so the gear field alone is enough on a crowded page
     - Remembers the first gearbox found and reconnects by itself; a single shift wakes a sleeping gearbox
     - Keeps the gearbox awake during the ride and only scans while the active ride profile has a Pinion field
