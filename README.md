@@ -75,6 +75,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Karoo BBrakers](#karoo-bbrakers)
   - [Aero Tracker](#aero-tracker)
   - [GravelShock](#gravelshock)
+  - [PinionKarooExtension](#pinionkarooextension)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -809,6 +810,20 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Real-time vibration fatigue and stress meter
     - Percentage bar with the time spent on each terrain type
     - English and Spanish
+
+### PinionKarooExtension
+- **Extension Name:** [PinionKarooExtension](https://github.com/madooroy/PinionKarooExtension)
+  - Description: Shows the current gear and battery level of a Pinion Smart.Shift gearbox on the Karoo, read over Bluetooth.
+  - License: Open Source, GPL-3.0
+  - Features:
+    - Pinion Gear and Pinion Battery data fields that look and behave like the built-in ones
+    - Split fields that put the gear beside cadence, power, heart rate, speed or battery in one cell, plus a Shifts + Avg Gear field for the ride's totals
+    - Gear, shift count and average gear are saved in the ride's FIT file, so sites such as intervals.icu can chart them
+    - Battery alerts at 20 %, 10 % and 5 %, matching the gearbox's own LED warnings, so the gear field alone is enough on a crowded page
+    - Remembers the first gearbox found and reconnects by itself; a single shift wakes a sleeping gearbox
+    - Keeps the gearbox awake during the ride and only scans while the active ride profile has a Pinion field
+    - Read-only: never changes gearbox settings. Tested on a Karoo 2 with a real gearbox; Karoo 3 supported but untested
+    - Unofficial community project, not affiliated with Pinion or Hammerhead
 
 ## Libraries
 
