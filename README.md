@@ -76,6 +76,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Aero Tracker](#aero-tracker)
   - [GravelShock](#gravelshock)
   - [PinionKarooExtension](#pinionkarooextension)
+  - [Top Bar Hider](#top-bar-hider)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -824,6 +825,18 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Keeps the gearbox awake during the ride and only scans while the active ride profile has a Pinion field
     - Read-only: never changes gearbox settings. Tested on a Karoo 2 with a real gearbox; Karoo 3 supported but untested
     - Unofficial community project, not affiliated with Pinion or Hammerhead
+
+### Top Bar Hider
+- **Extension Name:** [Top Bar Hider](https://github.com/Zalvato/Karoo-TopBarHider)
+  - Description: Hides ride time, battery and clock at the top of the ride screen behind a black bar while you ride, for a calmer view. A data field brings them back with a tap.
+  - License: Closed Source, Freeware
+  - Features:
+    - Hide the top line on all data pages, only on the map page, or on all but the map page
+    - Data field "TOP BAR": a tap shows or hides the top line (switch) or shows it for a few seconds (timer)
+    - Optionally shows the top line during a pause and an auto-pause
+    - In-ride alerts stay readable; an optional accessibility setting makes it work for every alert, Karoo's own included
+    - Leaves Karoo's radar strip free (left or right) while a vehicle is detected
+    - No internet permission; updates through the Karoo's extension info page; English or German
 
 ## Libraries
 
