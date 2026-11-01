@@ -77,6 +77,11 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [GravelShock](#gravelshock)
   - [PinionKarooExtension](#pinionkarooextension)
   - [Top Bar Hider](#top-bar-hider)
+  - [BetterETA](#bettereta)
+  - [PoiAhead](#poiahead)
+  - [AutoLoop Karoo](#autoloop-karoo)
+  - [BigFields](#bigfields)
+  - [Karoo AXS Ratio](#karoo-axs-ratio)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -837,6 +842,52 @@ To update extensions after you have installed them, long-tap the app icon on the
     - In-ride alerts stay readable; an optional accessibility setting makes it work for every alert, Karoo's own included
     - Leaves Karoo's radar strip free (left or right) while a vehicle is detected
     - No internet permission; updates through the Karoo's extension info page; English or German
+
+### BetterETA
+- **Extension Name:** [BetterETA](https://github.com/anpaiss/BetterETA)
+  - Description: An arrival time that learns how you ride. The route ahead is cut into short stretches by gradient and surface, and the time to go is the sum of how fast you usually ride each kind of stretch, learned from the rides already on your Karoo and updated during the ride.
+  - License: Open Source, MIT
+  - Features:
+    - ETA and time to go fields that follow the elevation profile of the route instead of the average speed so far
+    - Learns per gradient band and surface from the FIT files on the device, keeps learning on every ride, adapts to the shape of the day
+    - Everything on the device, no account, no internet
+
+### PoiAhead
+- **Extension Name:** [PoiAhead](https://github.com/anpaiss/PoiAhead)
+  - Description: Drinking-water fountains from OpenStreetMap along your ride. A popup tells you when a fountain is coming up, on whatever page you are, and takes you there with one tap.
+  - License: Open Source, MIT
+  - Features:
+    - Popup with name and live distance when a fountain is within the alert distance and close to the route; NAVIGATE hands it to the Karoo's own pin navigation
+    - "Water Ahead" full-page field with the ten closest fountains and their distances
+    - Fountains drawn on the Karoo map with the water symbol
+    - Data downloaded once over Wi-Fi for your area, then used offline
+
+### AutoLoop Karoo
+- **Extension Name:** [AutoLoop Karoo](https://github.com/anpaiss/AutoLoopKaroo)
+  - Description: Scrolls through your ride data pages by itself, so you can keep your hands on the bars.
+  - License: Open Source, MIT
+  - Features:
+    - Up to 12 pages, each with its own dwell time; pages set to 0 s are skipped
+    - A Switches data field to pause and resume the loop from the ride screen, or the lap button
+    - Manual pause is kept across the Karoo's auto-pause
+
+### BigFields
+- **Extension Name:** [BigFields](https://github.com/anpaiss/BigFields)
+  - Description: Data fields in digits as large as the screen allows, for riders who would rather not need reading glasses on the bike.
+  - License: Open Source, MIT
+  - Features:
+    - "Big Page": one field that takes the whole page and shows one or two values in rows of equal height
+    - Digits fitted to the cell, measured on the real outline of the digits, in a condensed font so half-page rows grow taller
+    - The same digit height on the whole page, and sizes that do not jump when 9.8 becomes 10.2
+    - Six styles (Karoo dark and light, Vivid, Outline, Pastel, Ink); heart rate and power take the colour of their zone
+
+### Karoo AXS Ratio
+- **Extension Name:** [Karoo AXS Ratio](https://github.com/anpaiss/KarooAxsRatio)
+  - Description: Small always-visible tiles in the four corners of the ride screen, over whatever page you are on. Born to keep the SRAM AXS rear gear in sight, it also shows a handful of other live metrics.
+  - License: Open Source, MIT
+  - Features:
+    - One metric per corner: AXS rear gear, heart rate (tile colored by zone), power, cadence, speed, grade, temperature, distance to the next turn
+    - Four tile styles (Vivid, Outline, Pastel, Ink); tiles hide while the screen is off
 
 ## Libraries
 
