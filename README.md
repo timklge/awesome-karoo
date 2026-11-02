@@ -82,6 +82,7 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [AutoLoop Karoo](#autoloop-karoo)
   - [BigFields](#bigfields)
   - [Karoo AXS Ratio](#karoo-axs-ratio)
+  - [Status Bar Temp](#status-bar-temp)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -888,6 +889,16 @@ To update extensions after you have installed them, long-tap the app icon on the
   - Features:
     - One metric per corner: AXS rear gear, heart rate (tile colored by zone), power, cadence, speed, grade, temperature, distance to the next turn
     - Four tile styles (Vivid, Outline, Pastel, Ink); tiles hide while the screen is off
+
+### Status Bar Temp
+- **Extension Name:** [Status Bar Temp](https://github.com/ulope/karoo-statusbar-temp)
+  - Description: Shows the current air temperature in the top bar of the ride screen, between the ride time and the battery level.
+  - License: Open Source, MIT
+  - Features:
+    - Uses the Karoo's own temperature reading, in °C or °F as set in your profile
+    - Optional decimals and unit; adjustable color, size and position
+    - Requires enabling an accessibility service
+    - Tested on Karoo 3; Karoo 2 supported but untested
 
 ## Libraries
 
