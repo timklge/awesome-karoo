@@ -895,12 +895,10 @@ To update extensions after you have installed them, long-tap the app icon on the
   - Description: Shows the current air temperature in the top bar of the ride screen, between the ride time and the battery level.
   - License: Open Source, MIT
   - Features:
-    - Uses the Karoo's own temperature reading (the built-in sensor, or a paired temperature sensor); °C or °F from your Karoo profile
-    - Drawn in the same font, size and baseline as the battery level, centered in the gap, and follows the ride time and battery level as they change width
-    - Only on the ride screen: hidden on the launcher, in menus and other apps, and while a drawer, the control center or a dialog covers the top bar
-    - Settings for decimals, unit, text color, size and position, with a preview of the top bar
-    - Requires enabling an accessibility service, used only to find where the ride time and battery level sit; no internet permission
-    - Updates through the Karoo's extension info page. Tested on a Karoo 3; Karoo 2 supported but untested
+    - Uses the Karoo's own temperature reading, in °C or °F as set in your profile
+    - Optional decimals and unit; adjustable color, size and position
+    - Requires enabling an accessibility service
+    - Tested on Karoo 3; Karoo 2 supported but untested
 
 ## Libraries
 
