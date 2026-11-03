@@ -828,7 +828,7 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Battery alerts at 20 %, 10 % and 5 %, matching the gearbox's own LED warnings, so the gear field alone is enough on a crowded page
     - Remembers the first gearbox found and reconnects by itself; a single shift wakes a sleeping gearbox
     - Keeps the gearbox awake during the ride and only scans while the active ride profile has a Pinion field
-    - Read-only: never changes gearbox settings. Tested on a Karoo 2 with a real gearbox; Karoo 3 supported but untested
+    - Read-only: never changes gearbox settings. Tested on a Karoo 2 with a real gearbox; confirmed working on a Karoo 3 by a rider
     - Unofficial community project, not affiliated with Pinion or Hammerhead
 
 ### Top Bar Hider
