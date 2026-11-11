@@ -67,6 +67,48 @@ A community-driven list of known extensions and resources for the Karoo cycling 
   - [Workout+](#workout)
   - [Squadrats Overlay](#squadrats-overlay)
   - [Karoo Maps Bridge](#karoo-maps-bridge)
+  - [Saftladen](#saftladen)
+  - [WaxLog](#waxlog)
+  - [karoo-wahoo-headwind](#karoo-wahoo-headwind)
+  - [ALTGRAPH](#altgraph)
+  - [KarooTopoMaps](#karootopomaps)
+  - [Karoo Sentinel](#karoo-sentinel)
+  - [Karoo BBrakers](#karoo-bbrakers)
+  - [Aero Tracker](#aero-tracker)
+  - [GravelShock](#gravelshock)
+  - [PinionKarooExtension](#pinionkarooextension)
+  - [Top Bar Hider](#top-bar-hider)
+  - [BetterETA](#bettereta)
+  - [PoiAhead](#poiahead)
+  - [AutoLoop Karoo](#autoloop-karoo)
+  - [BigFields](#bigfields)
+  - [Karoo AXS Ratio](#karoo-axs-ratio)
+  - [Status Bar Temp](#status-bar-temp)
+  - [karoo-pace](#karoo-pace)
+  - [Karoo Radar](#karoo-radar)
+  - [Magicshine Controls](#magicshine-controls)
+  - [Moxy](#moxy)
+  - [KarooFireFly](#karoofirefly)
+  - [ClipRide](#clipride)
+  - [Karoo Camera Control](#karoo-camera-control)
+  - [HeartKaroo](#heartkaroo)
+  - [KogSense](#kogsense)
+  - [Gear Helper](#gear-helper)
+  - [Climber+](#climber)
+  - [MTB Dynamics](#mtb-dynamics)
+  - [Karoo DFA alpha1](#karoo-dfa-alpha1)
+  - [karoo-decoupling](#karoo-decoupling)
+  - [Pitstop](#pitstop)
+  - [SendPin](#sendpin)
+  - [WearTracker](#weartracker)
+  - [PartnerRide](#partnerride)
+  - [Quiver Odometer](#quiver-odometer)
+  - [Ride Namer](#ride-namer)
+  - [Karoo Dynamic Headphones](#karoo-dynamic-headphones)
+  - [PhoneStatus](#phonestatus)
+  - [Stock Tracker](#stock-tracker)
+  - [Player Zero](#player-zero)
+  - [XM Headphones](#xm-headphones)
 - [Libraries](#libraries)
   - [ktor-client-karoo](#ktor-client-karoo)
   - [karoo-ext-testing](#karoo-ext-testing)
@@ -702,7 +744,6 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Unofficial community project, not affiliated with Hammerhead or Squadrats
 
 ### Karoo Maps Bridge
-
 - **Extension Name:** [Karoo Maps Bridge](https://github.com/Carlolius/karoo-maps-bridge)
   - Description: Send places and routes from Google Maps (and other map apps) on your Android phone to the Karoo's native navigation. Made for the Karoo 2, which lacks the built-in "share location from phone" feature.
   - License: Open Source, Apache-2.0
@@ -712,6 +753,490 @@ To update extensions after you have installed them, long-tap the app icon on the
     - Google Maps directions: send the stops in order, or compute BRouter bike route alternatives shown on a map with distance, climbing, surface and cycle lanes, and upload the chosen one through the Hammerhead Companion app
     - Works over the phone's hotspot or any WiFi; no accounts, no cloud server
     - Unofficial community project, not affiliated with Hammerhead or Google
+
+### Saftladen
+- **Extension Name:** [Saftladen](https://github.com/hamann/karoo-saftladen)
+  - Description: Reports the battery status of every paired sensor, and of the Karoo itself, as JSON to a URL you configure whenever a ride ends — so you find out a sensor needs charging at home rather than at the roadside.
+  - License: Open Source, Apache 2
+  - Features:
+    - One report per ride covering every saved sensor — ANT+, BLE and extension-provided alike — including ones that dropped out mid-ride, plus the head unit's own charge as a real percentage
+    - Reports are buffered on the device and retried until the endpoint accepts them, so a ride that ends out of network range is not lost
+    - Uses the Karoo's built-in HTTP mechanism (WiFi, or Bluetooth via the companion app); the app holds no internet permission of its own
+    - Configurable endpoint URL and one optional request header, with a test button and a bonus action for reporting on demand
+    - Documented JSON format, and a Home Assistant webhook setup that turns each sensor into a battery entity
+
+### WaxLog
+- **Extension Name:** [WaxLog](https://github.com/Zalvato/Karoo-WaxLog)
+  - Description: Tracks the distance on your waxed chains – and your chain rotation. Every ride is credited to the chain that's on the bike; a data field shows how close it is to its wax limit, and alerts tell you when it's due soon and when it's due.
+  - License: Closed Source, Freeware
+  - Features:
+    - Chain rotation: a chain set per bike – swap with one tap, mark chains as waxed, see at a glance which one is ready to go on
+    - Data field in three variants and any size; large fields add this ride's distance and roughly how many rides the chain still lasts
+    - Alerts (popup and beep) from an adjustable "due soon" threshold and at the limit; green, yellow and red in the field and the app
+    - History per chain, editable, with the chain's total distance kept across waxings
+    - Automatic backups and transfer to a new Karoo over Wi-Fi (QR code)
+    - Updates itself, never during a ride; km or miles, English or German
+
+### karoo-wahoo-headwind
+- **Extension Name:** [karoo-wahoo-headwind](https://github.com/vvrnv/karoo-wahoo-headwind)
+  - Description: Controls a Wahoo KICKR Headwind fan from the Karoo over Bluetooth.
+  - License: Open Source, MIT
+  - Features:
+    - Manual wind with a slider, ±1% steps and 25 / 50 / 75 / 100 presets
+    - Heart rate and speed modes from the sensors paired to the Karoo. The fan stays off until a sample arrives
+    - On/off toggle that restores the previous fan speed
+    - Ride-page data field with the same controls
+
+### ALTGRAPH
+- **Extension Name:** [ALTGRAPH](https://github.com/DAVOE75/ALTGRAPH)
+  - Description: 3D relief altimetry, climb viewer and voice co-pilot for the Karoo. Shows the route ahead as a 3D profile with a beacon on your position, grade colours, and pacing tools for climbs.
+  - License: Closed Source, All rights reserved (permission required to use the code). Free core features; ELITE features are free for now and will become a paid subscription.
+  - Features:
+    - 3D elevation profile data field (global route view and sliding window), with a rider beacon and a finish flag
+    - Climb viewer for categorized climbs, including custom climbs defined by Start and Summit POIs, with colour-coded route overlay on the map (off / climbs only / whole route)
+    - TV route profile (2D) with a climb list: name, category, start km, length, average and max grade
+    - Gear recommendation synced to the rider's position on the route
+    - Grade zones, grade trend, fatigue grade and climb pacing data fields
+    - Voice co-pilot with attack alerts (ELITE)
+    - Altimetric radar bar with ruler, alerts and ghost (ELITE)
+    - Available in English, Spanish, French, Italian, German and Portuguese
+
+### KarooTopoMaps
+- **Extension Name:** [KarooTopoMaps](https://github.com/DAVOE75/KarooTopoMaps)
+  - Description: Map theme suite for the Karoo that replaces the standard map look with nine professional cartographic styles designed for transflective screens.
+  - License: Closed Source, All rights reserved (permission required to use the code). The nine classic themes are free; the advanced Custom Map Studio PRO is intended to require a license (closed beta).
+  - Features:
+    - Nine professional map themes (IGN and topographic styles)
+    - One-tap discipline profiles for road, MTB, gravel and night riding
+    - Extreme-sunlight booster with thicker, higher-contrast lines
+    - Drinking-water radar with prominent map icons
+    - IMBA-based trail difficulty colouring
+    - Visibility, line-pattern, typography and dual map source controls
+
+### Karoo Sentinel
+- **Extension Name:** [Karoo Sentinel](https://github.com/DAVOE75/KarooSentinel)
+  - Description: Security and anti-theft extension that detects unauthorised movement of the parked Karoo and raises an alarm with Telegram alerts.
+  - License: Open Source
+  - Features:
+    - Accelerometer-based movement and vibration detection with adjustable sensitivity
+    - GPS geofencing (20 m movement threshold) and live location tracking through Telegram
+    - Anti-jammer and sensor-disconnection alerts
+    - Anti-shutdown protection with siren and last known location
+    - Hardware beeper and silent trap modes, PIN protection
+
+### Karoo BBrakers
+- **Extension Name:** [Karoo BBrakers](https://github.com/DAVOE75/KarooBBrakers)
+  - Description: Braking telemetry and safety extension for Karoo 2 and Karoo 3 that analyses braking efficiency, cornering, energy loss and brake temperature.
+  - License: Open Source, MIT
+  - Features:
+    - Braking detection with stationary lockout and gravity-pitch decoupling on steep climbs
+    - Corner radar and apex speed retention
+    - Predictive braking warnings based on stopping distance
+    - Grip margin and washout alarms based on the Kamm friction circle
+    - Peloton Smoothness Index, Descent Efficiency Score, brake load distribution, pad service odometer and thermal warnings
+
+### Aero Tracker
+- **Extension Name:** [Aero Tracker](https://github.com/DAVOE75/Aero-Tracker)
+  - Description: Virtual wind tunnel for the Karoo 2 and Karoo 3 that estimates your aerodynamic drag area (CdA) in real time from power, speed and gradient. Also available in Hammerhead's extension library.
+  - License: Open Source, MIT
+  - Features:
+    - Live CdA calculation with a 5-second smoothed value
+    - "Watts saved" comparison against a baseline CdA
+    - Aerodynamic power percentage and riding posture classification
+    - Configurable rider and bike mass, rolling resistance and smoothing
+
+### GravelShock
+- **Extension Name:** [GravelShock](https://github.com/DAVOE75/GravelShock)
+  - Description: Analyses and classifies terrain roughness in real time using the Karoo's built-in accelerometer, for gravel, MTB and road riders.
+  - License: Open Source, MIT
+  - Features:
+    - Live terrain classification: smooth tarmac, gravel, cobbles and rough / MTB
+    - Real-time vibration fatigue and stress meter
+    - Percentage bar with the time spent on each terrain type
+    - English and Spanish
+
+### PinionKarooExtension
+- **Extension Name:** [PinionKarooExtension](https://github.com/madooroy/PinionKarooExtension)
+  - Description: Shows the current gear and battery level of a Pinion Smart.Shift gearbox on the Karoo, read over Bluetooth.
+  - License: Open Source, GPL-3.0
+  - Features:
+    - Pinion Gear and Pinion Battery data fields that look and behave like the built-in ones
+    - Split fields that put the gear beside cadence, power, heart rate, speed or battery in one cell, plus a Shifts + Avg Gear field for the ride's totals
+    - Gear, shift count and average gear are saved in the ride's FIT file, so sites such as intervals.icu can chart them
+    - Battery alerts at 20 %, 10 % and 5 %, matching the gearbox's own LED warnings, so the gear field alone is enough on a crowded page
+    - Remembers the first gearbox found and reconnects by itself; a single shift wakes a sleeping gearbox
+    - Keeps the gearbox awake during the ride and only scans while the active ride profile has a Pinion field
+    - Read-only: never changes gearbox settings. Tested on a Karoo 2 with a real gearbox; confirmed working on a Karoo 3 by a rider
+    - Unofficial community project, not affiliated with Pinion or Hammerhead
+
+### Top Bar Hider
+- **Extension Name:** [Top Bar Hider](https://github.com/Zalvato/Karoo-TopBarHider)
+  - Description: Hides ride time, battery and clock at the top of the ride screen behind a black bar while you ride, for a calmer view. A data field brings them back with a tap.
+  - License: Closed Source, Freeware
+  - Features:
+    - Hide the top line on all data pages, only on the map page, or on all but the map page
+    - Data field "TOP BAR": a tap shows or hides the top line (switch) or shows it for a few seconds (timer)
+    - Optionally shows the top line during a pause and an auto-pause
+    - In-ride alerts stay readable; an optional accessibility setting makes it work for every alert, Karoo's own included
+    - Leaves Karoo's radar strip free (left or right) while a vehicle is detected
+    - No internet permission; updates through the Karoo's extension info page; English or German
+
+### BetterETA
+- **Extension Name:** [BetterETA](https://github.com/anpaiss/BetterETA)
+  - Description: An arrival time that learns how you ride. The route ahead is cut into short stretches by gradient and surface, and the time to go is the sum of how fast you usually ride each kind of stretch, learned from the rides already on your Karoo and updated during the ride.
+  - License: Open Source, MIT
+  - Features:
+    - ETA and time to go fields that follow the elevation profile of the route instead of the average speed so far
+    - Learns per gradient band and surface from the FIT files on the device, keeps learning on every ride, adapts to the shape of the day
+    - Everything on the device, no account, no internet
+
+### PoiAhead
+- **Extension Name:** [PoiAhead](https://github.com/anpaiss/PoiAhead)
+  - Description: Drinking-water fountains from OpenStreetMap along your ride. A popup tells you when a fountain is coming up, on whatever page you are, and takes you there with one tap.
+  - License: Open Source, MIT
+  - Features:
+    - Popup with name and live distance when a fountain is within the alert distance and close to the route; NAVIGATE hands it to the Karoo's own pin navigation
+    - "Water Ahead" full-page field with the ten closest fountains and their distances
+    - Fountains drawn on the Karoo map with the water symbol
+    - Data downloaded once over Wi-Fi for your area, then used offline
+
+### AutoLoop Karoo
+- **Extension Name:** [AutoLoop Karoo](https://github.com/anpaiss/AutoLoopKaroo)
+  - Description: Scrolls through your ride data pages by itself, so you can keep your hands on the bars.
+  - License: Open Source, MIT
+  - Features:
+    - Up to 12 pages, each with its own dwell time; pages set to 0 s are skipped
+    - A Switches data field to pause and resume the loop from the ride screen, or the lap button
+    - Manual pause is kept across the Karoo's auto-pause
+
+### BigFields
+- **Extension Name:** [BigFields](https://github.com/anpaiss/BigFields)
+  - Description: Data fields in digits as large as the screen allows, for riders who would rather not need reading glasses on the bike.
+  - License: Open Source, MIT
+  - Features:
+    - "Big Page": one field that takes the whole page and shows one or two values in rows of equal height
+    - Digits fitted to the cell, measured on the real outline of the digits, in a condensed font so half-page rows grow taller
+    - The same digit height on the whole page, and sizes that do not jump when 9.8 becomes 10.2
+    - Six styles (Karoo dark and light, Vivid, Outline, Pastel, Ink); heart rate and power take the colour of their zone
+
+### Karoo AXS Ratio
+- **Extension Name:** [Karoo AXS Ratio](https://github.com/anpaiss/KarooAxsRatio)
+  - Description: Small always-visible tiles in the four corners of the ride screen, over whatever page you are on. Born to keep the SRAM AXS rear gear in sight, it also shows a handful of other live metrics.
+  - License: Open Source, MIT
+  - Features:
+    - One metric per corner: AXS rear gear, heart rate (tile colored by zone), power, cadence, speed, grade, temperature, distance to the next turn
+    - Four tile styles (Vivid, Outline, Pastel, Ink); tiles hide while the screen is off
+
+### Status Bar Temp
+- **Extension Name:** [Status Bar Temp](https://github.com/ulope/karoo-statusbar-temp)
+  - Description: Shows the current air temperature in the top bar of the ride screen, between the ride time and the battery level.
+  - License: Open Source, MIT
+  - Features:
+    - Uses the Karoo's own temperature reading, in °C or °F as set in your profile
+    - Optional decimals and unit; adjustable color, size and position
+    - Requires enabling an accessibility service
+    - Tested on Karoo 3; Karoo 2 supported but untested
+
+### karoo-pace
+- **Extension Name:** [karoo-pace](https://github.com/markhaines/karoo-pace)
+  - Description: A drop-in replacement for the native speed card that colours it by how the current speed compares to the ride average.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Five colour bands relative to the ride average: 115% and above green, 105 to 115% light green, 95 to 105% neutral, 85 to 95% orange and below 85% red, with chevron indicators
+    - Bands are percentages rather than fixed speeds, and no colour is shown below 5 km/h or before the ride average has been established
+    - The colour follows a 3 second smoothed speed while the number shows raw speed, so the value reacts immediately without the colour strobing on GPS noise
+    - Replicates the native card's fonts and layout, so it replaces the stock speed field without looking out of place
+    - Karoo 3, firmware 1.527 or later
+
+### Karoo Radar
+- **Extension Name:** [Karoo Radar](https://github.com/ukabu/karoo-radar-ext)
+  - Description: Adds numerical radar data fields for rear vehicle detection, and records the radar data to the ride's FIT file.
+  - License: Open Source, MIT
+  - Features:
+    - Vehicle Count, Closest Distance, Relative Speed and Absolute Speed data fields
+    - Background colour follows the threat level: neutral when clear, yellow when approaching, orange for a warning and red for critical
+    - Writes radar_vehicles, radar_nearest_distance_m, radar_relative_speed_kmh and radar_absolute_speed_kmh to the FIT file every second
+    - Field layout adapts to whatever grid size the field is placed in
+    - Targets the Karoo 3
+
+### Magicshine Controls
+- **Extension Name:** [Magicshine Controls](https://github.com/lenne0815/karoo-magicshine-controls)
+  - Description: Karoo app and ride field for controlling supported Magicshine lights over Bluetooth.
+  - License: Open Source, MIT
+  - Features:
+    - Control screen with LOW, HIGH and OFF output, 25/50/75/100 brightness, SOS and continuous flash modes, and connect/disconnect
+    - Ride field in four segments: light state toggle, a two second flash that restores the previous state, battery, and a shortcut into the app
+    - Battery and temperature polled every 30 seconds while connected
+    - The ride field connects and disconnects with the ride screen
+    - Tuned to the tested EVO 1700, and shows high, mid or low battery on firmware that reports discrete values
+
+### Moxy
+- **Extension Name:** [Karoo MoxyMonitor Extension](https://github.com/Moxy-Monitor/moxy-karoo-extension)
+  - Description: Data fields for muscle oxygen saturation and total hemoglobin from Moxy Monitor sensors.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - SMO2 and total hemoglobin (THb) data fields for any data screen
+    - Pairs up to four Moxy Monitor sensors through a normal Karoo sensor scan
+    - Sensor location is configurable per device and is included in the FIT recording
+    - Karoo 2 and Karoo 3
+
+### KarooFireFly
+- **Extension Name:** [KarooFireFly](https://github.com/derstrassi/karoofirefly)
+  - Description: Controls ANT+ and Bluetooth bike lights from a Karoo 3, switching light modes by time of day and ambient light instead of only turning them on and off with the ride.
+  - License: Open Source, MIT
+  - Features:
+    - ANT+ lights (Garmin Varia RTL 515/516, Magene L508) controlled through the Karoo's own pairing, and Magicshine BLE lights (Hori 1300, EVO 1300/1700) directly over Bluetooth
+    - Automatic Day and Night mode switching from sunrise and sunset times with configurable offsets, from the Karoo 3's ambient light sensor, or from both together
+    - Radar Warn Flash option for rear lights, which flashes the light when the radar reports an approaching vehicle while the light is off
+    - Per light configuration with a front or rear role and a mode list read from each connected light
+    - Bonus Actions to toggle the lights or cycle Off, Day and Night, which can be mapped to AXS shift buttons or Karoo hardware buttons
+    - Battery level and temperature readout for Magicshine BLE lights, and notifications when the light changes zone
+    - ANT+ control uses an undocumented internal Karoo API, so it is used at your own risk
+
+### ClipRide
+- **Extension Name:** [ClipRide](https://github.com/yrkan/clipride)
+  - Description: Connects to GoPro cameras over Bluetooth to control recording from the Karoo, including automatic recording and highlight markers tied to ride events.
+  - License: Open Source, MIT
+  - Features:
+    - Start and stop recording, HiLight markers, Video/Photo/Timelapse mode switching, quick photo and camera sleep or wake
+    - Six ride screen data fields (status, battery, recording, power, mode and photo) and three Bonus Actions, with tap actions on the fields
+    - Auto-Record on ride start with an optional delay, stop on pause or end, and optionally continue through auto-pause
+    - Auto-Highlights on the lap button, peak power, max speed, climb summit, heart rate zone 5, steep descents and ride start and end, each with its own cooldown
+    - Alerts for low battery, an SD card with under five minutes left, overheating and cold temperature
+    - Video settings (resolution, frame rate, field of view, stabilisation) are applied on each connection, using the Open GoPro BLE specification
+    - Supports the GoPro MAX 2 and the HERO 9 to 13, including the 11 Mini
+
+### Karoo Camera Control
+- **Extension Name:** [karoo-camera-control](https://github.com/michalchecinski/karoo-camera-control)
+  - Description: Controls GoPro action cameras over Bluetooth from the Karoo.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Connect and manage several cameras
+    - Start and stop recording and monitor the recording time
+    - Switch between Video, Photo and Timelapse modes and pick a preset within a mode
+    - Show battery level and remaining storage
+    - Karoo 2 and Karoo 3
+
+### HeartKaroo
+- **Extension Name:** [HeartKaroo](https://github.com/inqu-lab/HeartKaroo)
+  - Description: A bundle of physiology data fields computed on the device, with heart rate variability metrics read from a Polar chest strap over Bluetooth.
+  - License: Not specified in the repository
+  - Features:
+    - Aerobic and power decoupling over a rolling 30 minute window, efficiency factor, cardiac cost and W' balance (Skiba)
+    - Power analytics: variability index, intensity factor, live TSS, kilojoules, coasting percentage, Coggan quadrant analysis and best 5 s to 60 min power
+    - HRV from a Polar strap: RMSSD, SDNN, pNN50, Poincare SD1/SD2, DFA alpha1, respiratory rate and an irregular beat rate
+    - Exposes the strap as a Karoo sensor named "<strap> (HR+HRV)" alongside the standard heart rate data point
+    - Writes HRV values, alpha1, respiratory rate and an aerobic threshold estimate into the FIT file, per record and in the ride summary
+    - Pre-ride two minute resting RMSSD readiness measurement with a seven day trend
+    - No network access; all metrics are computed on the device
+
+### KogSense
+- **Extension Name:** [KogSense](https://github.com/jcro001/KogSense)
+  - Description: Beeps when an electronic drivetrain reaches its mechanical limits, supporting SRAM AXS directly and Shimano Di2 through the Ki2 extension.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - End of range beeps on reaching the first or last cassette gear
+    - Pre-shift warning before an automatic synchronised front shift, with an ascending tone for upshifts and a descending tone for downshifts
+    - Learns synchronised shift boundary cogs while riding, filtering false positives from manual front shifts
+    - Settings, cassette sizes and boundaries are remembered separately for each connected bike
+    - Handles cross-chain blocked combinations, such as the locked small-small on SRAM 2x
+    - Tested on SRAM AXS 2x12 and Shimano Di2 2x12, on Karoo 2 and Karoo 3
+
+### Gear Helper
+- **Extension Name:** [Gear Helper](https://github.com/futureshape/karoo-gear-helper)
+  - Description: Shows the current front and rear gear briefly after every shift, and plays configurable beeps at the rear derailleur's easiest and hardest gear.
+  - License: Open Source, MIT
+  - Features:
+    - Gear popup over any ride page, the map and the drawer, with front and rear gear indices and optional tooth counts
+    - Automatic 1x detection hides the redundant front gear
+    - Popup duration and position are configurable
+    - Rear limit alert modes: off, single, double, ascending or descending, at three intensities, with separate beeper tuning for Karoo 2 and newer hardware
+    - Optional muting of the Karoo's audio alerts and buzzer while a ride is paused
+    - Reads the shifting sensor already paired with the Karoo, rather than connecting to the drivetrain itself
+    - Karoo 2 and newer Karoo running KOS 1.613.2351 or later
+
+### Climber+
+- **Extension Name:** [Climber+](https://github.com/hazzus/karoo-climber-plus)
+  - Description: A floating climb overlay for the Karoo, like the built-in Climber but shown over any ride page.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Permanent chip while a route is loaded, showing climbs completed, a countdown to the next climb, and the live grade and distance to the top while climbing
+    - Climb drawer opens before each climb with a grade coloured elevation profile in 100 m chunks, an approach progress bar and a strip of the next 500 m split into five grade tiles
+    - Display modes cycled by tapping the profile: full climb, remaining only, or a preview window of the next 2, 5 or 10 km
+    - Full screen view with four configurable data fields, which can show any karoo-ext data stream, and a scrollable list of upcoming climbs
+    - Six grade palettes, metric or imperial units, and configurable overlay position, height and opacity
+    - Karoo 2 and Karoo 3
+
+### MTB Dynamics
+- **Extension Name:** [MTB Dynamics](https://github.com/angkyria/karoo-mtb)
+  - Description: Garmin style MTB metrics for the Karoo: grit, flow, jumps and cornering, computed from the Karoo's accelerometer and gyroscope together with the speed, grade and GPS streams.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Grit trail difficulty, Flow braking loss per 100 m, jump detection with airtime, distance, height, landing g and rotations, and cornering analysis from the gyroscope
+    - MTB score, and trail segments that split the ride into climbs, descents and flats with every metric per segment
+    - Trails are recognised across rides, with timed runs, ranks and personal bests
+    - Suspension and drivetrain data joined with the terrain, including RockShox Flight Attendant states, gear use per terrain and shift logging
+    - Service tracker for fork and shock hours, drivetrain kilometres and cog hours, with configurable intervals and reminders
+    - Writes per second mtb_* developer fields and a large session summary to the FIT file, optionally using Garmin's native grit, flow and jump count fields
+    - Ride end summary sent to your phone over ntfy, and optionally written into the Intervals.icu activity
+    - Karoo 2 and Karoo 3; the repository marks the current builds as testing releases
+
+### Karoo DFA alpha1
+- **Extension Name:** [Karoo DFA alpha1 Extension](https://github.com/Lemonchic/karoo-dfa-extension)
+  - Description: Calculates DFA alpha1 in real time from an HR strap's raw beat stream, and records it to the ride's FIT file for analysis on Intervals.icu and Runalyze.
+  - License: Not specified in the repository
+  - Features:
+    - Live DFA alpha1 data field with a background colour that reflects the configured LT1 (default 0.75) and LT2 (default 0.50) thresholds
+    - Separate artifact percentage field showing the share of corrected beats, coloured by data quality
+    - Writes Alpha1 and Artifacts developer fields to the FIT activity, which Intervals.icu and Runalyze read on upload
+    - Kubios style artifact filtering with absolute RR limits and relative median filters, corrected by natural cubic spline interpolation
+    - Recalculates every 15 seconds to save battery, and stops writing values when the artifact rate exceeds a configurable tolerance
+    - Thresholds and artifact tolerance are configurable on the device
+    - Tested on Karoo 2
+
+### karoo-decoupling
+- **Extension Name:** [karoo-decoupling](https://github.com/schaefer-dev/karoo-decoupling)
+  - Description: Shows aerobic decoupling (Pa:Hr drift) as a live data field, comparing the efficiency factor of the first half of the ride against the second half.
+  - License: Not specified in the repository
+  - Features:
+    - Samples power and heart rate once per second of moving time, excluding stopped time
+    - Splits the ride at the midpoint of moving time and shows the drift percentage
+    - After the first two minutes it shows a running preview of what the final drift would be if the ride ended now
+    - Keeps the last known heart rate and power values when a sensor drops out, and resets after a stop to start transition
+    - Release builds repaint every 30 seconds as a battery optimisation, while the calculation still uses every sample
+    - Karoo 2 and Karoo 3; build from source
+
+### Pitstop
+- **Extension Name:** [Pitstop](https://github.com/rutgerg/karoo-pitstop)
+  - Description: Shows the nearest service that is currently open along a planned route in eleven categories, and routes you there in two taps with the Karoo's own navigation.
+  - License: Open Source, MIT
+  - Features:
+    - One data tile per category: restaurant, supermarket, fuel, cafe, hotel, doctor, pharmacy, bike shop, ATM, train station and water refill
+    - Samples the planned route every 2 km and queries OpenStreetMap Overpass with a 10 km buffer, caching the results locally and retrying automatically once Wi-Fi is available
+    - Refreshes a 10 km radius around the rider every 20 minutes
+    - Tiles show the nearest open place with its distance, name and opening hours, and filter out the closed ones
+    - Tapping a tile opens the native pin screen with Navigate or Save as POI
+    - Chevron buttons step through the next nearest alternatives in each category
+
+### SendPin
+- **Extension Name:** [SendPin](https://github.com/albertjfoo/sendpin)
+  - Description: Sends a location pin shared from Apple Maps on an iPhone to a Karoo 2 over Bluetooth, which then opens its native map pin screen. No cloud, account or internet connection is needed.
+  - License: Open Source, MIT
+  - Features:
+    - The iPhone share sheet passes the pin to the phone app, which broadcasts the coordinates as roughly 72 bytes of JSON on a custom Bluetooth service
+    - The Karoo extension picks up the pin, connects, reads the coordinates and disconnects in about two seconds, then hands the destination to the Karoo's own navigation
+    - The phone stops broadcasting once the Karoo has taken the destination, so you never leave Apple Maps
+    - The Karoo pairs to the first phone it hears, so a second SendPin user nearby cannot land pins on the wrong device
+    - Pin updates are installed on the Karoo itself with a long press and Update, without a cable
+    - Tested on Karoo 2; the destination needs a GPS fix and the relevant offline map region
+
+### WearTracker
+- **Extension Name:** [WearTracker](https://github.com/wjakob/WearTracker)
+  - Description: Tracks wear and mileage on drivetrain components, brake pads and tyres for each bike, calculated from the bike odometer against a stored offset per component.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Detects the bikes configured on the Karoo and tracks each independently
+    - Covers the chain, chainring, cassette and both derailleurs, front and rear brake pad distance, front and rear tyre distance, and sealant age
+    - Shows the Karoo's total non-resettable odometer as a frame mileage field
+    - When a chain is replaced it records the longest chain used, to help decide when to replace the cassette, chainring and derailleurs
+    - Eleven custom data types in km or miles, following the Karoo's unit preference
+    - Front derailleur wear only appears on bikes with more than one front gear
+    - Build from source
+
+### PartnerRide
+- **Extension Name:** [PartnerRide](https://github.com/bb-generation/PartnerRide)
+  - Description: Shows the distance to a partner's Karoo in a Partner Gap data field, with the two devices exchanging positions directly over Bluetooth. No phone, internet or account is involved.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Partner Gap field showing the distance to the partner's Karoo with an ahead or behind arrow, updated about once per second
+    - The two Karoos exchange position, speed and heading directly over Bluetooth at a range of roughly 50 to 150 m
+    - Pairing uses a shared six digit code, with no Bluetooth pairing step, and the code persists between rides
+    - The gap is colour coded green up to 15 m, yellow to 50 m and red beyond, with status messages for no GPS, no signal or no code
+    - Optional gap alert with a configurable threshold, 100 m by default, which beeps and flashes when it is first exceeded
+    - Corrects for GPS lag by dead reckoning the older position and averaging recent readings
+    - Karoo 2 and Karoo 3
+
+### Quiver Odometer
+- **Extension Name:** [Quiver Odometer](https://github.com/pdkane/quiver-karoo)
+  - Description: Syncs the mileage of finished rides from the Karoo to a [Quiver](https://quiver.fyi) garage, so component maintenance and service clocks stay current.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Pairs once with a code from the Quiver settings page, then syncs every finished ride automatically
+    - One tap backfill of the entire Karoo ride history
+    - Keeps maintenance, wear and service clocks current without manual logging
+    - Declares its release manifest, so the Karoo offers an in-device update when a new version is published
+    - Karoo 2 and Karoo 3; this repository hosts built releases only
+
+### Ride Namer
+- **Extension Name:** [Ride Namer](https://github.com/duncanbottrill/karoo-ride-namer)
+  - Description: Gives every finished ride a name generated from its weather, distance, elevation, speed, intensity and location, and can rename the matching Strava activity. The name generator runs offline.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Fetches weather once per ride from Open-Meteo at the first GPS fix, and names the ride by its midpoint rather than its start
+    - Collects distance, ascent, average and maximum speed, average and maximum heart rate, average power and intensity factor
+    - Reverse geocodes the ride midpoint to a place name, skipping it when offline
+    - Four name styles: funny, descriptive, minimal and random
+    - Shows a notification with the name and keeps a history in the app
+    - Optional Strava auto-rename, connected by scanning a QR code, which matches the uploaded activity by start time
+    - Adds no in-ride data fields, as it only acts at the end of a ride
+    - Karoo 3
+
+### Karoo Dynamic Headphones
+- **Extension Name:** [Karoo Dynamic Headphones](https://github.com/lenne0815/Karoo-dynamic-Headphones)
+  - Description: Controls music playback over Bluetooth headphones based on riding speed, pausing when you stop and raising the volume as you go faster.
+  - License: Open Source, MIT
+  - Features:
+    - Pauses music when speed drops below a configurable threshold, 0.5 km/h by default
+    - Scales the volume with speed, with configurable minimum and maximum volumes
+    - Takes speed from an ANT+ or BLE speed sensor, falling back to GPS speed
+    - Works with any media app that exposes a MediaSession, and adjusts the system volume
+    - A normal mode switches off the auto-pause and uses a fixed volume
+    - Karoo 3
+
+### PhoneStatus
+- **Extension Name:** [Phone Status](https://github.com/alifib/karoo-phonestatus)
+  - Description: Shows the phone connection as a native looking phone icon in the status bar, which becomes a red slashed phone when the connection is lost.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Draws the indicator into the status bar as an overlay, since Karoo OS has no way to add status icons
+    - Reads the phone state from the Karoo's private phone service
+    - The icon tint adapts to the screen behind it, and the icon repositions itself to follow the other status icons
+    - Runs automatically on every boot once the overlay and accessibility permissions are granted, with no configuration
+    - Read only; it monitors the status bar and ride app and transmits no data
+    - Karoo 2 and Karoo 3
+
+### Stock Tracker
+- **Extension Name:** [Stock Tracker for Karoo](https://github.com/gingerr6/stock-tracker)
+  - Description: Shows live stock, crypto, index and futures prices from Yahoo Finance on the ride screen.
+  - License: Open Source, Apache 2.0
+  - Features:
+    - Ten configurable slots, accepting any Yahoo Finance symbol, including stocks, crypto pairs, indices and futures
+    - A dedicated field per slot, plus a ticker field that cycles through all configured symbols every 5 seconds
+    - Each field shows the symbol, the price coloured by the daily change, the change percentage with an arrow, and an intraday sparkline
+    - Refreshes every 5 minutes over the Karoo's HTTP system, keeping the last known price on screen if a refresh fails
+    - Symbols are configured in the app on the device
+
+### Player Zero
+- **Extension Name:** [Player Zero for Karoo](https://github.com/NorthwoodsSentinel/player-zero-karoo)
+  - Description: Connects to a Onewheel GT or GT-S over Bluetooth and shows the board's battery, motor temperature, safety headroom, amps and speed as data fields. Nothing leaves the Karoo.
+  - License: Open Source, MIT
+  - Features:
+    - Data fields for board battery, motor temperature, safety headroom, board amps and board speed
+    - Connects directly over Bluetooth using the board's Polaris token, with a repeated setup burst to keep the session alive
+    - Battery reads as --% until the board accepts the token, so a real percentage confirms the connection
+    - Configure the board's Bluetooth name and token on the device, or push a config file with adb
+    - Settings page shows a live connection status line
+    - Karoo 2 and Karoo 3; v0.1.0 was verified on a Karoo 2
+
+### XM Headphones
+- **Extension Name:** [XM Headphones](https://github.com/nikosavola/karoo-xm-headphones)
+  - Description: Controls Sony headphones over classic Bluetooth from the Karoo, bringing the noise cancelling and ambient sound controls of Sony's Sound Connect app to the ride screen.
+  - License: Open Source, Apache 2
+  - Features:
+    - Switches between noise cancelling, ambient sound (with level and focus on voice) and off
+    - Ride fields for headset battery and ambient level, plus a noise cancelling field that cycles modes when tapped
+    - Controller action for a Karoo button, and a control screen with the headset's model, firmware and protocol details
+    - Works over classic RFCOMM with no Google services needed
 
 ## Libraries
 
