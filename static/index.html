@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en" class="scheme-light dark:scheme-dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="A community-driven list of known extensions and resources for the Karoo cycling computer">
+  <title>awesome-karoo</title>
+  <script>
+    (() => {
+      const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
+      const applyTheme = () => {
+        document.documentElement.classList.toggle('dark', systemDark.matches);
+        document.querySelector('meta[name="theme-color"]').content = systemDark.matches ? '#020617' : '#ffffff';
+      };
+      systemDark.addEventListener('change', applyTheme);
+      applyTheme();
+    })();
+  </script>
+  <link rel="stylesheet" href="tailwind.css">
+  <style>
+    :root { --text-xs: .875rem; --text-xs--line-height: 1.5; --text-sm: 1rem; --text-sm--line-height: 1.5; }
+    .text-\[11px\] { font-size: .875rem; line-height: 1.5; }
+    .text-\[13px\], .text-\[15px\] { font-size: 1rem; line-height: 1.5; }
+    .extension-full-description { margin-bottom: 1.5rem; font-size: 1rem; line-height: 1.5; white-space: pre-line; }
+    .screenshot-gallery { margin-top: 1.5rem; }
+    .extension-icon-column { width: 44px; }
+    .extension-icon-cell { padding: 1.25rem .5rem; }
+    .extension-icon { display: block; box-sizing: border-box; width: 28px; height: 28px; object-fit: contain; padding: 3px; border-radius: 5px; background: #f1f5f9; }
+    .dark .extension-icon { background: #e2e8f0; }
+    .screenshot-thumb { display: block; width: 90px; height: 150px; object-fit: contain; background: #e2e8f0; }
+    .screenshot-dialog { position: fixed; inset: 0; margin: auto; max-width: min(90vw, 600px); max-height: 90vh; padding: 0; border: 0; background: transparent; }
+    .screenshot-close { position: absolute; top: .5rem; right: .5rem; width: 2rem; height: 2rem; border-radius: 50%; background: rgb(15 23 42 / 85%); color: white; font-size: 1.5rem; line-height: 1; cursor: pointer; }
+    .screenshot-close:focus-visible { outline: 2px solid #f97316; outline-offset: 2px; }
+    .screenshot-dialog::backdrop { background: rgb(15 23 42 / 80%); }
+    .screenshot-dialog img { display: block; max-width: 100%; max-height: 75vh; margin: auto; object-fit: contain; }
+    .multi-filter { position: relative; min-width: 9rem; flex: 1; }
+    .multi-filter summary { cursor: pointer; list-style: none; border: 1px solid #e2e8f0; background: white; color: #334155; padding: .75rem 2rem .75rem .75rem; font-size: 1rem; position: relative; }
+    .multi-filter summary::-webkit-details-marker { display: none; }
+    .multi-filter summary { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .multi-filter-options label:focus-within { outline: 2px solid #f97316; outline-offset: -2px; }
+    @media (min-width: 1024px) { .multi-filter { flex: none; } }
+    .multi-filter-in-advanced { margin-top: .375rem; }
+    .multi-filter summary::after { content: ''; position: absolute; right: .75rem; top: 50%; width: 1rem; height: 1rem; transform: translateY(-50%); background: center / contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2364758b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); }
+    .multi-filter summary:focus-visible { outline: 2px solid #f97316; outline-offset: 2px; }
+    .multi-filter-options { position: absolute; z-index: 20; top: 100%; left: 0; min-width: 100%; max-height: 15rem; overflow-y: auto; border: 1px solid #e2e8f0; background: white; box-shadow: 0 8px 20px #0f172a1a; }
+    .multi-filter-options label { display: flex; align-items: center; gap: .5rem; padding: .6rem .75rem; color: #334155; font-size: 1rem; cursor: pointer; white-space: nowrap; }
+    .multi-filter-options label:hover { background: #f8fafc; }
+    .multi-filter-options input { accent-color: #ea580c; }
+    .dark .multi-filter summary, .dark .multi-filter-options { border-color: #334155; background: #0f172a; color: #cbd5e1; }
+    .dark .multi-filter summary::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); }
+    .dark .multi-filter-options label { color: #cbd5e1; }
+    .dark .multi-filter-options label:hover { background: #1e293b; }
+    select:not([multiple]) {
+      appearance: none;
+      padding-right: 2.5rem;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2364758b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+      background-position: right 0.75rem center;
+      background-repeat: no-repeat;
+      background-size: 1rem;
+    }
+    .dark select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    }
+    @media (forced-colors: active) {
+      select:not([multiple]) { appearance: auto; background-image: none; }
+      .multi-filter summary::after { width: .5rem; height: .5rem; right: 1rem; border-right: 2px solid; border-bottom: 2px solid; background: none; transform: translateY(-75%) rotate(45deg); }
+    }
+    .extension-table { width: 100%; min-width: 960px; }
+    .extension-name-column { width: 16%; }
+    .extension-tags-column { width: 16%; }
+    .extension-license-column { width: 9%; }
+    .extension-library-column { width: 8%; }
+    .extension-stars-column { width: 6%; }
+    .extension-downloads-column { width: 9%; }
+    .extension-version-column { width: 7%; }
+    .extension-updated-column { width: 8%; }
+    .extension-table th button, .extension-table [data-tag] { max-width: 100%; white-space: normal; overflow-wrap: anywhere; text-align: left; }
+    .extension-table > thead > tr > th, .extension-table > tbody > tr > td:not([colspan]) { padding-inline: .5rem; overflow-wrap: anywhere; }
+    @media (min-width: 1024px) {
+      .extension-table { min-width: 0; }
+    }
+    @media (max-width: 639px) {
+      .extension-table-scroll { container-type: inline-size; }
+      .extension-table { width: calc(100% + 684px); min-width: 0; }
+      .extension-table col:first-child { width: 40px; }
+      .extension-table col:nth-child(2) { width: 35cqw; }
+      .extension-table col:nth-child(3) { width: calc(65cqw - 40px); }
+      .extension-tags-column { width: 164px; }
+      .extension-license-column, .extension-library-column, .extension-downloads-column { width: 90px; }
+      .extension-stars-column { width: 70px; }
+      .extension-version-column { width: 80px; }
+      .extension-updated-column { width: 100px; }
+      .extension-table > tbody > tr > td.extension-icon-cell { padding-inline: .375rem; }
+      .extension-description { display: block; overflow: visible; }
+      .extension-details { position: sticky; left: 0; width: calc(100cqw - 40px); }
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-white font-sans text-slate-900 antialiased selection:bg-orange-100 selection:text-orange-950 dark:selection:bg-orange-900/50 dark:selection:text-orange-100 dark:bg-slate-950 dark:text-slate-100">
+  <header class="border-b border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-950">
+    <nav aria-label="Main navigation" class="mx-auto flex max-w-[1480px] items-center justify-between gap-4 px-5 py-4 sm:px-8 lg:px-12">
+      <a href="https://github.com/timklge/awesome-karoo" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3  focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange-500">
+        <span aria-hidden="true" class="flex size-9 shrink-0 items-center justify-center bg-[#f15a35] text-[22px] font-bold leading-none text-white">a</span>
+        <span class="text-[17px] font-bold tracking-tight">awesome<span class="text-[#e9522c]">-karoo</span></span>
+      </a>
+      <div class="flex items-center gap-2 sm:gap-4">
+        <a href="https://github.com/timklge/awesome-karoo?tab=readme-ov-file#installation-of-extensions-on-your-device" target="_blank" rel="noopener noreferrer" class="hidden text-sm font-medium text-slate-600 hover:text-slate-950 focus-visible:outline-2 focus-visible:outline-orange-500 sm:inline dark:text-slate-300 dark:hover:text-white">Installation guide</a>
+        <a href="https://github.com/timklge/awesome-karoo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border border-slate-200 bg-white px-3 py-2 text-sm font-semibold shadow-sm transition hover:border-slate-300 hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 dark:border-slate-700 dark:bg-slate-900 dark:shadow-none dark:hover:border-slate-500 dark:hover:bg-slate-800">
+          <svg aria-hidden="true" class="size-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.54v-2.12c-3.1.68-3.76-1.31-3.76-1.31-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.7 1.15 1.7 1.15 1 .7 2.3.5 2.86.38.1-.73.39-1.23.71-1.52-2.48-.28-5.09-1.24-5.09-5.48 0-1.21.43-2.2 1.14-2.97-.12-.28-.5-1.4.11-2.91 0 0 .93-.3 3.05 1.13a10.6 10.6 0 0 1 5.56 0c2.12-1.43 3.04-1.13 3.04-1.13.6 1.51.23 2.63.11 2.91.71.77 1.14 1.76 1.14 2.97 0 4.25-2.61 5.2-5.1 5.47.4.34.76.99.76 2v2.97c0 .3.2.65.76.54A11.1 11.1 0 0 0 12 .9Z"/></svg>
+          <span class="hidden min-[360px]:inline">GitHub</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="mx-auto max-w-[1480px] px-5 pb-20 sm:px-8 lg:px-12">
+    <section aria-labelledby="main-title" class="border-b border-slate-200 pb-8 pt-12 sm:pb-10 sm:pt-14 dark:border-slate-700">
+      <div class="max-w-4xl">
+        <h1 id="main-title" class="text-4xl font-bold leading-[1.12] tracking-[-0.045em] sm:text-5xl">List of known karoo extensions</h1>
+        <p class="mt-4 max-w-2xl text-[15px] leading-7 text-slate-600 sm:text-base dark:text-slate-300">A community-driven list of extensions and resources for the Karoo cycling computer. Find new data fields, navigation tools, ride controls, and more.</p>
+      </div>
+      <div class="mt-8 flex flex-wrap items-center gap-x-7 gap-y-3 text-sm text-slate-500 dark:text-slate-400">
+        <span><strong id="totalStat" class="mr-1.5 text-lg font-bold text-slate-900 dark:text-slate-100">—</strong> extensions in this directory</span>
+        <span class="hidden h-4 w-px bg-slate-200 sm:block"></span>
+        <span><strong id="downloadsStat" class="mr-1.5 text-lg font-bold text-slate-900 dark:text-slate-100">—</strong> total downloads</span>
+        <span class="hidden h-4 w-px bg-slate-200 sm:block"></span>
+        <span><strong id="starsStat" class="mr-1.5 text-lg font-bold text-slate-900 dark:text-slate-100">—</strong> total stars</span>
+        <span class="hidden h-4 w-px bg-slate-200 sm:block"></span>
+        <span><strong id="authorStat" class="mr-1.5 text-lg font-bold text-slate-900 dark:text-slate-100">—</strong> repository owners</span>
+      </div>
+    </section>
+
+    <section aria-labelledby="browse-title" class="pt-9">
+      <div class="mb-5 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <h2 id="browse-title" class="text-[22px] font-bold tracking-tight">Explore extensions</h2>
+          <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Search the directory, narrow things down, and open a project to learn more.</p>
+        </div>
+        <a href="https://github.com/timklge/awesome-karoo#contributing" target="_blank" rel="noopener noreferrer" class="inline-flex w-fit items-center gap-1.5 text-sm font-semibold text-[#c54624] hover:text-orange-700 focus-visible:outline-2 focus-visible:outline-orange-500 dark:text-orange-400 dark:hover:text-orange-300">
+          Add an extension <img src="external-link.svg" alt="" aria-hidden="true" class="size-3 shrink-0">
+        </a>
+      </div>
+
+      <div class="border border-slate-200 bg-white shadow-[0_2px_18px_rgba(15,23,42,0.025)] dark:border-slate-700 dark:bg-slate-900 dark:shadow-none">
+        <div class="border-b border-slate-200 px-4 py-4 sm:px-6 sm:py-5 dark:border-slate-700">
+          <div class="flex flex-col gap-3 lg:flex-row lg:items-center">
+            <label class="relative block min-w-0 flex-1">
+              <span class="sr-only">Search extensions by name, description, features, tags, version, or author</span>
+              <svg aria-hidden="true" class="pointer-events-none absolute left-3.5 top-1/2 size-[18px] -translate-y-1/2 text-slate-400 dark:text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+              <input id="searchInput" autocomplete="off" type="search" placeholder="Search by name, feature, description, author…" class="w-full border border-slate-200 bg-white py-3 pl-11 pr-14 text-sm text-slate-900 outline-none placeholder:text-slate-400 focus:border-[#e96745] focus:ring-2 focus:ring-orange-100 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:ring-orange-900/40">
+              <kbd class="pointer-events-none absolute right-3.5 top-1/2 hidden -translate-y-1/2 border border-slate-200 px-1.5 py-0.5 font-mono text-[11px] text-slate-400 sm:block dark:border-slate-700 dark:text-slate-400">/</kbd>
+            </label>
+            <div class="flex flex-wrap items-center gap-2.5">
+              <select id="compatFilter" aria-label="Filter by Karoo device support" class="min-w-36 flex-1 border border-slate-200 bg-white px-3 py-3 text-sm text-slate-700 outline-none focus:border-orange-400 focus:ring-2 focus:ring-orange-100 lg:flex-none dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:focus:ring-orange-900/40"><option value="">All devices</option><option value="k2">Karoo 2</option><option value="k3">Karoo 3</option></select>
+              <select id="licenseFilter" aria-label="Filter by license" class="min-w-32 flex-1 border border-slate-200 bg-white px-3 py-3 text-sm text-slate-700 outline-none focus:border-orange-400 focus:ring-2 focus:ring-orange-100 lg:flex-none dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:focus:ring-orange-900/40"><option value="">All licenses</option></select>
+              <select id="libraryFilter" aria-label="Filter by Hammerhead library availability" class="min-w-37 flex-1 border border-slate-200 bg-white px-3 py-3 text-sm text-slate-700 outline-none focus:border-orange-400 focus:ring-2 focus:ring-orange-100 lg:flex-none dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:focus:ring-orange-900/40"><option value="">Any availability</option><option value="yes">In HH library</option><option value="no">Other extensions</option></select>
+              <button type="button" id="moreFiltersButton" aria-expanded="false" aria-controls="advancedFilters" class="inline-flex shrink-0 items-center gap-2 border border-slate-200 px-3.5 py-3 text-sm font-medium text-slate-700 hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-orange-500 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800">
+                <svg aria-hidden="true" class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M7 12h10m-7 5h4"/></svg> More filters
+              </button>
+            </div>
+          </div>
+          <div id="advancedFilters" class="mt-4 hidden border border-slate-200 bg-slate-50 p-4 dark:border-slate-700 dark:bg-slate-800">
+            <p class="mb-3 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Additional filters</p>
+            <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+              <label class="block text-xs font-medium text-slate-600 dark:text-slate-300">Tag / category<select id="tagFilter" class="mt-1.5 w-full border border-slate-200 bg-white px-3 py-2.5 text-sm text-slate-700 outline-none focus:border-orange-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300"><option value="">All tags</option></select></label>
+              <label class="block text-xs font-medium text-slate-600 dark:text-slate-300">Author / repo owner<select id="authorFilter" class="mt-1.5 w-full border border-slate-200 bg-white px-3 py-2.5 text-sm text-slate-700 outline-none focus:border-orange-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300"><option value="">All authors</option></select></label>
+              <label class="block text-xs font-medium text-slate-600 dark:text-slate-300">Version metadata<select id="versionFilter" class="mt-1.5 w-full border border-slate-200 bg-white px-3 py-2.5 text-sm text-slate-700 outline-none focus:border-orange-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300"><option value="">Any version</option><option value="known">Version provided</option><option value="unknown">Not provided</option></select></label>
+              <label class="block text-xs font-medium text-slate-600 dark:text-slate-300">Added on or after<input id="addedFilter" type="date" class="mt-1.5 w-full border border-slate-200 bg-white px-3 py-2.5 text-sm text-slate-700 outline-none focus:border-orange-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300"></label>
+              <label class="block text-xs font-medium text-slate-600 dark:text-slate-300">Updated on or after<input id="updatedFilter" type="date" class="mt-1.5 w-full border border-slate-200 bg-white px-3 py-2.5 text-sm text-slate-700 outline-none focus:border-orange-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300"></label>
+            </div>
+          </div>
+          <div class="mt-5 flex flex-wrap items-center gap-1.5" aria-label="Quick category filters" id="categoryButtons"></div>
+        </div>
+
+        <div class="flex flex-col gap-3 border-b border-slate-200 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-6 dark:border-slate-700">
+          <div class="flex min-h-6 flex-wrap items-center gap-2 text-sm text-slate-500 dark:text-slate-400"><span id="resultsCount" role="status" aria-live="polite">Loading extensions…</span><button id="clearFilters" type="button" class="hidden px-2 py-1 text-xs font-semibold text-[#c54624] hover:bg-orange-50 focus-visible:outline-2 focus-visible:outline-orange-500 dark:text-orange-400 dark:hover:bg-orange-950/40">Clear filters ✕</button></div>
+          <div class="flex items-center gap-2 text-sm"><label for="sortBy" class="shrink-0 text-slate-500 dark:text-slate-400">Sort by</label><select id="sortBy" class="min-w-36 max-w-44 flex-1 border border-slate-200 bg-white px-2.5 py-2 text-sm font-medium text-slate-700 outline-none focus:border-orange-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300"><option value="name">Name</option><option value="description">Description</option><option value="features">Features</option><option value="tags">Tags</option><option value="version">Version</option><option value="author">Author</option><option value="compatibility">Compatibility</option><option value="license">License</option><option value="featured">HH library</option><option value="addedAt">Date added</option><option value="updatedAt">Date updated</option></select><button id="sortDirection" type="button" class="inline-flex size-9 shrink-0 items-center justify-center border border-slate-200 text-base text-slate-700 hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-orange-500 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800" title="Toggle sort direction" aria-label="Sort ascending">↑</button></div>
+        </div>
+
+        <p class="flex items-center justify-between border-b border-slate-100 bg-slate-50/60 px-4 py-2 text-[11px] font-medium text-slate-500 lg:hidden dark:border-slate-700 dark:bg-slate-800/60 dark:text-slate-400"><span>Scroll table horizontally to see all details</span><span aria-hidden="true">Swipe →</span></p>
+        <div class="extension-table-scroll overflow-x-auto" tabindex="0" aria-label="Extension table, horizontally scrollable on smaller screens">
+          <table class="extension-table w-full table-fixed border-collapse text-left text-sm">
+            <caption class="sr-only">Karoo extensions. Click column headings to sort; expand a row to view features and extra metadata.</caption>
+            <colgroup><col class="extension-icon-column"><col class="extension-name-column"><col><col class="extension-tags-column"><col class="extension-license-column"><col class="extension-library-column"><col class="extension-stars-column"><col class="extension-downloads-column"><col class="extension-version-column"><col class="extension-updated-column"></colgroup>
+            <thead class="bg-slate-50 text-[11px] font-semibold uppercase tracking-[0.055em] text-slate-500 dark:bg-slate-800 dark:text-slate-400">
+              <tr>
+                <th scope="col"><span class="sr-only">Icon</span></th>
+                <th scope="col" data-col="name" class="px-5 py-3.5 sm:pl-6"><button class="inline-flex items-center gap-1.5 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-orange-500 dark:hover:text-white" data-sort="name">Extension <span data-arrow="name"></span></button></th>
+                <th scope="col" data-col="description" class="px-4 py-3.5"><button class="inline-flex items-center gap-1.5 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-orange-500 dark:hover:text-white" data-sort="description">Description &amp; features <span data-arrow="description"></span></button></th>
+                <th scope="col" data-col="tags" class="px-4 py-3.5"><button class="inline-flex items-center gap-1.5 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-orange-500 dark:hover:text-white" data-sort="tags">Tags <span data-arrow="tags"></span></button></th>
+                <th scope="col" data-col="license" class="px-4 py-3.5"><button class="inline-flex items-center gap-1.5 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-orange-500 dark:hover:text-white" data-sort="license">License <span data-arrow="license"></span></button></th>
+                <th scope="col" data-col="featured" class="px-4 py-3.5"><button class="inline-flex items-center gap-1.5 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-orange-500 dark:hover:text-white" data-sort="featured">HH library <span data-arrow="featured"></span></button></th>
+                <th scope="col" data-col="stars" class="px-4 py-3.5"><button class="inline-flex items-center gap-1.5 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-orange-500 dark:hover:text-white" data-sort="stars">Stars <span data-arrow="stars"></span></button></th>
+                <th scope="col" data-col="downloads" class="px-4 py-3.5"><button class="inline-flex items-center gap-1.5 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-orange-500 dark:hover:text-white" data-sort="downloads" title="APK downloads across all published GitHub releases, including prereleases">Downloads <span data-arrow="downloads"></span></button></th>
+                <th scope="col" data-col="version" class="px-4 py-3.5"><button class="inline-flex items-center gap-1.5 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-orange-500 dark:hover:text-white" data-sort="version">Version <span data-arrow="version"></span></button></th>
+                <th scope="col" data-col="updatedAt" class="px-4 py-3.5"><button class="inline-flex items-center gap-1.5 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-orange-500 dark:hover:text-white" data-sort="updatedAt">Updated <span data-arrow="updatedAt"></span></button></th>
+              </tr>
+            </thead>
+            <tbody id="extensionRows" class="divide-y divide-slate-100 dark:divide-slate-700"></tbody>
+          </table>
+        </div>
+
+        <div id="emptyState" class="hidden px-6 py-16 text-center">
+          <div class="mx-auto mb-3 flex size-12 items-center justify-center bg-slate-100 text-slate-400 dark:bg-slate-800 dark:text-slate-400"><svg class="size-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></div>
+          <p class="font-semibold text-slate-900 dark:text-slate-100">No extensions found</p><p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Try another search or clear some filters.</p><button id="emptyClear" class="mt-4 bg-slate-900 px-4 py-2 text-sm font-medium text-white dark:text-slate-950 hover:bg-slate-700 focus-visible:outline-2 focus-visible:outline-orange-500 dark:bg-slate-100 dark:hover:bg-slate-200">Clear all filters</button>
+        </div>
+        <div class="flex flex-col gap-3 border-t border-slate-200 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 dark:border-slate-700">
+          <div class="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400"><label for="pageSize">Rows per page</label><select id="pageSize" class="border border-slate-200 bg-white px-2 py-1.5 text-xs text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300"><option value="12">12</option><option value="25" selected>25</option><option value="50">50</option><option value="all">All</option></select></div>
+          <div class="flex items-center gap-3"><span class="text-xs text-slate-500 dark:text-slate-400" id="pageInfo">—</span><button id="prevPage" type="button" class="border border-slate-200 px-3 py-1.5 text-sm font-medium text-slate-700 enabled:hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40 focus-visible:outline-2 focus-visible:outline-orange-500 dark:border-slate-700 dark:text-slate-300 dark:enabled:hover:bg-slate-800">← Previous</button><button id="nextPage" type="button" class="border border-slate-200 px-3 py-1.5 text-sm font-medium text-slate-700 enabled:hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40 focus-visible:outline-2 focus-visible:outline-orange-500 dark:border-slate-700 dark:text-slate-300 dark:enabled:hover:bg-slate-800">Next →</button></div>
+        </div>
+      </div>
+
+      <div class="mt-5 flex items-start gap-2.5 bg-slate-50 px-4 py-3 text-xs leading-5 text-slate-500 dark:bg-slate-800 dark:text-slate-400"><svg aria-hidden="true" class="mt-0.5 size-4 shrink-0 text-slate-400 dark:text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg><p><strong class="font-semibold text-slate-700 dark:text-slate-300">
+          About this list:</strong> Extensions in this list are not tested for functionality, issues or malicious behaviour. Install them on your device at your own risk. Extensions on your device have access to your location and other data.</p></div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-slate-50/70 dark:border-slate-700 dark:bg-slate-950"><div class="mx-auto flex max-w-[1480px] flex-col gap-3 px-5 py-7 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-12 dark:text-slate-400"><p><span class="font-bold text-slate-800 dark:text-slate-100">awesome-karoo</span> · A community-maintained extension directory · <span id="buildInfo">Build time unavailable</span></p><div class="flex flex-wrap gap-5"><a href="https://github.com/timklge/awesome-karoo" class="inline-flex items-center gap-1 hover:text-slate-900 dark:hover:text-white">Source on GitHub <img src="external-link.svg" alt="" aria-hidden="true" class="size-3 shrink-0"></a><a href="https://github.com/timklge/awesome-karoo#contributing" class="inline-flex items-center gap-1 hover:text-slate-900 dark:hover:text-white">Contribute <img src="external-link.svg" alt="" aria-hidden="true" class="size-3 shrink-0"></a></div></div></footer>
+
+  <dialog id="screenshotDialog" class="screenshot-dialog" aria-label="Screenshot">
+    <img id="screenshotImage" src="" alt="">
+    <button type="button" id="closeScreenshot" class="screenshot-close" aria-label="Close screenshot">×</button>
+  </dialog>
+
+  <script>
+    (async () => {
+      'use strict';
+      const response = await fetch('catalogue.json');
+      if (!response.ok) throw new Error('Unable to load catalogue: HTTP ' + response.status);
+      const catalogue = await response.json();
+      // Keep supporting catalogue snapshots generated before build metadata was added.
+      const entries = Array.isArray(catalogue) ? catalogue : catalogue.entries;
+      const $ = (id) => document.getElementById(id);
+      const builtAt = catalogue.builtAt ? new Date(catalogue.builtAt) : null;
+      if (builtAt && !Number.isNaN(builtAt.getTime())) {
+        const time = document.createElement('time');
+        time.dateTime = builtAt.toISOString();
+        time.textContent = time.dateTime.slice(0, 19).replace('T', ' ') + ' UTC';
+        $('buildInfo').replaceChildren('Site built: ', time);
+      }
+
+      const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+      const safeUrl = (url) => /^https:\/\/[^\s"'<>]+$/i.test(url) ? url : '#';
+      const niceDate = (value) => value ? new Date(value + 'T12:00:00').toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' }) : '—';
+      const missing = (value) => value == null || value === '';
+      // Counts are snapshots embedded by the Go generator, never live API calls.
+      const formatCount = value => Number.isInteger(value) ? new Intl.NumberFormat('en-US').format(value) : '—';
+      for (const [value, label] of [['stars', 'Stars'], ['downloads', 'Downloads']]) $('sortBy').add(new Option(label, value));
+      const state = { query:'', tag:[], compatibility:[], license:[], featured:[], author:[], version:[], added:'', updated:'', sort:'stars', direction:'desc', page:1, pageSize:25, expanded: new Set() };
+      const descendingSorts = ['addedAt','updatedAt','stars','downloads'];
+      const categories = [['All',''],['Navigation','navigation'],['Training','training'],['Data fields','data-fields'],['Controls','controls'],['Safety','safety'],['Sensors','sensors'],['Maps','maps'],['Weather','weather'],['Maintenance','maintenance'],['Exploration','exploration']];
+      $('totalStat').textContent = entries.length;
+      for (const [id, key] of [['downloadsStat', 'downloads'], ['starsStat', 'stars']]) {
+        const counts = entries.map(e => e[key]).filter(value => Number.isInteger(value) && value >= 0);
+        $(id).textContent = formatCount(counts.length ? counts.reduce((sum, value) => sum + value, 0) : null);
+        $(id).title = counts.length === entries.length ? `Total across all ${entries.length} extensions` : `Total from ${counts.length} of ${entries.length} extensions with available data; unavailable counts are excluded`;
+      }
+      $('authorStat').textContent = new Set(entries.map(e => e.author)).size;
+
+      // Dynamic options make the same page work with future CI-generated JSON.
+      const licenses = [...new Set(entries.map(e => e.license).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
+      for (const license of licenses) $('licenseFilter').add(new Option(license, license));
+      const authors = [...new Set(entries.map(e => e.author).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
+      for (const author of authors) $('authorFilter').add(new Option(author, author));
+      const tags = [...new Set(entries.flatMap(e => e.tags || []))].sort((a,b)=>a.localeCompare(b));
+      for (const tag of tags) $('tagFilter').add(new Option(tag, tag));
+
+      const filterKeys = { compatFilter:'compatibility', licenseFilter:'license', libraryFilter:'featured', tagFilter:'tag', authorFilter:'author', versionFilter:'version' };
+      const filterControls = {};
+      for (const [id, key] of Object.entries(filterKeys)) {
+        const select = $(id);
+        const details = document.createElement('details');
+        details.className = 'multi-filter';
+        const summary = document.createElement('summary');
+        const defaultLabel = select.options[0].textContent;
+        const filterLabel = select.getAttribute('aria-label') || select.parentElement.firstChild.textContent.trim();
+        summary.textContent = defaultLabel;
+        const options = document.createElement('div');
+        options.className = 'multi-filter-options';
+        for (const option of [...select.options].slice(1)) {
+          const label = document.createElement('label');
+          const checkbox = document.createElement('input');
+          checkbox.type = 'checkbox';
+          checkbox.value = option.value;
+          label.append(checkbox, document.createTextNode(option.textContent));
+          options.append(label);
+          checkbox.addEventListener('change', () => setValue(key, [...options.querySelectorAll('input:checked')].map(input => input.value)));
+        }
+        details.append(summary, options);
+        if (select.parentElement.tagName === 'LABEL') {
+          details.classList.add('multi-filter-in-advanced');
+          const wrapper = document.createElement('div');
+          wrapper.className = select.parentElement.className;
+          wrapper.append(document.createTextNode(select.parentElement.firstChild.textContent), details);
+          select.parentElement.replaceWith(wrapper);
+        } else select.replaceWith(details);
+        filterControls[key] = { details, summary, options, defaultLabel, filterLabel };
+      }
+      document.addEventListener('click', event => {
+        for (const { details } of Object.values(filterControls)) if (!details.contains(event.target)) details.open = false;
+      });
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape') for (const { details, summary } of Object.values(filterControls)) {
+          if (details.open && details.contains(document.activeElement)) { details.open = false; summary.focus(); }
+        }
+      });
+
+      const getSortValue = (e,key) => {
+        switch(key) {
+          case 'features': case 'tags': return (e[key] || []).join(' ');
+          case 'compatibility': return ({both:'Karoo 2 and 3',k2:'Karoo 2',k3:'Karoo 3',unknown:''})[e.compatibility] || '';
+          case 'featured': return e.featured ? 'yes' : 'no';
+          default: return e[key];
+        }
+      };
+      const sortEntries = (rows) => [...rows].sort((a,b) => {
+        const av = getSortValue(a,state.sort), bv = getSortValue(b,state.sort);
+        if (missing(av) && missing(bv)) return a.name.localeCompare(b.name);
+        if (missing(av)) return 1;
+        if (missing(bv)) return -1;
+        const comparison = String(av).localeCompare(String(bv), undefined, { numeric:true, sensitivity:'base' });
+        return (comparison || a.name.localeCompare(b.name)) * (state.direction === 'asc' ? 1 : -1);
+      });
+      const filteredEntries = () => {
+        const words = state.query.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
+        return entries.filter(e => {
+          const haystack = [e.name,e.description,...(e.features || []),...(e.tags || []),e.author,e.license,e.version || '',e.compatibility].join(' ').toLocaleLowerCase();
+          if (!words.every(w => haystack.includes(w))) return false;
+          if (state.tag.length && !state.tag.some(tag => (e.tags || []).includes(tag))) return false;
+          if (state.compatibility.length && !state.compatibility.some(value => e.compatibility === value || (value !== 'unknown' && e.compatibility === 'both'))) return false;
+          if (state.license.length && !state.license.includes(e.license)) return false;
+          if (state.featured.length && !state.featured.some(value => (value === 'yes') === Boolean(e.featured))) return false;
+          if (state.author.length && !state.author.includes(e.author)) return false;
+          if (state.version.length && !state.version.some(value => (value === 'known') === !missing(e.version))) return false;
+          if (state.added && (!e.addedAt || e.addedAt < state.added)) return false;
+          if (state.updated && (!e.updatedAt || e.updatedAt < state.updated)) return false;
+          return true;
+        });
+      };
+      const compatBadge = (v) => {
+        if (v === 'both') return '<span class="inline-flex bg-emerald-50 px-2 py-1 text-xs font-medium text-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-300">K2 + K3</span>';
+        if (v === 'k2') return '<span class="inline-flex bg-blue-50 px-2 py-1 text-xs font-medium text-blue-800 dark:bg-blue-950/50 dark:text-blue-300">Karoo 2</span>';
+        if (v === 'k3') return '<span class="inline-flex bg-blue-50 px-2 py-1 text-xs font-medium text-blue-800 dark:bg-blue-950/50 dark:text-blue-300">Karoo 3</span>';
+        return '<span class="text-xs text-slate-400 dark:text-slate-400" title="Compatibility metadata not available">Not listed</span>';
+      };
+      const featureRow = (e, index) => {
+        const key = escapeHtml(e.name);
+        const open = state.expanded.has(e.name);
+        const tags = (e.tags || []).map(t => `<button type="button" data-tag="${escapeHtml(t)}" class="bg-slate-100 px-2 py-1 text-[11px] font-medium text-slate-600 transition hover:bg-orange-100 hover:text-orange-800 focus-visible:outline-2 focus-visible:outline-orange-500 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-orange-950/50 dark:hover:text-orange-300">${escapeHtml(t)}</button>`).join('');
+        const url = escapeHtml(safeUrl(e.url));
+        const screenshots = (e.screenshots || []).map((screenshot, screenshotIndex) => `<button type="button" data-screenshot="${index}" data-screenshot-index="${screenshotIndex}" aria-label="Open screenshot ${screenshotIndex + 1} for ${key}" class="border border-slate-200 transition hover:border-orange-500 focus-visible:outline-2 focus-visible:outline-orange-500 dark:border-slate-700"><img class="screenshot-thumb" src="${escapeHtml(safeUrl(screenshot.src))}" alt="${escapeHtml(screenshot.alt)}" loading="lazy"></button>`).join('');
+        const icon = e.iconUrl && safeUrl(e.iconUrl) !== '#' ? `<img class="extension-icon" src="${escapeHtml(safeUrl(e.iconUrl))}" alt="" loading="lazy">` : '<span class="text-xs text-slate-400" title="Icon not available">—</span>';
+        const main = `<tr class="group align-top transition-colors hover:bg-slate-50/70 dark:hover:bg-slate-800/70">
+          <td class="extension-icon-cell">${icon}</td>
+          <td class="px-5 py-5 sm:pl-6"><a href="${url}" target="_blank" rel="noopener noreferrer" class="break-words font-semibold leading-5 text-slate-900 decoration-[#f15a35] underline-offset-4 hover:text-[#d34c28] hover:underline focus-visible:outline-2 focus-visible:outline-orange-500 dark:text-slate-100 dark:hover:text-orange-300">${key}&nbsp;<img src="external-link.svg" alt="" aria-hidden="true" class="size-3" style="display: inline;"></a><div class="mt-1.5 break-all text-xs text-slate-400 dark:text-slate-400">${escapeHtml(e.author)}</div></td>
+          <td class="px-4 py-5"><p class="extension-description line-clamp-2 text-[13px] leading-5 text-slate-600 dark:text-slate-300">${escapeHtml(e.description)}</p><button type="button" data-detail="${index}" aria-expanded="${open}" aria-label="${open ? 'Hide' : 'Show'} features for ${key}" class="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-[#c54624] hover:text-orange-700 focus-visible:outline-2 focus-visible:outline-orange-500 dark:text-orange-400 dark:hover:text-orange-300">${open ? 'Hide details' : 'View features'} <span aria-hidden="true">${open ? '↑' : '↓'}</span></button></td>
+          <td class="px-4 py-5"><div class="flex flex-wrap gap-1.5">${tags}</div></td>
+          <td class="px-4 py-5"><span class="inline-flex max-w-full break-words border border-slate-200 bg-white px-2 py-1 text-[11px] font-medium leading-4 text-slate-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300">${escapeHtml(e.license || 'Not listed')}</span></td>
+          <td class="px-4 py-5">${e.featured ? '<span class="inline-flex items-center gap-1.5 text-xs font-medium text-emerald-700 dark:text-emerald-400"><svg aria-hidden="true" class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12 5 5L20 7"/></svg> Featured</span>' : '<span class="text-xs text-slate-400 dark:text-slate-400">—</span>'}</td>
+          <td class="px-4 py-5 text-xs text-slate-500 dark:text-slate-400">${formatCount(e.stars)}</td>
+          <td class="px-4 py-5 text-xs text-slate-500 dark:text-slate-400">${formatCount(e.downloads)}</td>
+          <td class="px-4 py-5 text-xs text-slate-500 dark:text-slate-400">${escapeHtml(e.version || '—')}</td>
+
+          <td class="px-4 py-5 text-xs text-slate-500 dark:text-slate-400">${niceDate(e.updatedAt)}</td>
+        </tr>`;
+        const otherDetails = [
+          ['Tags', tags ? `<div class="flex flex-wrap gap-1.5">${tags}</div>` : 'Not listed'],
+          ['License', escapeHtml(e.license || 'Not listed')],
+          ['HH library', e.featured ? 'Featured' : 'Not listed'],
+          ['Stars', formatCount(e.stars)],
+          ['Downloads', formatCount(e.downloads)],
+          ['Latest version', escapeHtml(e.version || 'Not available')],
+          ['Last updated', e.updatedAt ? niceDate(e.updatedAt) : 'Not available'],
+          ['Karoo compatibility', compatBadge(e.compatibility)],
+          ['Repository owner', escapeHtml(e.author)],
+          ['Added at', e.addedAt ? niceDate(e.addedAt) : 'Not available'],
+        ];
+        const details = open ? `<tr class="bg-[#fcfcfd] dark:bg-slate-800/60"><td colspan="10" class="border-t border-slate-100 px-5 py-5 sm:px-6 dark:border-slate-700"><div class="extension-details grid gap-6 sm:grid-cols-[minmax(0,1fr)_minmax(260px,0.7fr)]"><div><p class="extension-full-description text-slate-700 dark:text-slate-300">${escapeHtml(e.description)}</p><h3 class="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Features</h3><ul class="mt-3 grid gap-2 text-[13px] leading-5 text-slate-700 sm:grid-cols-2 dark:text-slate-300">${(e.features || []).map(f=>`<li class="flex gap-2"><span class="mt-1.5 size-1.5 shrink-0  bg-orange-400"></span><span>${escapeHtml(f)}</span></li>`).join('')}</ul>${screenshots ? `<section class="screenshot-gallery"><h3 class="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Screenshots</h3><div class="mt-3 flex flex-wrap gap-3">${screenshots}</div></section>` : ''}</div><div><h3 class="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Other details</h3><dl class="mt-3 grid grid-cols-2 gap-x-4 gap-y-3 text-xs">${otherDetails.map(([label, value]) => `<div class="min-w-0"><dt class="text-slate-400 dark:text-slate-400">${label}</dt><dd class="mt-1 break-words font-semibold text-slate-700 dark:text-slate-300">${value}</dd></div>`).join('')}</dl><a href="${url}" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-[#c54624] hover:underline focus-visible:outline-2 focus-visible:outline-orange-500 dark:text-orange-400">Visit project <img src="external-link.svg" alt="" aria-hidden="true" class="size-3 shrink-0"></a></div></div></td></tr>` : '';
+        return main + details;
+      };
+      const hasFilters = () => Boolean(state.query || Object.values(filterKeys).some(key => state[key].length) || state.added || state.updated);
+      const render = () => {
+        const all = sortEntries(filteredEntries());
+        const pageCount = state.pageSize === 'all' ? 1 : Math.max(1,Math.ceil(all.length/state.pageSize));
+        state.page = Math.min(state.page,pageCount);
+        const start = state.pageSize === 'all' ? 0 : (state.page-1)*state.pageSize;
+        const shown = state.pageSize === 'all' ? all : all.slice(start,start+state.pageSize);
+        $('extensionRows').innerHTML = shown.map(e => featureRow(e, entries.indexOf(e))).join('');
+        $('emptyState').classList.toggle('hidden',all.length !== 0);
+        const first = all.length ? start+1 : 0, last = Math.min(start+shown.length,all.length);
+        $('resultsCount').innerHTML = `<strong class="font-semibold text-slate-900 dark:text-slate-100">${all.length}</strong> ${all.length === 1 ? 'extension' : 'extensions'} found`;
+        $('pageInfo').textContent = `Showing ${first}–${last} of ${all.length}`;
+        $('prevPage').disabled = state.page <= 1;
+        $('nextPage').disabled = state.page >= pageCount;
+        $('clearFilters').classList.toggle('hidden', !hasFilters());
+        const counts = Object.fromEntries(categories.map(([,tag])=>[tag,tag === '' ? entries.length : entries.filter(e => (e.tags || []).includes(tag)).length]));
+        $('categoryButtons').innerHTML = categories.map(([label,tag]) => { const active = (!tag && !state.tag.length) || state.tag.includes(tag); return `<button type="button" data-category="${escapeHtml(tag)}" aria-pressed="${active}" class=" border px-3.5 py-1.5 text-xs font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 ${active ? 'border-slate-900 bg-slate-900 text-white dark:border-slate-200 dark:bg-slate-100 dark:text-slate-950' : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-slate-500 dark:hover:bg-slate-800'}">${escapeHtml(label)}<span class="ml-1.5 ${active ? 'text-slate-600 dark:text-slate-500':'text-slate-400 dark:text-slate-400'}">${counts[tag]}</span></button>`; }).join('');
+        $('sortDirection').textContent = state.direction === 'asc' ? '↑' : '↓';
+        $('sortDirection').setAttribute('aria-label', `Sort ${state.direction === 'asc' ? 'ascending' : 'descending'}; click to reverse`);
+        $('sortBy').value = state.sort;
+        $('pageSize').value = String(state.pageSize);
+        for (const [key, { summary, options, defaultLabel, filterLabel }] of Object.entries(filterControls)) {
+          const selected = state[key];
+          for (const input of options.querySelectorAll('input')) input.checked = selected.includes(input.value);
+          const labels = [...options.querySelectorAll('input:checked')].map(input => input.parentElement.textContent);
+          summary.textContent = labels.length === 0 ? defaultLabel : labels.length === 1 ? labels[0] : `${labels.length} selected`;
+          summary.setAttribute('aria-label', `${filterLabel}: ${labels.length ? labels.join(', ') : defaultLabel}`);
+        }
+        document.querySelectorAll('th[data-col]').forEach(th => {
+          const column = th.dataset.col, selected = state.sort === column;
+          th.setAttribute('aria-sort',selected ? (state.direction === 'asc' ? 'ascending' : 'descending') : 'none');
+          th.querySelector('[data-arrow]').textContent = selected ? (state.direction === 'asc' ? '↑' : '↓') : '';
+          th.classList.toggle('text-slate-900',selected);
+          th.classList.toggle('dark:text-white',selected);
+        });
+      };
+      const setValue = (key,value) => { state[key] = value; state.page=1; render(); };
+      $('searchInput').addEventListener('input', e=> setValue('query',e.target.value));
+
+      $('addedFilter').addEventListener('change',e=>setValue('added',e.target.value));
+      $('updatedFilter').addEventListener('change',e=>setValue('updated',e.target.value));
+      $('sortBy').addEventListener('change',e=>{state.sort=e.target.value;state.direction=descendingSorts.includes(state.sort)?'desc':'asc';state.page=1;render();});
+      $('sortDirection').addEventListener('click',()=>{state.direction=state.direction === 'asc'?'desc':'asc';state.page=1;render();});
+      $('pageSize').addEventListener('change',e=>{state.pageSize=e.target.value === 'all' ? 'all' : Number(e.target.value);state.page=1;render();});
+      $('prevPage').addEventListener('click',()=>{state.page--;render();});
+      $('nextPage').addEventListener('click',()=>{state.page++;render();});
+      $('moreFiltersButton').addEventListener('click',()=>{const open = !$('advancedFilters').classList.toggle('hidden');$('moreFiltersButton').setAttribute('aria-expanded',String(open));});
+      const clearAll = () => {
+        for (const key of Object.values(filterKeys)) state[key] = [];
+        for (const key of ['query','added','updated']) state[key] = '';
+        state.page=1;
+        for (const id of ['searchInput','addedFilter','updatedFilter']) $(id).value='';
+        render();
+      };
+      $('clearFilters').addEventListener('click',clearAll);
+      $('emptyClear').addEventListener('click',clearAll);
+      $('closeScreenshot').addEventListener('click', () => $('screenshotDialog').close());
+      $('screenshotDialog').addEventListener('click', event => {
+        if (event.target === $('screenshotDialog')) $('screenshotDialog').close();
+      });
+      document.addEventListener('click',event=>{
+        const screenshot = event.target.closest('[data-screenshot]');
+        if (screenshot) {
+          const entry = entries[Number(screenshot.dataset.screenshot)];
+          const image = entry?.screenshots?.[Number(screenshot.dataset.screenshotIndex)];
+          if (!image) return;
+          $('screenshotDialog').setAttribute('aria-label', `${entry.name} screenshot`);
+          $('screenshotImage').src = safeUrl(image.src);
+          $('screenshotImage').alt = image.alt;
+          $('screenshotDialog').showModal();
+          return;
+        }
+        const category = event.target.closest('[data-category]');
+        if (category) {setValue('tag',category.dataset.category === '' ? [] : state.tag.includes(category.dataset.category) ? state.tag.filter(tag => tag !== category.dataset.category) : [...state.tag, category.dataset.category]);return;}
+        const tag = event.target.closest('[data-tag]');
+        if (tag) {setValue('tag',state.tag.includes(tag.dataset.tag) ? state.tag : [...state.tag, tag.dataset.tag]);return;}
+        const sort = event.target.closest('[data-sort]');
+        if (sort) {const next = sort.dataset.sort;state.direction = next === state.sort ? (state.direction === 'asc' ? 'desc' : 'asc') : (descendingSorts.includes(next) ? 'desc' : 'asc');state.sort=next;state.page=1;render();return;}
+        const detail = event.target.closest('[data-detail]');
+        if (detail) {const e=entries[Number(detail.dataset.detail)];if (!e) return;state.expanded.has(e.name) ? state.expanded.delete(e.name) : state.expanded.add(e.name);render();return;}
+      });
+      document.addEventListener('keydown',event=>{
+        if (!$('screenshotDialog').open && event.key === '/' && !event.ctrlKey && !event.altKey && !event.metaKey && !['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName) && !document.activeElement.isContentEditable) {event.preventDefault();$('searchInput').focus();}
+        if (event.key === 'Escape' && document.activeElement === $('searchInput')) $('searchInput').blur();
+      });
+      render();
+    })().catch(error => {
+      console.error(error);
+      document.getElementById('resultsCount').textContent = 'Unable to load the extension catalogue. Please reload the page.';
+    });
+  </script>
+</body>
+</html>

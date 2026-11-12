@@ -1,0 +1,2068 @@
+{
+  "$schema": "./extensions.schema.json",
+  "source": "https://github.com/timklge/awesome-karoo/blob/master/README.md",
+  "extensions": [
+    {
+      "name": "Vin-HkE",
+      "compatibility": "both",
+      "addedAt": "2024-12-21",
+      "homepage": "https://github.com/maduwatas/Vin-HkE",
+      "manifest": "https://github.com/maduwatas/Vin-HkE/releases/latest/download/manifest.json",
+      "features": [
+        "Workout player",
+        "Virtual pace partner",
+        "Colored data fields",
+        "Graphical data fields for power and heart rate",
+        "Custom alerts based on time, pulse, power and calories burned",
+        "Pit board"
+      ],
+      "tags": [
+        "training",
+        "workouts",
+        "data-fields",
+        "alerts"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "karoo-kpower",
+      "compatibility": "both",
+      "addedAt": "2024-12-21",
+      "homepage": "https://github.com/lockevod/Karoo-KPower",
+      "manifest": "https://github.com/lockevod/Karoo-KPower/releases/latest/download/manifest.json",
+      "features": [
+        "Virtual power meter estimating wattage from rolling resistance, FTP, headwind, drag coefficient and other inputs"
+      ],
+      "tags": [
+        "power",
+        "virtual-sensors",
+        "training"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "karoo-kremote",
+      "compatibility": "both",
+      "addedAt": "2024-12-21",
+      "homepage": "https://github.com/lockevod/Karoo-KRemote",
+      "manifest": "https://github.com/lockevod/Karoo-KRemote/releases/latest/download/manifest.json",
+      "features": [
+        "Use ANT+ remotes to swipe screens or trigger the back button, including context-dependent map zoom"
+      ],
+      "tags": [
+        "remote-control",
+        "ant-plus",
+        "controls"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "karoo-KDoubleType",
+      "compatibility": "both",
+      "addedAt": "2024-12-26",
+      "homepage": "https://github.com/lockevod/Karoo-KDoubleType",
+      "manifest": "https://github.com/lockevod/Karoo-KDoubleType/releases/latest/download/manifest.json",
+      "features": [
+        "Show two different data types in one field"
+      ],
+      "tags": [
+        "data-fields",
+        "customization"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "karoo-KActions",
+      "compatibility": "both",
+      "addedAt": "2025-04-19",
+      "homepage": "https://github.com/lockevod/Karoo-KActions",
+      "manifest": "https://github.com/lockevod/Karoo-KActions/releases/latest/download/manifest.json",
+      "features": [
+        "Automated notifications when starting or finishing a ride, supporting multiple messaging providers",
+        "Execute automated actions via webhooks",
+        "Trigger custom webhooks from data fields",
+        "Send custom messages from a data-field button"
+      ],
+      "tags": [
+        "automation",
+        "messaging",
+        "webhooks",
+        "alerts"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "karoo-reminder",
+      "compatibility": "both",
+      "addedAt": "2024-12-21",
+      "homepage": "https://github.com/timklge/karoo-reminder",
+      "manifest": "https://github.com/timklge/karoo-reminder/releases/latest/download/manifest.json",
+      "features": [
+        "Configure reminders shown during rides",
+        "Trigger reminders by time, distance or sensor thresholds",
+        "Turn on screen, beep over Bluetooth, show custom text and auto-dismiss after a chosen duration"
+      ],
+      "tags": [
+        "alerts",
+        "reminders",
+        "training"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "karoo-powerbar",
+      "compatibility": "both",
+      "addedAt": "2024-12-21",
+      "homepage": "https://github.com/timklge/karoo-powerbar",
+      "manifest": "https://github.com/timklge/karoo-powerbar/releases/latest/download/manifest.json",
+      "features": [
+        "Show colored power or heart-rate bars at top or bottom of screen",
+        "Keep bars visible over the ride app and other apps"
+      ],
+      "tags": [
+        "power",
+        "heart-rate",
+        "overlays",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "karoo-headwind",
+      "compatibility": "both",
+      "addedAt": "2024-12-21",
+      "homepage": "https://github.com/timklge/karoo-headwind",
+      "manifest": "https://github.com/timklge/karoo-headwind/releases/latest/download/manifest.json",
+      "features": [
+        "Display current headwind speed and direction in a data field",
+        "Fetch weather from Open-Meteo",
+        "Display current and next-hours weather, including precipitation, wind, temperature and cloud cover",
+        "Additional data fields for surface pressure, cloud cover and other values"
+      ],
+      "tags": [
+        "weather",
+        "wind",
+        "data-fields",
+        "forecast"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "karoo-tilehunting",
+      "compatibility": "both",
+      "addedAt": "2025-02-16",
+      "homepage": "https://github.com/timklge/karoo-tilehunting",
+      "manifest": "https://github.com/timklge/karoo-tilehunting/releases/latest/download/manifest.json",
+      "features": [
+        "Outline StatsHunters explored and unexplored tiles, largest square and clusters",
+        "Alert on entering unexplored tiles",
+        "Optionally overlay past activities on map",
+        "Show counts of explored and recently explored tiles"
+      ],
+      "tags": [
+        "exploration",
+        "maps",
+        "tiles",
+        "stats"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "karoo-spintunes",
+      "compatibility": "k3",
+      "addedAt": "2025-06-26",
+      "homepage": "https://github.com/timklge/karoo-spintunes",
+      "manifest": "https://github.com/timklge/karoo-spintunes/releases/latest/download/manifest.json",
+      "features": [
+        "Spotify controls for play/pause, skipping, shuffle, repeat, queue and playlists",
+        "Thumbnails for tracks and playlists",
+        "Remote-control Spotify on phone or computer",
+        "Offline controls when Spotify is sideloaded, including volume and speed-dependent volume"
+      ],
+      "tags": [
+        "music",
+        "spotify",
+        "remote-control",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "KPedal",
+      "compatibility": "both",
+      "addedAt": "2026-01-21",
+      "homepage": "https://github.com/yrkan/KPedal",
+      "manifest": "https://github.com/yrkan/KPedal/releases/latest/download/manifest.json",
+      "features": [
+        "Real-time feedback on pedaling efficiency and technique",
+        "Karoo data fields for balance, torque effectiveness and pedal smoothness",
+        "Companion app for drills, ride history, analytics and achievements"
+      ],
+      "tags": [
+        "pedaling",
+        "ant-plus",
+        "cycling-dynamics",
+        "training"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "Wattramp",
+      "compatibility": "both",
+      "addedAt": "2025-12-27",
+      "homepage": "https://github.com/yrkan/wattramp",
+      "manifest": "https://github.com/yrkan/wattramp/releases/latest/download/manifest.json",
+      "features": [
+        "FTP tests on device with live data fields",
+        "Ramp, 20-minute and 2×8-minute test protocols",
+        "Data fields for interval, target power, test progress and power zone"
+      ],
+      "tags": [
+        "ftp",
+        "workouts",
+        "power",
+        "training"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "Ki2",
+      "compatibility": "both",
+      "addedAt": "2025-01-05",
+      "homepage": "https://github.com/valterc/ki2",
+      "manifest": "https://github.com/valterc/ki2/releases/latest/download/manifest.json",
+      "features": [
+        "Pair and connect electronic shifting groupsets",
+        "Configure hood button actions",
+        "Change shifting mode",
+        "Configure profiles with shifting data elements",
+        "Control Karoo from shift buttons during rides",
+        "Overlay shifting information",
+        "Low-battery notifications",
+        "Audio alerts for synchro shifts and shifting limits"
+      ],
+      "tags": [
+        "shifting",
+        "shimano",
+        "controls",
+        "sensors"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "KarooFlightRadar",
+      "compatibility": "both",
+      "addedAt": "2025-11-25",
+      "homepage": "https://github.com/KiloDeltaApps/KarooFlightRadar",
+      "manifest": "https://github.com/KiloDeltaApps/KarooFlightRadar/releases/latest/download/manifest.json",
+      "features": [
+        "Track nearby aircraft using open-source flight APIs",
+        "Radar display with north-up and track-up orientations",
+        "Adjust radar display range",
+        "Choose aircraft labels including call sign, type, registration, altitude, ground speed and vertical speed",
+        "Filter by altitude, speed and elevation above horizon"
+      ],
+      "tags": [
+        "aviation",
+        "radar",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "kxradar",
+      "compatibility": "both",
+      "addedAt": "2025-01-04",
+      "homepage": "https://github.com/itxsvv/kxradar",
+      "manifest": "https://github.com/itxsvv/kxradar/releases/latest/download/manifest.json",
+      "features": [
+        "Replace radar alert sound with a custom beep",
+        "Control radar light based on passing vehicles to save battery"
+      ],
+      "tags": [
+        "radar",
+        "safety",
+        "alerts",
+        "lights"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "kxtheme",
+      "compatibility": "both",
+      "addedAt": "2026-04-22",
+      "homepage": "https://github.com/itxsvv/kxtheme",
+      "manifest": "https://github.com/itxsvv/kxtheme/releases/latest/download/manifest.json",
+      "features": [
+        "Customize basic map colors"
+      ],
+      "tags": [
+        "maps",
+        "themes",
+        "customization"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "kxgear",
+      "compatibility": "both",
+      "addedAt": "2026-05-06",
+      "homepage": "https://github.com/itxsvv/kxgear",
+      "manifest": "https://github.com/itxsvv/kxgear/releases/latest/download/manifest.json",
+      "features": [
+        "Track mileage for chains, cassettes, tires and other components after rides",
+        "Set custom mileage alerts and manage multiple bikes in offline storage"
+      ],
+      "tags": [
+        "maintenance",
+        "components",
+        "bike-tracking"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "karoo-routegraph",
+      "compatibility": "both",
+      "addedAt": "2025-04-19",
+      "homepage": "https://github.com/timklge/karoo-routegraph",
+      "manifest": "https://github.com/timklge/karoo-routegraph/releases/latest/download/manifest.json",
+      "features": [
+        "Colorized route elevation profile with climbs and POI markers",
+        "Vertical or flipped elevation profile with climb and POI names and remaining distances",
+        "Fields for remaining elevation and distance to next POI",
+        "Minimap data field",
+        "Traffic incidents on a loaded route with HERE Maps API key",
+        "Find nearby or ahead POIs and navigate to them"
+      ],
+      "tags": [
+        "navigation",
+        "elevation",
+        "climbs",
+        "pois",
+        "maps"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Waypoints",
+      "compatibility": "both",
+      "addedAt": "2025-04-27",
+      "homepage": "https://github.com/dimskiy/WaypointsKaroo",
+      "manifest": "https://github.com/dimskiy/WaypointsKaroo/releases/latest/download/manifest.json",
+      "features": [
+        "Search online for restaurants, shops, cafes and other places",
+        "Navigate to found POIs in native Karoo navigation",
+        "Find spots near current device location",
+        "Search using device SIM without Wi-Fi",
+        "Save POIs for offline use"
+      ],
+      "tags": [
+        "navigation",
+        "pois",
+        "offline",
+        "maps"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "karoo-notepad",
+      "compatibility": "both",
+      "addedAt": "2025-06-06",
+      "homepage": "https://github.com/timklge/karoo-notepad",
+      "manifest": "https://github.com/timklge/karoo-notepad/releases/latest/download/manifest.json",
+      "features": [
+        "Enter custom text in the extension menu",
+        "Show custom text in a ride data field",
+        "Open the editor from a tappable data field"
+      ],
+      "tags": [
+        "notes",
+        "data-fields",
+        "customization"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "karoo-wprimebalance",
+      "compatibility": "both",
+      "addedAt": "2025-08-07",
+      "homepage": "https://github.com/currand/karoo-wprimebalance",
+      "manifest": "https://github.com/currand/karoo-wprimebalance/releases/latest/download/manifest.json",
+      "features": [
+        "Compute W′ balance with Skiba model optimized for real-time use",
+        "Show remaining W′ in joules",
+        "Show W′ as percent of remaining capacity",
+        "Time to exhaustion",
+        "Compute W′ parameters during ride",
+        "Display newly calculated parameters after ride"
+      ],
+      "tags": [
+        "power",
+        "training",
+        "w-prime",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "WPrimeKarooExtension",
+      "compatibility": "k3",
+      "addedAt": "2025-12-30",
+      "homepage": "https://github.com/apopovsky/WPrimeKarooExtension",
+      "manifest": "https://github.com/apopovsky/WPrimeKarooExtension/releases/latest/download/manifest.json",
+      "features": [
+        "Track W′ anaerobic capacity balance on Karoo 3",
+        "Model depletion and recovery of anaerobic reserve",
+        "Choose among six scientific algorithms",
+        "Update W′ balance once per second"
+      ],
+      "tags": [
+        "power",
+        "training",
+        "w-prime",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "W′ Race",
+      "compatibility": "both",
+      "addedAt": "2026-06-25",
+      "homepage": "https://github.com/j4m1eb/Karoo-Wprime-Race",
+      "manifest": "https://github.com/j4m1eb/Karoo-Wprime-Race/releases/latest/download/manifest.json",
+      "features": [
+        "W′ TT field compares balance to a linear target",
+        "W′ Crit compares balance to race-phase floors",
+        "Show usable W′ above floor",
+        "Time-to-floor and time-to-empty from current 3-second power",
+        "Multiple recovery models and configurable trend arrows"
+      ],
+      "tags": [
+        "racing",
+        "training",
+        "w-prime",
+        "pacing"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "karoo-colorspeed",
+      "compatibility": "both",
+      "addedAt": "2025-09-11",
+      "homepage": "https://github.com/currand/karoo-colorspeed",
+      "manifest": "https://github.com/currand/karoo-colorspeed/releases/latest/download/manifest.json",
+      "features": [
+        "Compare current speed with ride average",
+        "Compare current speed with previous-lap average",
+        "Compare current-lap with previous-lap average",
+        "Compare current speed with target speed",
+        "Compare lap speed with target speed"
+      ],
+      "tags": [
+        "speed",
+        "data-fields",
+        "customization"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Average Speed Colour",
+      "compatibility": "both",
+      "addedAt": "2026-06-25",
+      "homepage": "https://github.com/j4m1eb/Karoo-Average-speed-colour",
+      "manifest": "https://github.com/j4m1eb/Karoo-Average-speed-colour/releases/latest/download/manifest.json",
+      "features": [
+        "Compare speed to ride average, last lap average or target",
+        "Compare lap average with last lap average or target",
+        "Customize target speed, colors, icons and positions"
+      ],
+      "tags": [
+        "speed",
+        "data-fields",
+        "customization"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "CupRoute",
+      "compatibility": "k3",
+      "addedAt": "2026-01-12",
+      "homepage": "https://github.com/nairdam88/cuproute",
+      "manifest": "https://github.com/nairdam88/cuproute/releases/latest/download/manifest.json",
+      "features": [
+        "Offline European specialty coffee-shop database",
+        "Search by name or city",
+        "Sort by distance from current position",
+        "Filter for currently open locations",
+        "Open locations in native Karoo navigation"
+      ],
+      "tags": [
+        "coffee",
+        "pois",
+        "navigation",
+        "offline"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Resupply",
+      "compatibility": "both",
+      "addedAt": "2026-09-30",
+      "homepage": "https://github.com/patricebender/resupply-karoo",
+      "manifest": "https://github.com/patricebender/resupply-karoo/releases/latest/download/manifest.json",
+      "features": [
+        "Find offline POIs along loaded route or around current location",
+        "Configure allowed detour distance and categories",
+        "Browse as map pins or distance-ordered list"
+      ],
+      "tags": [
+        "navigation",
+        "pois",
+        "offline",
+        "resupply"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "eiRadar",
+      "compatibility": "both",
+      "addedAt": "2026-02-13",
+      "homepage": "https://github.com/yrkan/eiradar",
+      "manifest": "https://github.com/yrkan/eiradar/releases/latest/download/manifest.json",
+      "features": [
+        "Sound, vibration and visual alerts for rear-approaching vehicles",
+        "Configurable distance thresholds, cooldowns, night mode and speed gate",
+        "Support any ANT+ radar",
+        "Offline operation"
+      ],
+      "tags": [
+        "radar",
+        "safety",
+        "alerts",
+        "ant-plus"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "7climb",
+      "compatibility": "both",
+      "addedAt": "2026-02-13",
+      "homepage": "https://github.com/yrkan/7climb",
+      "manifest": "https://github.com/yrkan/7climb/releases/latest/download/manifest.json",
+      "features": [
+        "Analyze W′ balance",
+        "Provide power targets",
+        "Show tactical terrain insights"
+      ],
+      "tags": [
+        "climbing",
+        "pacing",
+        "w-prime",
+        "power"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "karoo-wattspeed",
+      "compatibility": "both",
+      "addedAt": "2026-02-14",
+      "homepage": "https://github.com/timklge/karoo-wattspeed",
+      "manifest": "https://github.com/timklge/karoo-wattspeed/releases/latest/download/manifest.json",
+      "features": [
+        "Calculate virtual indoor speed from power independent of trainer flywheel speed and gearing"
+      ],
+      "tags": [
+        "indoor-training",
+        "speed",
+        "power",
+        "virtual-sensors"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "k-breathe",
+      "compatibility": "both",
+      "addedAt": "2026-02-15",
+      "homepage": "https://github.com/gloscherrybomb/k-breathe",
+      "manifest": "https://github.com/gloscherrybomb/k-breathe/releases/latest/download/manifest.json",
+      "features": [
+        "Display live Tymewear VitalPro breathing metrics",
+        "Record breathing metrics to FIT file"
+      ],
+      "tags": [
+        "breathing",
+        "sensors",
+        "data-fields",
+        "fit-recording"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "nomride",
+      "compatibility": "both",
+      "addedAt": "2026-03-09",
+      "homepage": "https://github.com/yrkan/nomride",
+      "manifest": "https://github.com/yrkan/nomride/releases/latest/download/manifest.json",
+      "features": [
+        "Track carbohydrate intake against burn from power and FTP zones",
+        "Log water intake with rate and sip count",
+        "Customizable timed reminders",
+        "Log food and water by bonus actions or taps",
+        "Write carb data to FIT files",
+        "Preconfigured foods including gels, bars and bananas"
+      ],
+      "tags": [
+        "nutrition",
+        "hydration",
+        "reminders",
+        "fit-recording"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "karoo-metrics-overlay",
+      "compatibility": "both",
+      "addedAt": "2026-03-18",
+      "homepage": "https://github.com/zenpeartree/karoo-metrics-overlay",
+      "manifest": "https://github.com/zenpeartree/karoo-metrics-overlay/releases/latest/download/manifest.json",
+      "features": [
+        "Stream ride metrics via Wi-Fi as a live browser overlay",
+        "Support OBS Studio, Streamlabs and other browser-source tools"
+      ],
+      "tags": [
+        "streaming",
+        "overlays",
+        "telemetry"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Barberfish",
+      "compatibility": "both",
+      "addedAt": "2026-03-21",
+      "homepage": "https://github.com/jpweytjens/barberfish",
+      "manifest": "https://github.com/jpweytjens/barberfish/releases/latest/download/manifest.json",
+      "features": [
+        "Three-column HUD for speed, heart rate and power with zone colors",
+        "Zone colors for backgrounds or text across four palettes",
+        "Consistent time field formats",
+        "Average speed fields with target or min/max range and threshold colors"
+      ],
+      "tags": [
+        "data-fields",
+        "customization",
+        "heart-rate",
+        "power"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "WaxWatch",
+      "compatibility": "k3",
+      "addedAt": "2026-03-29",
+      "homepage": "https://github.com/shinytoaster/WaxWatch",
+      "manifest": "https://github.com/shinytoaster/WaxWatch/releases/latest/download/manifest.json",
+      "features": [
+        "Track chain-wax lifespan by activity profile",
+        "Choose wax formulas and baseline distances",
+        "Account for rider weight",
+        "Adjust wear estimates by riding surface",
+        "Automatic background tracking",
+        "Rewax alerts"
+      ],
+      "tags": [
+        "maintenance",
+        "chain-wax",
+        "components"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "veloVigil",
+      "compatibility": "both",
+      "addedAt": "2026-03-29",
+      "homepage": "https://github.com/velovigil/velovigil-karoo",
+      "manifest": "https://github.com/velovigil/velovigil-karoo/releases/latest/download/manifest.json",
+      "features": [
+        "Polar H10 Bluetooth heart-rate streaming into Karoo",
+        "Compute RMSSD, SDNN and pNN50 from RR intervals",
+        "Crash detection from filtered acceleration",
+        "Jump and airtime detection",
+        "Adaptive food and water alerts",
+        "Offline telemetry buffer and synchronization",
+        "Multi-rider fleet dashboard",
+        "AI coaching through rider-controlled backend"
+      ],
+      "tags": [
+        "safety",
+        "heart-rate",
+        "hrv",
+        "coaching",
+        "nutrition"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "sk0711-graph",
+      "compatibility": "both",
+      "addedAt": "2026-04-19",
+      "homepage": "https://github.com/svenk0711/sk0711-graph",
+      "manifest": "https://github.com/svenk0711/sk0711-graph/releases/latest/download/manifest.json",
+      "features": [
+        "Show HR zone and power zone graphs",
+        "Color curves by the Karoo training zones",
+        "Show current, average and maximum values",
+        "Tap to cycle time window between 1 minute, 5 minutes and full ride"
+      ],
+      "tags": [
+        "data-fields",
+        "graphs",
+        "heart-rate",
+        "power"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "karoo-KSafe",
+      "compatibility": "k3",
+      "addedAt": "2026-04-26",
+      "homepage": "https://github.com/lockevod/Karoo-KSafe",
+      "manifest": "https://github.com/lockevod/Karoo-KSafe/releases/latest/download/manifest.json",
+      "features": [
+        "Detect crashes and notify emergency contacts",
+        "Send automated start and finish ride notifications through multiple providers",
+        "Send custom messages from data-field buttons"
+      ],
+      "tags": [
+        "safety",
+        "crash-detection",
+        "alerts",
+        "messaging"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "karoo-gearbeeper",
+      "compatibility": "both",
+      "addedAt": "2026-04-27",
+      "homepage": "https://portcity.tech/karoo-gearbeeper/",
+      "manifest": null,
+      "features": [
+        "Beep on smallest or largest SRAM AXS cassette cog",
+        "Recognize cross-chain blocked gear combinations as cassette ends",
+        "Distinct physical-end and blocked-end patterns with directional pitch",
+        "Reset alert after shifting away",
+        "Support road, gravel and MTB AXS configurations"
+      ],
+      "tags": [
+        "shifting",
+        "sram",
+        "alerts"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "WaterMelonControl",
+      "compatibility": "both",
+      "addedAt": "2026-05-11",
+      "homepage": "https://github.com/sksense/karoo-WaterMelonControl",
+      "manifest": "https://github.com/sksense/karoo-WaterMelonControl/releases/latest/download/manifest.json",
+      "features": [
+        "Show playing track and artist and open active media app",
+        "Play/pause, next and previous media widget",
+        "Change device volume from a ride data field"
+      ],
+      "tags": [
+        "music",
+        "media",
+        "controls",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "karoo-ride-replay",
+      "compatibility": "both",
+      "addedAt": "2026-05-26",
+      "homepage": "https://github.com/lgangitano/karoo-ride-replay",
+      "manifest": "https://github.com/lgangitano/karoo-ride-replay/releases/latest/download/manifest.json",
+      "features": [
+        "Replay recorded FIT files stored on Karoo",
+        "Inject mock GPS using Android LocationManager",
+        "Emulate power, heart-rate, cadence and speed sensors with the device API",
+        "Variable playback speed and start-time offset"
+      ],
+      "tags": [
+        "developer-tools",
+        "testing",
+        "simulation",
+        "fit-recording"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Maverick HUD",
+      "compatibility": "k3",
+      "addedAt": "2026-06-06",
+      "homepage": "https://github.com/eideroliveira/karoo-maverick-hud",
+      "manifest": "https://github.com/eideroliveira/karoo-maverick-hud/releases/latest/download/manifest.json",
+      "features": [
+        "Show selected ride data on EverySight Maverick smart glasses",
+        "Zone-colored power, heart rate and cadence with configurable training zones",
+        "Metrics including speed, distance, power, HR, cadence, TSS and gears",
+        "Show current gear teeth, ratio or gear inches",
+        "Automatic workout page",
+        "Karoo settings with WYSIWYG editor, live display controls and preview",
+        "Automatic or manual page switching with unit preferences",
+        "Temple gestures and an on-Karoo mirror data field"
+      ],
+      "tags": [
+        "hud",
+        "smart-glasses",
+        "data-fields",
+        "training"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "karoo-tbt-beep",
+      "compatibility": "both",
+      "addedAt": "2026-07-18",
+      "homepage": "https://github.com/RyTiXz/karoo-tbt-beep",
+      "manifest": "https://github.com/RyTiXz/karoo-tbt-beep/releases/latest/download/manifest.json",
+      "features": [
+        "Configure three turn-by-turn beep distances",
+        "Choose tone patterns, frequency and custom sequences",
+        "Adjust beep timing based on speed"
+      ],
+      "tags": [
+        "navigation",
+        "audio",
+        "alerts",
+        "customization"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Pédalons Karoo Extension",
+      "compatibility": "k3",
+      "addedAt": "2026-08-05",
+      "homepage": "https://github.com/glandais/tribly",
+      "manifest": "https://github.com/glandais/tribly/releases/latest/download/manifest.json",
+      "features": [
+        "Browse routes from Pédalons teams",
+        "One-tap synchronization to Karoo",
+        "Device-code authentication",
+        "Automatic token refresh"
+      ],
+      "tags": [
+        "routes",
+        "navigation",
+        "sync"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "KarooB54",
+      "compatibility": "k3",
+      "addedAt": "2026-08-13",
+      "homepage": "https://github.com/GitGeshizzle/KarooB54",
+      "manifest": "https://github.com/GitGeshizzle/KarooB54/releases/latest/download/manifest.json",
+      "features": [
+        "Show time remaining on Supernova B54 battery",
+        "Display battery percentage"
+      ],
+      "tags": [
+        "lights",
+        "battery",
+        "sensors"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Karoo Home Assistant Companion",
+      "compatibility": "both",
+      "addedAt": "2026-08-14",
+      "homepage": "https://github.com/michalchecinski/karoo-hass-companion",
+      "manifest": "https://github.com/michalchecinski/karoo-hass-companion/releases/latest/download/manifest.json",
+      "features": [
+        "Run Home Assistant scripts and control locks, covers, lights and switches",
+        "Choose Wi-Fi-only or phone-assisted networking",
+        "PIN-protect app or controls",
+        "Confirm high-impact actions before opening doors or gates"
+      ],
+      "tags": [
+        "smart-home",
+        "remote-control",
+        "automation"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "BigNum",
+      "compatibility": "both",
+      "addedAt": "2026-08-25",
+      "homepage": "https://github.com/smartycoder/karoo-bignum",
+      "manifest": "https://github.com/smartycoder/karoo-bignum/releases/latest/download/manifest.json",
+      "features": [
+        "39 large-number fields for speed, distance, heart rate, cadence, power, climbing, time and temperature",
+        "Fit numbers to available data-field area",
+        "Heart-rate and power zone colors",
+        "Coloring modes for text and background",
+        "Raised smaller seconds in elapsed-time fields",
+        "Power smoothing intervals from 3 seconds to 1 hour",
+        "Derived fields including W/kg, TSS, calories, VAM and climb progress",
+        "Respect Karoo metric or imperial settings"
+      ],
+      "tags": [
+        "data-fields",
+        "accessibility",
+        "customization"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "KStack",
+      "compatibility": "both",
+      "addedAt": "2026-08-31",
+      "homepage": "https://github.com/antmordel/karoo-kstack",
+      "manifest": "https://github.com/antmordel/karoo-kstack/releases/latest/download/manifest.json",
+      "features": [
+        "Stack current, average and maximum values for HR, speed, power, cadence and lap time",
+        "Use native Karoo average and maximum data streams",
+        "Scale typography to field dimensions",
+        "Configurable HR and power zone coloring",
+        "Show average and maximum side by side or stacked",
+        "Independently handle missing sensors",
+        "Follow Karoo unit preference",
+        "In-place updates",
+        "Karoo 2 and Karoo 3 support"
+      ],
+      "tags": [
+        "data-fields",
+        "customization",
+        "metrics"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "RadarCount for Karoo",
+      "compatibility": "both",
+      "addedAt": "2026-09-09",
+      "homepage": "https://github.com/Aryeh95/RadarCount-Karoo",
+      "manifest": "https://github.com/Aryeh95/RadarCount-Karoo/releases/latest/download/manifest.json",
+      "features": [
+        "Data fields for passing vehicle count, count per hour, speed, distance and combined radar",
+        "Track each radar target separately",
+        "Show relative or absolute passing speed",
+        "Write MyBikeTraffic-compatible radar FIT fields",
+        "Activate radar streams only when needed",
+        "Respect unit preferences",
+        "Support all paired ANT+ radar devices",
+        "In-place updates",
+        "Karoo 2 and Karoo 3"
+      ],
+      "tags": [
+        "radar",
+        "traffic",
+        "fit-recording",
+        "safety"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Karoo Forumslader Extension",
+      "compatibility": "both",
+      "addedAt": "2026-09-14",
+      "homepage": "https://github.com/fezu54/karoo-forumslader",
+      "manifest": "https://github.com/fezu54/karoo-forumslader/releases/latest/download/manifest.json",
+      "features": [
+        "Discover and connect a BLE Forumslader charger from the sensors menu",
+        "Stream battery level, speed, voltage and charge/discharge state",
+        "Karoo 2 and Karoo 3 support"
+      ],
+      "tags": [
+        "battery",
+        "dynamo",
+        "bluetooth",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "GluKaMon",
+      "compatibility": "k3",
+      "addedAt": "2026-09-20",
+      "homepage": "https://github.com/brennancarley/GluKaMonAPK",
+      "manifest": "https://github.com/brennancarley/GluKaMonAPK/releases/latest/download/manifest.json",
+      "features": [
+        "48 customizable glucose data tiles in eleven categories",
+        "Dexcom Share, LibreLinkUp, Nightscout and xDrip/Juggluco connections",
+        "One-, five- and fifteen-minute views",
+        "Customizable glucose ranges",
+        "Visual and audio zone alerts",
+        "Automatic dark and light themes",
+        "Units in mg/dL or mmol/L",
+        "Record glucose into ride FIT files",
+        "Ten UI languages",
+        "Power-aware polling and retry modes"
+      ],
+      "tags": [
+        "glucose",
+        "cgm",
+        "data-fields",
+        "fit-recording",
+        "alerts"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Miefquirl",
+      "compatibility": "k3",
+      "addedAt": "2026-09-24",
+      "homepage": "https://github.com/hamann/karoo-miefquirl",
+      "manifest": "https://github.com/hamann/karoo-miefquirl/releases/latest/download/manifest.json",
+      "features": [
+        "Tappable field steps Wahoo KICKR Headwind by 10 percent and toggles power",
+        "In-ride alert on fan changes"
+      ],
+      "tags": [
+        "indoor-training",
+        "fan",
+        "bluetooth",
+        "controls"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Light Control for iGPSPORT",
+      "compatibility": "k3",
+      "addedAt": "2026-09-27",
+      "homepage": "https://github.com/tiagodias00/igpsport-karoo",
+      "manifest": "https://github.com/tiagodias00/igpsport-karoo/releases/latest/download/manifest.json",
+      "features": [
+        "Tappable control field for light modes, battery and remaining runtime",
+        "Pair and reconnect from Karoo sensor menu",
+        "Control auto light, sleep, dimming and low-battery saving",
+        "Automate light on ride start and stop",
+        "Edit steady and flash modes with brightness and timing",
+        "Bonus and hardware button actions",
+        "20% and 10% battery alerts",
+        "Works offline with in-place updates",
+        "Tested on Karoo 3"
+      ],
+      "tags": [
+        "lights",
+        "bluetooth",
+        "remote-control"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "CORE Heat",
+      "compatibility": "both",
+      "addedAt": "2026-09-27",
+      "homepage": "https://github.com/angkyria/karoo-core",
+      "manifest": "https://github.com/angkyria/karoo-core/releases/latest/download/manifest.json",
+      "features": [
+        "Core temperature, skin temperature, heat strain index, zone, load and adaptation fields",
+        "Read heat strain from CORE BLE sensor or estimate until connected",
+        "Write strain and training metrics into FIT files",
+        "Configurable heat colors and decimal formatting",
+        "Karoo 2 and Karoo 3"
+      ],
+      "tags": [
+        "temperature",
+        "heat-training",
+        "sensors",
+        "fit-recording"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Waybook",
+      "compatibility": "k3",
+      "addedAt": "2026-10-01",
+      "homepage": "https://github.com/jakubfoglar/waybook-karoo",
+      "manifest": "https://github.com/jakubfoglar/waybook-karoo/releases/latest/download/manifest.json",
+      "features": [
+        "Discover interesting stops around a loaded route",
+        "Display POI map pins with offline access after caching",
+        "Photos, summaries and practical information for attractions",
+        "Google Maps reviews, ratings and photos",
+        "Find places nearby in real time",
+        "Show next stops in ride data fields"
+      ],
+      "tags": [
+        "navigation",
+        "pois",
+        "discovery",
+        "offline"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Workout+",
+      "compatibility": "both",
+      "addedAt": "2026-10-04",
+      "homepage": "https://github.com/angkyria/karoo-workout-plus",
+      "manifest": "https://github.com/angkyria/karoo-workout-plus/releases/latest/download/manifest.json",
+      "features": [
+        "Modern workout target bar with optional numeric style",
+        "Secondary power, heart rate or cadence targets",
+        "Interval countdown, progress and zone-colored history",
+        "Up to four configurable data fields and time-in-zone indicators",
+        "Optional CORE heat sensor row",
+        "Replace workout page, cover ride screens or show minimized chip",
+        "Requires draw-over-other-apps permission",
+        "Tested on Karoo 2"
+      ],
+      "tags": [
+        "workouts",
+        "training",
+        "overlays",
+        "karoo-2"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Squadrats Overlay",
+      "compatibility": "both",
+      "addedAt": "2026-10-09",
+      "homepage": "https://github.com/leoschweizer/karoo-squadrats",
+      "manifest": "https://github.com/leoschweizer/karoo-squadrats/releases/latest/download/manifest.json",
+      "features": [
+        "Show uncollected Squadrats and Squadratinhos on Karoo map",
+        "Sync tile data by center and radius using personal token",
+        "Offline cached tiles while riding",
+        "HTTP sync over Wi-Fi or companion connection",
+        "Unofficial community project"
+      ],
+      "tags": [
+        "exploration",
+        "tiles",
+        "maps",
+        "offline"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Karoo Maps Bridge",
+      "compatibility": "both",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/Carlolius/karoo-maps-bridge",
+      "manifest": "https://github.com/Carlolius/karoo-maps-bridge/releases/latest/download/manifest.json",
+      "features": [
+        "Share locations from Google Maps, OsmAnd, Organic Maps, MAPS.ME, Apple Maps and messaging apps",
+        "Browse shared points on Karoo and launch native navigation",
+        "Send ordered Google Maps stops or calculate BRouter alternatives",
+        "Transfer via hotspot or Wi-Fi without cloud accounts",
+        "Unofficial community project"
+      ],
+      "tags": [
+        "navigation",
+        "phone-integration",
+        "maps",
+        "karoo-2"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Saftladen",
+      "compatibility": "both",
+      "addedAt": "2026-10-12",
+      "homepage": "https://github.com/hamann/karoo-saftladen",
+      "manifest": "https://github.com/hamann/karoo-saftladen/releases/latest/download/manifest.json",
+      "features": [
+        "Report Karoo and paired sensor battery state as JSON after each ride",
+        "Queue reports offline and retry until uploaded",
+        "Use built-in Karoo HTTP transport",
+        "Configure endpoint and optional request header",
+        "Home Assistant webhook support"
+      ],
+      "tags": [
+        "battery",
+        "sensors",
+        "home-assistant",
+        "automation"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "WaxLog",
+      "compatibility": "k3",
+      "addedAt": "2026-10-22",
+      "homepage": "https://github.com/Zalvato/Karoo-WaxLog",
+      "manifest": "https://github.com/Zalvato/Karoo-WaxLog/releases/latest/download/manifest.json",
+      "features": [
+        "Track chain rotation per bike and mark re-waxed chains",
+        "Data fields showing current distance and wax-life remaining",
+        "Beep and popup alerts at configurable thresholds",
+        "Editable per-chain history and total distance",
+        "Backup and migrate settings over Wi-Fi",
+        "Automatic updates outside rides and metric/imperial support"
+      ],
+      "tags": [
+        "maintenance",
+        "chain-wax",
+        "components",
+        "alerts"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "karoo-wahoo-headwind",
+      "compatibility": "k3",
+      "addedAt": "2026-10-22",
+      "homepage": "https://github.com/vvrnv/karoo-wahoo-headwind",
+      "manifest": "https://github.com/vvrnv/karoo-wahoo-headwind/releases/latest/download/manifest.json",
+      "features": [
+        "Manually set fan speed with slider, small steps and presets",
+        "Heart-rate and speed controlled modes",
+        "On/off toggle restoring previous speed",
+        "Ride-page fan control data field"
+      ],
+      "tags": [
+        "fan",
+        "indoor-training",
+        "bluetooth",
+        "remote-control"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "ALTGRAPH",
+      "compatibility": "both",
+      "addedAt": "2026-10-24",
+      "homepage": "https://github.com/DAVOE75/ALTGRAPH",
+      "manifest": "https://github.com/DAVOE75/ALTGRAPH/releases/latest/download/manifest.json",
+      "features": [
+        "3D route elevation profile with rider marker and finish flag",
+        "Classified climb viewer and color-coded route overlays",
+        "2D overview and detailed climb list",
+        "Position-aware gear recommendations",
+        "Grade trend, fatigue and pacing fields",
+        "Voice co-pilot and attack alerts in ELITE",
+        "Altimetric radar with ghost and alerts in ELITE",
+        "Multiple interface languages"
+      ],
+      "tags": [
+        "elevation",
+        "climbs",
+        "navigation",
+        "pacing",
+        "3d"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "KarooTopoMaps",
+      "compatibility": "both",
+      "addedAt": "2026-10-24",
+      "homepage": "https://github.com/DAVOE75/KarooTopoMaps",
+      "manifest": "https://github.com/DAVOE75/KarooTopoMaps/releases/latest/download/manifest.json",
+      "features": [
+        "Nine professional topographic and IGN-style map themes",
+        "Road, MTB, gravel and night profiles",
+        "High-contrast sunlight booster",
+        "Water-source map markers",
+        "IMBA trail difficulty coloring",
+        "Customize visibility, pattern, labels and map sources"
+      ],
+      "tags": [
+        "maps",
+        "themes",
+        "topography",
+        "customization"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Karoo Sentinel",
+      "compatibility": "both",
+      "addedAt": "2026-10-24",
+      "homepage": "https://github.com/DAVOE75/KarooSentinel",
+      "manifest": "https://github.com/DAVOE75/KarooSentinel/releases/latest/download/manifest.json",
+      "features": [
+        "Detect movement and vibration with adjustable sensitivity",
+        "GPS geofencing and Telegram location tracking",
+        "Anti-jammer and disconnection alerts",
+        "Siren and last-known location if shutdown is attempted",
+        "Beeper, silent modes and PIN protection"
+      ],
+      "tags": [
+        "security",
+        "anti-theft",
+        "alerts",
+        "location"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Karoo BBrakers",
+      "compatibility": "both",
+      "addedAt": "2026-10-24",
+      "homepage": "https://github.com/DAVOE75/KarooBBrakers",
+      "manifest": "https://github.com/DAVOE75/KarooBBrakers/releases/latest/download/manifest.json",
+      "features": [
+        "Detect braking with stationary lockout and gravity compensation",
+        "Analyze cornering and apex speed",
+        "Predict stopping-distance braking risks",
+        "Grip margin and washout alarms",
+        "Brake efficiency, thermal warnings and service odometer"
+      ],
+      "tags": [
+        "braking",
+        "safety",
+        "telemetry",
+        "mtb"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Aero Tracker",
+      "compatibility": "both",
+      "addedAt": "2026-10-24",
+      "homepage": "https://github.com/DAVOE75/Aero-Tracker",
+      "manifest": "https://github.com/DAVOE75/Aero-Tracker/releases/latest/download/manifest.json",
+      "features": [
+        "Estimate live CdA with five-second smoothing",
+        "Compare watts saved against baseline CdA",
+        "Show aerodynamic power ratio and riding posture",
+        "Configure weight, rolling resistance and smoothing"
+      ],
+      "tags": [
+        "aerodynamics",
+        "power",
+        "training",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "GravelShock",
+      "compatibility": "k3",
+      "addedAt": "2026-10-24",
+      "homepage": "https://github.com/DAVOE75/GravelShock",
+      "manifest": "https://github.com/DAVOE75/GravelShock/releases/latest/download/manifest.json",
+      "features": [
+        "Classify terrain as tarmac, gravel, cobbles and MTB from acceleration",
+        "Live vibration fatigue and stress score",
+        "Percentage time on each terrain type",
+        "English and Spanish interfaces"
+      ],
+      "tags": [
+        "terrain",
+        "gravel",
+        "mtb",
+        "telemetry"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "PinionKarooExtension",
+      "compatibility": "both",
+      "addedAt": "2026-10-25",
+      "homepage": "https://github.com/madooroy/PinionKarooExtension",
+      "manifest": "https://github.com/madooroy/PinionKarooExtension/releases/latest/download/manifest.json",
+      "features": [
+        "Native-style Pinion gear and battery data fields",
+        "Combined gear and cadence, power, HR, speed or battery fields",
+        "Save shift and gear statistics in FIT files",
+        "Battery alerts at 20, 10 and 5 percent",
+        "Remember and reconnect to gearbox",
+        "Keep gearbox awake during rides with relevant field",
+        "Read-only integration on Karoo 2 and 3",
+        "Unofficial Pinion integration"
+      ],
+      "tags": [
+        "shifting",
+        "pinion",
+        "bluetooth",
+        "fit-recording"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Top Bar Hider",
+      "compatibility": "k3",
+      "addedAt": "2026-10-31",
+      "homepage": "https://github.com/Zalvato/Karoo-TopBarHider",
+      "manifest": "https://github.com/Zalvato/Karoo-TopBarHider/releases/latest/download/manifest.json",
+      "features": [
+        "Hide top status line on all, only map or all-but-map ride pages",
+        "Tappable data field toggles or temporarily reveals top line",
+        "Show status line when ride pauses",
+        "Preserve in-ride alerts with optional accessibility service",
+        "Avoid obscuring radar strip",
+        "Offline in-place updates"
+      ],
+      "tags": [
+        "overlays",
+        "customization",
+        "interface"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "BetterETA",
+      "compatibility": "both",
+      "addedAt": "2026-11-01",
+      "homepage": "https://github.com/anpaiss/BetterETA",
+      "manifest": "https://github.com/anpaiss/BetterETA/releases/latest/download/manifest.json",
+      "features": [
+        "Estimate arrival and time remaining from route gradient and surface",
+        "Learn typical riding speed from on-device FIT history",
+        "Compute entirely offline without account"
+      ],
+      "tags": [
+        "navigation",
+        "eta",
+        "route-planning",
+        "offline"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "PoiAhead",
+      "compatibility": "both",
+      "addedAt": "2026-11-01",
+      "homepage": "https://github.com/anpaiss/PoiAhead",
+      "manifest": "https://github.com/anpaiss/PoiAhead/releases/latest/download/manifest.json",
+      "features": [
+        "Show approaching water fountain notification with distance and navigation action",
+        "Show ten closest fountains in a data page",
+        "Draw drinking-water locations on Karoo map",
+        "Cache OpenStreetMap data over Wi-Fi for offline use"
+      ],
+      "tags": [
+        "navigation",
+        "water",
+        "pois",
+        "offline"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "AutoLoop Karoo",
+      "compatibility": "both",
+      "addedAt": "2026-11-01",
+      "homepage": "https://github.com/anpaiss/AutoLoopKaroo",
+      "manifest": "https://github.com/anpaiss/AutoLoopKaroo/releases/latest/download/manifest.json",
+      "features": [
+        "Auto-cycle up to twelve ride data pages with per-page dwell time",
+        "Pause and resume using data field or lap button",
+        "Keep manual pause through automatic ride pauses"
+      ],
+      "tags": [
+        "automation",
+        "data-pages",
+        "controls"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "BigFields",
+      "compatibility": "both",
+      "addedAt": "2026-11-01",
+      "homepage": "https://github.com/anpaiss/BigFields",
+      "manifest": "https://github.com/anpaiss/BigFields/releases/latest/download/manifest.json",
+      "features": [
+        "Full-page one- or two-row numeric data field",
+        "Size digits to fit precisely",
+        "Keep consistent digit heights across updates",
+        "Six visual themes with heart-rate and power zone colors"
+      ],
+      "tags": [
+        "data-fields",
+        "accessibility",
+        "customization"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Karoo AXS Ratio",
+      "compatibility": "k3",
+      "addedAt": "2026-11-01",
+      "homepage": "https://github.com/anpaiss/KarooAxsRatio",
+      "manifest": "https://github.com/anpaiss/KarooAxsRatio/releases/latest/download/manifest.json",
+      "features": [
+        "Show AXS gear, heart rate, power, cadence, speed, grade, temperature or next-turn distance in screen corners",
+        "Choose among four corner-tile themes and hide when display is off"
+      ],
+      "tags": [
+        "shifting",
+        "overlays",
+        "data-fields",
+        "sram"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Status Bar Temp",
+      "compatibility": "both",
+      "addedAt": "2026-11-09",
+      "homepage": "https://github.com/ulope/karoo-statusbar-temp",
+      "manifest": "https://github.com/ulope/karoo-statusbar-temp/releases/latest/download/manifest.json",
+      "features": [
+        "Show Karoo air temperature in top status bar",
+        "Set decimals, units, color, size and position",
+        "Accessibility permission for status bar overlay",
+        "Karoo 3 tested with Karoo 2 support"
+      ],
+      "tags": [
+        "weather",
+        "temperature",
+        "overlays"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "karoo-pace",
+      "compatibility": "k3",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/markhaines/karoo-pace",
+      "manifest": "https://github.com/markhaines/karoo-pace/releases/latest/download/manifest.json",
+      "features": [
+        "Color speed card in five bands relative to ride average",
+        "Use relative percent thresholds and suppress colors at low speed",
+        "Smooth coloring while showing raw speed",
+        "Match native card typography and layout",
+        "Karoo 3 firmware support"
+      ],
+      "tags": [
+        "speed",
+        "data-fields",
+        "pacing"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Karoo Radar",
+      "compatibility": "k3",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/ukabu/karoo-radar-ext",
+      "manifest": "https://github.com/ukabu/karoo-radar-ext/releases/latest/download/manifest.json",
+      "features": [
+        "Numerical fields for approaching vehicle count, distance and speed",
+        "Background color reflects radar threat level",
+        "Record radar data in FIT file each second",
+        "Responsive data-field layout",
+        "Targets Karoo 3"
+      ],
+      "tags": [
+        "radar",
+        "safety",
+        "data-fields",
+        "fit-recording"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Magicshine Controls",
+      "compatibility": "k3",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/lenne0815/karoo-magicshine-controls",
+      "manifest": "https://github.com/lenne0815/karoo-magicshine-controls/releases/latest/download/manifest.json",
+      "features": [
+        "Control supported Magicshine lights, brightness, SOS and flashing",
+        "Ride field to toggle, flash, inspect battery and open app",
+        "Poll battery and temperature periodically",
+        "Connect during ride screens",
+        "Optimized for Magicshine EVO 1700"
+      ],
+      "tags": [
+        "lights",
+        "bluetooth",
+        "remote-control"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Karoo MoxyMonitor Extension",
+      "compatibility": "both",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/Moxy-Monitor/moxy-karoo-extension",
+      "manifest": "https://github.com/Moxy-Monitor/moxy-karoo-extension/releases/latest/download/manifest.json",
+      "features": [
+        "Show SmO2 and total hemoglobin data fields",
+        "Pair up to four Moxy sensors",
+        "Configure sensor location and save in FIT files",
+        "Karoo 2 and 3"
+      ],
+      "tags": [
+        "sensors",
+        "muscle-oxygen",
+        "data-fields",
+        "fit-recording"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "KarooFireFly",
+      "compatibility": "k3",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/derstrassi/karoofirefly",
+      "manifest": "https://github.com/derstrassi/karoofirefly/releases/latest/download/manifest.json",
+      "features": [
+        "Control ANT+ and Magicshine BLE bike lights",
+        "Automatically switch day/night by sunrise, sunset or ambient sensor",
+        "Radar-triggered rear warning flashes",
+        "Per-light roles and supported mode lists",
+        "Bonus Actions for lights and shifting/hardware buttons",
+        "Show light battery and temperature with status alerts",
+        "ANT+ control uses undocumented Karoo API"
+      ],
+      "tags": [
+        "lights",
+        "bluetooth",
+        "ant-plus",
+        "automation"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "ClipRide",
+      "compatibility": "both",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/yrkan/clipride",
+      "manifest": "https://github.com/yrkan/clipride/releases/latest/download/manifest.json",
+      "features": [
+        "Start/stop GoPro recording, add HiLight markers and change shooting modes",
+        "Six data fields and three Bonus Actions",
+        "Record automatically on ride start and stop on pause/end",
+        "Auto-create highlights for lap, power, speed, climbs and other ride events",
+        "Battery, storage and temperature alerts",
+        "Apply camera video settings over BLE",
+        "Support HERO 9–13, HERO 11 Mini and MAX 2"
+      ],
+      "tags": [
+        "gopro",
+        "camera",
+        "bluetooth",
+        "automation"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "karoo-camera-control",
+      "compatibility": "both",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/michalchecinski/karoo-camera-control",
+      "manifest": "https://github.com/michalchecinski/karoo-camera-control/releases/latest/download/manifest.json",
+      "features": [
+        "Connect and manage multiple GoPro cameras",
+        "Start/stop recording with duration monitor",
+        "Switch video, photo and timelapse presets",
+        "Show battery and remaining storage",
+        "Karoo 2 and 3"
+      ],
+      "tags": [
+        "gopro",
+        "camera",
+        "bluetooth",
+        "remote-control"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "HeartKaroo",
+      "compatibility": "k3",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/inqu-lab/HeartKaroo",
+      "manifest": "https://github.com/inqu-lab/HeartKaroo/releases/latest/download/manifest.json",
+      "features": [
+        "Aerobic decoupling, efficiency, cardiac cost and W′ balance",
+        "Power variability, intensity, TSS, energy and quadrant analytics",
+        "Polar strap HRV including RMSSD, SDNN, pNN50, DFA alpha1 and respiration",
+        "Expose HR and HRV as a Karoo sensor",
+        "Write HRV and training estimates into FIT files",
+        "Resting RMSSD readiness test with seven-day trend",
+        "Compute metrics offline"
+      ],
+      "tags": [
+        "hrv",
+        "heart-rate",
+        "power",
+        "training",
+        "fit-recording"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "KogSense",
+      "compatibility": "both",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/jcro001/KogSense",
+      "manifest": "https://github.com/jcro001/KogSense/releases/latest/download/manifest.json",
+      "features": [
+        "Beep at cassette gear limits",
+        "Warn before automatic synchronized front shifts",
+        "Learn synchro shift gear boundaries",
+        "Store cassette preferences by bike",
+        "Recognize cross-chain blocked combinations",
+        "Support SRAM AXS and Shimano Di2 through Ki2"
+      ],
+      "tags": [
+        "shifting",
+        "alerts",
+        "sram",
+        "shimano"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Gear Helper",
+      "compatibility": "both",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/futureshape/karoo-gear-helper",
+      "manifest": "https://github.com/futureshape/karoo-gear-helper/releases/latest/download/manifest.json",
+      "features": [
+        "Show current front and rear gear popup after shifts",
+        "Hide front gear in 1x configurations",
+        "Customize popup duration and position",
+        "Configurable tones for rear shifting limits",
+        "Mute ride audio when paused optionally",
+        "Read Karoo-paired shifting sensors",
+        "Karoo 2 and 3"
+      ],
+      "tags": [
+        "shifting",
+        "alerts",
+        "overlays"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Climber+",
+      "compatibility": "both",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/hazzus/karoo-climber-plus",
+      "manifest": "https://github.com/hazzus/karoo-climber-plus/releases/latest/download/manifest.json",
+      "features": [
+        "Floating climb chip with climbs completed and upcoming details",
+        "Grade-colored climb profile and upcoming segment preview",
+        "Switch full, remaining or lookahead climb profile",
+        "Full-screen climb view with four custom data fields",
+        "Configurable palettes, units, position and opacity",
+        "Karoo 2 and 3"
+      ],
+      "tags": [
+        "climbing",
+        "overlays",
+        "navigation",
+        "elevation"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "MTB Dynamics",
+      "compatibility": "both",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/angkyria/karoo-mtb",
+      "manifest": "https://github.com/angkyria/karoo-mtb/releases/latest/download/manifest.json",
+      "features": [
+        "Calculate grit, flow, jump and cornering metrics",
+        "Summarize MTB trail sections and ride score",
+        "Recognize trails across rides and rank personal bests",
+        "Correlate suspension and shifting with terrain",
+        "Track component service intervals",
+        "Record MTB fields and summaries into FIT",
+        "Send ride summary via ntfy and optionally Intervals.icu",
+        "Karoo 2 and 3 testing builds"
+      ],
+      "tags": [
+        "mtb",
+        "trail-analysis",
+        "fit-recording",
+        "maintenance"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Karoo DFA alpha1 Extension",
+      "compatibility": "both",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/Lemonchic/karoo-dfa-extension",
+      "manifest": "https://github.com/Lemonchic/karoo-dfa-extension/releases/latest/download/manifest.json",
+      "features": [
+        "Live DFA alpha1 data field with configurable LT thresholds",
+        "Show percentage of corrected heartbeats",
+        "Write alpha1 and artifact statistics into FIT",
+        "Filter RR artifacts and interpolate corrections",
+        "Recalculate every fifteen seconds and suppress unreliable values",
+        "Configurable thresholds and tolerances",
+        "Tested on Karoo 2"
+      ],
+      "tags": [
+        "hrv",
+        "training",
+        "fit-recording",
+        "heart-rate"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "karoo-decoupling",
+      "compatibility": "both",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/schaefer-dev/karoo-decoupling",
+      "manifest": "https://github.com/schaefer-dev/karoo-decoupling/releases/latest/download/manifest.json",
+      "features": [
+        "Sample moving-time power and HR each second",
+        "Display decoupling drift between ride halves",
+        "Preview end-of-ride decoupling from early in ride",
+        "Handle missing sensor samples and ride resets",
+        "Reduce draw updates to save battery",
+        "Karoo 2 and 3 with build-from-source requirement"
+      ],
+      "tags": [
+        "training",
+        "heart-rate",
+        "power",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Pitstop",
+      "compatibility": "k3",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/rutgerg/karoo-pitstop",
+      "manifest": "https://github.com/rutgerg/karoo-pitstop/releases/latest/download/manifest.json",
+      "features": [
+        "Data field for eleven service types including food, water, fuel and medical care",
+        "Query OpenStreetMap along planned route with local caching",
+        "Update nearby services during ride",
+        "Show closest open locations, hours and distances",
+        "Tap to navigate or save POI",
+        "Browse alternative nearby services"
+      ],
+      "tags": [
+        "navigation",
+        "pois",
+        "resupply",
+        "offline"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "SendPin",
+      "compatibility": "both",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/albertjfoo/sendpin",
+      "manifest": "https://github.com/albertjfoo/sendpin/releases/latest/download/manifest.json",
+      "features": [
+        "Share Apple Maps pin from iPhone to Karoo 2 via Bluetooth",
+        "Read and navigate to coordinates on Karoo",
+        "Stop phone broadcast after successful transfer",
+        "Use first paired sender to avoid cross-device interference",
+        "Update on device without cable",
+        "Tested on Karoo 2"
+      ],
+      "tags": [
+        "navigation",
+        "ios",
+        "bluetooth",
+        "phone-integration"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "WearTracker",
+      "compatibility": "k3",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/wjakob/WearTracker",
+      "manifest": "https://github.com/wjakob/WearTracker/releases/latest/download/manifest.json",
+      "features": [
+        "Track components independently for each Karoo bike",
+        "Count mileage on chains, cassette, derailleurs, brakes, tires and sealant",
+        "Frame odometer data field",
+        "Remember longest chain usage for drivetrain replacement planning",
+        "Eleven custom metrics and unit preferences",
+        "Automatically adapt to single-chainring bikes",
+        "Build from source"
+      ],
+      "tags": [
+        "maintenance",
+        "components",
+        "bike-tracking"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "PartnerRide",
+      "compatibility": "both",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/bb-generation/PartnerRide",
+      "manifest": "https://github.com/bb-generation/PartnerRide/releases/latest/download/manifest.json",
+      "features": [
+        "Show distance and ahead/behind indicator to another Karoo",
+        "Exchange positions over Bluetooth without internet",
+        "Pair with persistent six-digit code",
+        "Color gap by distance and show status",
+        "Optional beep and flash when partner exceeds distance threshold",
+        "Correct GPS lag by dead reckoning and smoothing",
+        "Karoo 2 and 3"
+      ],
+      "tags": [
+        "bluetooth",
+        "group-riding",
+        "location",
+        "safety"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Quiver Odometer",
+      "compatibility": "both",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/pdkane/quiver-karoo",
+      "manifest": "https://github.com/pdkane/quiver-karoo/releases/latest/download/manifest.json",
+      "features": [
+        "Pair with Quiver garage and sync completed rides automatically",
+        "Backfill all rides with one tap",
+        "Keep component maintenance and service clocks current",
+        "Declare release manifest for in-device updates",
+        "Karoo 2 and 3; built releases only"
+      ],
+      "tags": [
+        "sync",
+        "maintenance",
+        "odometer",
+        "components"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Ride Namer",
+      "compatibility": "k3",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/duncanbottrill/karoo-ride-namer",
+      "manifest": "https://github.com/duncanbottrill/karoo-ride-namer/releases/latest/download/manifest.json",
+      "features": [
+        "Fetch weather on first GPS fix",
+        "Use ride metrics to generate activity title",
+        "Reverse-geocode ride midpoint when online",
+        "Funny, descriptive, minimal or random naming styles",
+        "Show final name notification and history",
+        "Optionally rename matching Strava ride through QR authentication",
+        "No in-ride data field",
+        "Karoo 3"
+      ],
+      "tags": [
+        "automation",
+        "strava",
+        "weather",
+        "ride-logging"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Karoo Dynamic Headphones",
+      "compatibility": "k3",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/lenne0815/Karoo-dynamic-Headphones",
+      "manifest": "https://github.com/lenne0815/Karoo-dynamic-Headphones/releases/latest/download/manifest.json",
+      "features": [
+        "Pause media below speed threshold",
+        "Adjust volume as speed increases",
+        "Use paired speed sensor or GPS fallback",
+        "Works with MediaSession-compatible audio apps",
+        "Fixed-volume mode available",
+        "Karoo 3"
+      ],
+      "tags": [
+        "music",
+        "bluetooth",
+        "automation",
+        "headphones"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Phone Status",
+      "compatibility": "both",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/alifib/karoo-phonestatus",
+      "manifest": "https://github.com/alifib/karoo-phonestatus/releases/latest/download/manifest.json",
+      "features": [
+        "Draw phone connection icon in status bar",
+        "Read state from Karoo phone service",
+        "Adapt icon tint and position to other icons",
+        "Start on boot after permissions granted",
+        "Read-only, no telemetry sent",
+        "Karoo 2 and 3"
+      ],
+      "tags": [
+        "phone-integration",
+        "overlays",
+        "status-bar"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Stock Tracker for Karoo",
+      "compatibility": "k3",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/gingerr6/stock-tracker",
+      "manifest": "https://github.com/gingerr6/stock-tracker/releases/latest/download/manifest.json",
+      "features": [
+        "Ten configurable Yahoo Finance symbols for stock, crypto, futures and indices",
+        "Dedicated data fields and cycling ticker",
+        "Price, daily percentage change and sparklines",
+        "Refresh every five minutes through Karoo HTTP",
+        "Configure symbols on device"
+      ],
+      "tags": [
+        "stocks",
+        "data-fields",
+        "finance",
+        "network"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "Player Zero for Karoo",
+      "compatibility": "both",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/NorthwoodsSentinel/player-zero-karoo",
+      "manifest": "https://github.com/NorthwoodsSentinel/player-zero-karoo/releases/latest/download/manifest.json",
+      "features": [
+        "Show board battery, motor temperature, safety headroom, current and speed",
+        "Connect over Bluetooth with Polaris token",
+        "Indicate connection through valid battery reading",
+        "Configure Bluetooth name and token in app or adb",
+        "Live connection status",
+        "Karoo 2 and 3"
+      ],
+      "tags": [
+        "onewheel",
+        "bluetooth",
+        "sensors",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "XM Headphones",
+      "compatibility": "both",
+      "addedAt": "2026-11-11",
+      "homepage": "https://github.com/nikosavola/karoo-xm-headphones",
+      "manifest": "https://github.com/nikosavola/karoo-xm-headphones/releases/latest/download/manifest.json",
+      "features": [
+        "Switch Sony headphones between noise cancelling, ambient sound and off",
+        "Ride data fields for battery, ambient level and noise cancelling modes",
+        "Karoo-button action and full control screen",
+        "Classic Bluetooth RFCOMM without Google services"
+      ],
+      "tags": [
+        "headphones",
+        "sony",
+        "bluetooth",
+        "remote-control"
+      ],
+      "featuredInHammerheadLibrary": false
+    }
+  ]
+}
