@@ -51,6 +51,27 @@ If you are using a Karoo 2, you can use manual sideloading:
 
 To update extensions after you have installed them, long-tap the app icon on the main menu and select "Update" (works on both Karoo 2 and Karoo 3).
 
+## Libraries
+
+### ktor-client-karoo
+
+- **Library Name:** [ktor-client-karoo](https://github.com/jonasfranz/ktor-client-karoo)
+  - Description: Provides a Ktor Http Client Engine implementation for Karoo
+  - License: Open Source, Apache 2
+  - Features:
+    - Simplifies making http request via the Karoo System Service
+    - Works even if the Karoo itself has no wifi connection. (Karoo Companion required)
+
+### karoo-ext-testing
+
+- **Library Name:** [karoo-ext-testing](https://github.com/nikosavola/karoo-ext-testing)
+  - Description: Test doubles for the Karoo system side of karoo-ext, to test extensions on the JVM or an emulator without a Karoo
+  - License: Open Source, Apache 2
+  - Features:
+    - Fake `KarooSystemService` for Robolectric and emulator tests: data streams, location, ride state, navigation, HTTP, FIT, views and map effects
+    - Fake Bluetooth LE sensors and lights, with assertions for cleanup and ride restarts
+    - Test and debug tooling only, not for release APKs
+
 ## Resources
 
 ### karoo-ext
