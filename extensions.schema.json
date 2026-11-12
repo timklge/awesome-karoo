@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/timklge/awesome-karoo/blob/master/extensions.schema.json",
+  "title": "Awesome Karoo extension catalog",
+  "description": "A curated catalog of Karoo extensions. An inferred manifest URL uses the conventional GitHub latest-release asset path, but is not verified to exist.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "source",
+    "extensions"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Path or URL to the validation schema (editor convenience)."
+    },
+    "source": {
+      "type": "string",
+      "format": "uri",
+      "description": "Original extension list."
+    },
+    "extensions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/extension"
+      }
+    }
+  },
+  "$defs": {
+    "extension": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "addedAt",
+        "homepage",
+        "manifest",
+        "features",
+        "tags",
+        "compatibility",
+        "featuredInHammerheadLibrary"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Displayed extension name."
+        },
+        "addedAt": {
+          "type": "string",
+          "format": "date",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+          "description": "Date first listed in this catalogue (YYYY-MM-DD). Existing entries were backfilled from the committer date of the first local README revision linking to the extension."
+        },
+        "homepage": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://",
+          "description": "Extension homepage or source repository."
+        },
+        "manifest": {
+          "description": "URL of an extension update manifest.",
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https://"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "features": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Human-readable feature list."
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "description": "Lowercase, hyphenated topic labels."
+        },
+        "compatibility": {
+          "type": "string",
+          "enum": ["both", "k2", "k3", "unknown"],
+          "description": "Karoo device support reviewed from the extension homepage: both = Karoo 2 and 3, k2 = Karoo 2, k3 = Karoo 3 (Karoo 2 not mentioned or explicitly unsupported), unknown = homepage could not be checked. A missing Karoo 2 mention is not proof of incompatibility."
+        },
+        "featuredInHammerheadLibrary": {
+          "type": "boolean",
+          "description": "Listed under the Hammerhead library heading."
+        }
+      }
+    }
+  }
+}
