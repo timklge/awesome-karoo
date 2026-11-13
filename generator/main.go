@@ -1,13 +1,15 @@
-// Command generator builds the site's catalogue. All remote metadata is resolved
+// Command generator builds the static site. All remote metadata is resolved
 // here, never by visitors' browsers.
 package main
 
 import (
+	"bytes"
 	"context"
 	"encoding/json"
 	"flag"
 	"fmt"
 	"io"
+	"io/fs"
 	"log"
 	"net/http"
 	"net/url"
@@ -359,11 +361,67 @@ func generate(ctx context.Context, c *metadataClient, cat catalogue, workers int
 	return entries, ctx.Err()
 }
 
-func writeCatalogue(dir string, entries []entry, builtAt time.Time) error {
+const cataloguePlaceholder = "<!-- CATALOGUE_JSON -->"
+
+func writeSite(source, dir string, entries []entry, builtAt time.Time) error {
+	source, err := filepath.Abs(source)
+	if err != nil {
+		return err
+	}
+	dir, err = filepath.Abs(dir)
+	if err != nil {
+		return err
+	}
+	if rel, err := filepath.Rel(source, dir); err != nil {
+		return err
+	} else if rel != ".." && !strings.HasPrefix(rel, ".."+string(filepath.Separator)) {
+		return fmt.Errorf("output directory must be outside the static source directory")
+	}
+	index, err := os.ReadFile(filepath.Join(source, "index.html"))
+	if err != nil {
+		return err
+	}
+	if bytes.Count(index, []byte(cataloguePlaceholder)) != 1 {
+		return fmt.Errorf("index.html must contain exactly one %s placeholder", cataloguePlaceholder)
+	}
+	// Keep encoding/json's HTML escaping so remote metadata cannot close the
+	// application/json script element or inject HTML into the generated page.
 	data, err := json.MarshalIndent(generatedCatalogue{BuiltAt: builtAt.UTC(), Entries: entries}, "", "  ")
 	if err != nil {
 		return err
 	}
+	index = bytes.Replace(index, []byte(cataloguePlaceholder), data, 1)
+	if err := filepath.WalkDir(source, func(path string, d fs.DirEntry, err error) error {
+		if err != nil {
+			return err
+		}
+		rel, err := filepath.Rel(source, path)
+		if err != nil {
+			return err
+		}
+		dest := filepath.Join(dir, rel)
+		if d.IsDir() {
+			return os.MkdirAll(dest, 0o755)
+		}
+		// The index and catalogue are generated, not copied from old builds.
+		if rel == "index.html" || rel == "catalogue.json" {
+			return nil
+		}
+		asset, err := os.ReadFile(path)
+		if err != nil {
+			return err
+		}
+		return os.WriteFile(dest, asset, 0o644)
+	}); err != nil {
+		return err
+	}
+	if err := writeCatalogue(dir, data); err != nil {
+		return err
+	}
+	return os.WriteFile(filepath.Join(dir, "index.html"), index, 0o644)
+}
+
+func writeCatalogue(dir string, data []byte) error {
 	if err := os.MkdirAll(dir, 0o755); err != nil {
 		return err
 	}
@@ -392,7 +450,8 @@ func writeCatalogue(dir string, entries []entry, builtAt time.Time) error {
 
 func run() error {
 	input := flag.String("input", "../extensions.json", "path to the extension catalogue")
-	output := flag.String("output", "../static", "site directory to write catalogue.json into")
+	source := flag.String("static", "../static", "directory containing the site's source assets")
+	output := flag.String("output", "output", "directory to write the generated site into")
 	workers := flag.Int("workers", 4, "number of extensions to fetch concurrently")
 	timeout := flag.Duration("timeout", 30*time.Second, "timeout per HTTP request")
 	flag.Parse()
@@ -420,10 +479,10 @@ func run() error {
 	if err != nil {
 		return err
 	}
-	if err := writeCatalogue(*output, entries, time.Now()); err != nil {
+	if err := writeSite(*source, *output, entries, time.Now()); err != nil {
 		return fmt.Errorf("write site: %w", err)
 	}
-	log.Printf("generated %s with %d extensions", filepath.Join(*output, "catalogue.json"), len(entries))
+	log.Printf("generated site in %s with %d extensions", *output, len(entries))
 	return nil
 }
 
