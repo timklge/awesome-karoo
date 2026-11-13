@@ -211,7 +211,7 @@
       "compatibility": "both",
       "addedAt": "2025-12-27",
       "homepage": "https://github.com/yrkan/wattramp",
-      "manifest": "https://github.com/yrkan/wattramp/releases/latest/download/manifest.json",
+      "manifest": "https://raw.githubusercontent.com/yrkan/wattramp/main/karoo-app-manifest.json",
       "features": [
         "FTP tests on device with live data fields",
         "Ramp, 20-minute and 2×8-minute test protocols",
@@ -254,7 +254,7 @@
       "compatibility": "both",
       "addedAt": "2025-11-25",
       "homepage": "https://github.com/KiloDeltaApps/KarooFlightRadar",
-      "manifest": "https://github.com/KiloDeltaApps/KarooFlightRadar/releases/latest/download/manifest.json",
+      "manifest": null,
       "features": [
         "Track nearby aircraft using open-source flight APIs",
         "Radar display with north-up and track-up orientations",
@@ -292,7 +292,7 @@
       "compatibility": "both",
       "addedAt": "2026-04-22",
       "homepage": "https://github.com/itxsvv/kxtheme",
-      "manifest": "https://github.com/itxsvv/kxtheme/releases/latest/download/manifest.json",
+      "manifest": null,
       "features": [
         "Customize basic map colors"
       ],
@@ -348,7 +348,7 @@
       "compatibility": "both",
       "addedAt": "2025-04-27",
       "homepage": "https://github.com/dimskiy/WaypointsKaroo",
-      "manifest": "https://github.com/dimskiy/WaypointsKaroo/releases/latest/download/manifest.json",
+      "manifest": "https://github.com/dimskiy/WaypointsKaroo/releases/latest/download/manifest-karoo.json",
       "features": [
         "Search online for restaurants, shops, cafes and other places",
         "Navigate to found POIs in native Karoo navigation",
@@ -488,7 +488,7 @@
       "compatibility": "k3",
       "addedAt": "2026-01-12",
       "homepage": "https://github.com/nairdam88/cuproute",
-      "manifest": "https://github.com/nairdam88/cuproute/releases/latest/download/manifest.json",
+      "manifest": "https://github.com/nairdam88/cuproute/releases/latest/download/manifest-karoo.json",
       "features": [
         "Offline European specialty coffee-shop database",
         "Search by name or city",
@@ -528,7 +528,7 @@
       "compatibility": "both",
       "addedAt": "2026-02-13",
       "homepage": "https://github.com/yrkan/eiradar",
-      "manifest": "https://github.com/yrkan/eiradar/releases/latest/download/manifest.json",
+      "manifest": null,
       "features": [
         "Sound, vibration and visual alerts for rear-approaching vehicles",
         "Configurable distance thresholds, cooldowns, night mode and speed gate",
