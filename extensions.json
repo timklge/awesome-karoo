@@ -7,7 +7,7 @@
       "compatibility": "both",
       "addedAt": "2024-12-21",
       "homepage": "https://github.com/maduwatas/Vin-HkE",
-      "manifest": "https://github.com/maduwatas/Vin-HkE/releases/latest/download/manifest.json",
+      "manifest": "https://github.com/maduwatas/Vin-HkE/releases/download/latest/manifest.json",
       "features": [
         "Workout player",
         "Virtual pace partner",
@@ -192,7 +192,7 @@
       "compatibility": "both",
       "addedAt": "2026-01-21",
       "homepage": "https://github.com/yrkan/KPedal",
-      "manifest": "https://github.com/yrkan/KPedal/releases/latest/download/manifest.json",
+      "manifest": "https://raw.githubusercontent.com/yrkan/KPedal/main/karoo-app-manifest.json",
       "features": [
         "Real-time feedback on pedaling efficiency and technique",
         "Karoo data fields for balance, torque effectiveness and pedal smoothness",
@@ -509,7 +509,7 @@
       "compatibility": "both",
       "addedAt": "2026-09-30",
       "homepage": "https://github.com/patricebender/resupply-karoo",
-      "manifest": "https://github.com/patricebender/resupply-karoo/releases/latest/download/manifest.json",
+      "manifest": "https://github.com/patricebender/resupply-karoo/releases/download/v1.11.0/manifest.json",
       "features": [
         "Find offline POIs along loaded route or around current location",
         "Configure allowed detour distance and categories",
@@ -548,7 +548,7 @@
       "compatibility": "both",
       "addedAt": "2026-02-13",
       "homepage": "https://github.com/yrkan/7climb",
-      "manifest": "https://github.com/yrkan/7climb/releases/latest/download/manifest.json",
+      "manifest": "https://raw.githubusercontent.com/yrkan/7climb/main/karoo-app-manifest.json",
       "features": [
         "Analyze W′ balance",
         "Provide power targets",
@@ -2063,6 +2063,382 @@
         "remote-control"
       ],
       "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "hDrop Extension",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://github.com/hdroptech/hdrop-hammerhead-extension",
+      "manifest": "https://raw.githubusercontent.com/hdroptech/hdrop-hammerhead-extension/main/manifest.json",
+      "features": [
+        "Track sweat, sodium and hDrop score from a connected BLE sensor",
+        "Manually configure baseline values"
+      ],
+      "tags": [
+        "health",
+        "hydration",
+        "sensors",
+        "bluetooth"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "Race Countdown",
+      "compatibility": "both",
+      "addedAt": "2026-11-13",
+      "homepage": "https://github.com/robrusk/Race-Day-Countdown",
+      "manifest": "https://github.com/robrusk/Race-Day-Countdown/releases/latest/download/manifest.json",
+      "features": [
+        "Countdown to race start with color-coded alerts and a live clock",
+        "Beep alerts at ten, five and one minute",
+        "Automatically start ride recording when the countdown reaches zero"
+      ],
+      "tags": [
+        "racing",
+        "countdown",
+        "alerts",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "Trail Names",
+      "compatibility": "both",
+      "addedAt": "2026-11-13",
+      "homepage": "https://github.com/robrusk/Karoo-Trail-Names",
+      "manifest": "https://github.com/robrusk/Karoo-Trail-Names/releases/latest/download/manifest.json",
+      "features": [
+        "Show nearby trail names with directional arrows, proximity bar and difficulty symbols",
+        "Beep and flash alerts when approaching trails",
+        "Download OpenStreetMap trail data for offline use"
+      ],
+      "tags": [
+        "mtb",
+        "navigation",
+        "data-fields",
+        "offline"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "Xert EBC",
+      "compatibility": "unknown",
+      "addedAt": "2026-11-13",
+      "homepage": "https://www.xertonline.com/",
+      "manifest": "https://www.xertonline.com/app/manifest.json",
+      "features": [
+        "Xert training with Magic Buckets support",
+        "Sensor and activity recording integration",
+        "Open EBC from MPA or XSS ride data fields",
+        "Dark mode support"
+      ],
+      "tags": [
+        "training",
+        "workouts",
+        "power",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "SAiFELY",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://github.com/SAiFELY/saifely-releases",
+      "manifest": "https://github.com/SAiFELY/saifely-releases/releases/latest/download/manifest.json",
+      "features": [
+        "Automatically detect crashes and monitor for movement after an impact",
+        "Send emergency alerts with GPS location to your contacts"
+      ],
+      "tags": [
+        "safety",
+        "crash-detection",
+        "alerts",
+        "health"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "VinApp",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://github.com/maduwatas/Vin-HkE",
+      "manifest": "https://github.com/maduwatas/Vin-HkE/releases/download/Vinapp/manifest.vinapp.json",
+      "features": [
+        "Cycling training and planning app",
+        "Structured workouts with workout charts and Tune adjustments",
+        "Pair with Karoo using a QR code"
+      ],
+      "tags": [
+        "training",
+        "workouts",
+        "planning"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "Shelto",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://github.com/stefanjung/shelto-karoo-dist",
+      "manifest": "https://github.com/stefanjung/shelto-karoo-dist/releases/latest/download/manifest.json",
+      "features": [
+        "Show nearby community-maintained POIs on the map",
+        "Find shelters, drinking water, toilets, repair stations, bike shops and campsites",
+        "Browse photos, details and ratings and open native Karoo navigation",
+        "Cache nearby and route POIs for offline use",
+        "Sync favorites with a Shelto account"
+      ],
+      "tags": [
+        "navigation",
+        "pois",
+        "maps",
+        "offline"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "Best Bike Split",
+      "compatibility": "unknown",
+      "addedAt": "2026-11-13",
+      "homepage": "https://www.bestbikesplit.com/karoo",
+      "manifest": "https://www.bestbikesplit.com/karoo/manifest.json",
+      "features": [
+        "Race-plan pacing data fields for Karoo",
+        "Color-coded time delta and pacer gap relative to your planned race"
+      ],
+      "tags": [
+        "racing",
+        "pacing",
+        "power",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "Velocomp",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://github.com/velocomp-llc/VelocompKarooReleases",
+      "manifest": "https://github.com/velocomp-llc/VelocompKarooReleases/releases/latest/download/manifest.json",
+      "features": [
+        "Display CdA, wind speed and slope from a connected AeroPod"
+      ],
+      "tags": [
+        "aerodynamics",
+        "wind",
+        "sensors",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "Wandrer",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://wandrer.earth/",
+      "manifest": null,
+      "features": [
+        "View traveled and untraveled Wandrer roads on Karoo",
+        "Requires an upgraded Wandrer account"
+      ],
+      "tags": [
+        "exploration",
+        "maps",
+        "stats"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "Epic Ride Weather",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://github.com/EpicRideWeather/epicrideweather-for-karoo",
+      "manifest": "https://github.com/EpicRideWeather/epicrideweather-for-karoo/releases/latest/download/manifest.json",
+      "features": [
+        "Personalized weather forecasts and actionable in-ride data",
+        "Adapt route forecasts when turning around",
+        "Show wind relative to the route or direction of travel",
+        "Show segment countdowns as time or distance"
+      ],
+      "tags": [
+        "weather",
+        "wind",
+        "forecast",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "AI Endurance",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://aiendurance.com/",
+      "manifest": "https://aiendurance.com/karoo/manifest.json",
+      "features": [
+        "Compute live DFA alpha 1 and HRV-derived respiration frequency on-device",
+        "Numeric and graphical ride data fields",
+        "Show live readiness to train and HRV thresholds",
+        "Requires a Bluetooth chest strap, with Polar H10 recommended"
+      ],
+      "tags": [
+        "hrv",
+        "heart-rate",
+        "training",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "KGhost",
+      "compatibility": "both",
+      "addedAt": "2026-11-13",
+      "homepage": "https://github.com/lockevod/KGhost",
+      "manifest": "https://github.com/lockevod/KGhost/releases/latest/download/manifest.json",
+      "features": [
+        "Race against a fixed-pace ghost or your past rides on a route",
+        "Show live time and distance gaps in graphical and numeric data fields",
+        "Draw the ghost position on the map",
+        "Record rides and import GPX or FIT ghosts with All files access",
+        "Continue estimating during GPS dropouts"
+      ],
+      "tags": [
+        "racing",
+        "pacing",
+        "maps",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "GiBLI",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://giblitech.com/",
+      "manifest": null,
+      "features": [
+        "Display and record data from a GiBLI Aero Sensor",
+        "Store the current bike per device and sync bike settings"
+      ],
+      "tags": [
+        "aerodynamics",
+        "sensors",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "CrankBite",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://www.crankbite.com/",
+      "manifest": null,
+      "features": [
+        "Follow your nutrition plan on Karoo",
+        "Receive reminders when it is time to fuel"
+      ],
+      "tags": [
+        "nutrition",
+        "reminders",
+        "training"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "myWindsock",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://mywindsock.com/",
+      "manifest": "https://mywindsock.com/apps/hammerhead/manifest.json",
+      "features": [
+        "Real-time course and weather dynamics powered by myWindsock AI",
+        "CdA processing on Karoo"
+      ],
+      "tags": [
+        "weather",
+        "wind",
+        "aerodynamics",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "CycliqPlus Karoo",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://cycliq.com/",
+      "manifest": "https://cycliq.com/cycliqpluskaroo/manifest",
+      "features": [
+        "Turn on, control and monitor Cycliq Fly12 Sport and Fly6 Pro cameras",
+        "Receive device updates and in-ride alerts",
+        "Keep cameras recording through automatic ride pauses"
+      ],
+      "tags": [
+        "camera",
+        "remote-control",
+        "alerts"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "HR2VP Calories & Power - Extension for Karoo",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://bipr.fr/",
+      "manifest": "https://bipr.fr/manifest.json",
+      "features": [
+        "Estimate real-time power and calories from heart rate using individual heart-rate limits and FTP",
+        "Optionally modulate estimated power using cadence",
+        "Save power as native data in FIT files",
+        "Estimate FTP after rides with a real power meter connected"
+      ],
+      "tags": [
+        "power",
+        "heart-rate",
+        "virtual-sensors",
+        "fit-recording"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "WindField",
+      "compatibility": "both",
+      "addedAt": "2026-11-13",
+      "homepage": "https://windfield.app/",
+      "manifest": null,
+      "features": [
+        "Live wind, weather and radar on the activity screen",
+        "Race mode with a cached four-hour wind and temperature forecast",
+        "Time to sunset or sunrise data field",
+        "Alert when a ride is expected to finish after dark"
+      ],
+      "tags": [
+        "weather",
+        "wind",
+        "radar",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "Kamerad",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://tellioglu.at/kamerad/",
+      "manifest": "https://tellioglu.at/kamerad/manifest",
+      "features": [
+        "Control GoPro action cameras from Karoo",
+        "Start and stop recording and monitor camera battery",
+        "Switch supported cameras on and off",
+        "Automatically reconnect after losing a camera connection"
+      ],
+      "tags": [
+        "gopro",
+        "camera",
+        "bluetooth",
+        "remote-control"
+      ],
+      "featuredInHammerheadLibrary": true
     }
   ]
 }
