@@ -2439,6 +2439,158 @@
         "remote-control"
       ],
       "featuredInHammerheadLibrary": true
+    },
+    {
+      "name": "DDB UpAhead",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://github.com/Dubadai/karoo-upahead",
+      "manifest": "https://github.com/Dubadai/karoo-upahead/releases/latest/download/manifest.json",
+      "features": [
+        "Route elevation graph with feed stations, water, toilets, mechanics and other POIs",
+        "Show distance, estimated arrival and cut-off time remaining for upcoming stops",
+        "Highlight timed sections and cut-offs on the graph and map",
+        "Tap or use remote buttons to change graph zoom",
+        "Show off-route return path with elevation"
+      ],
+      "tags": [
+        "navigation",
+        "elevation",
+        "pois",
+        "resupply",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "DDB Mountaineer",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://github.com/Dubadai/karoo-mountaineer",
+      "manifest": "https://github.com/Dubadai/karoo-mountaineer/releases/latest/download/manifest.json",
+      "features": [
+        "Grade-colored climb graph with position, distance and estimated time to summit",
+        "Compare climbing time with Strava PR through Karoo Live Segments",
+        "Estimate time to top from power, gradient, rider and bike weight and wind",
+        "Optionally learn from completed climbs with data kept on the device",
+        "Summit summary with climb time, PR gap and VAM"
+      ],
+      "tags": [
+        "climbing",
+        "elevation",
+        "pacing",
+        "strava",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "DDB BigWatts",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://github.com/Dubadai/karoo-bigwatts",
+      "manifest": "https://github.com/Dubadai/karoo-bigwatts/releases/latest/download/manifest.json",
+      "features": [
+        "Large power number scaled to the available data-field size",
+        "Color numbers, backgrounds or gauges using Karoo power zones",
+        "Instant power or 3-, 5- and 10-second averages",
+        "Optional zone, heart rate or ride-average power below the watts",
+        "Optional gauge showing time spent in each power zone"
+      ],
+      "tags": [
+        "power",
+        "data-fields",
+        "accessibility",
+        "customization"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "DDB BetterIntervals",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://github.com/Dubadai/karoo-betterintervals",
+      "manifest": "https://github.com/Dubadai/karoo-betterintervals/releases/latest/download/manifest.json",
+      "features": [
+        "Load and run planned structured workouts from Intervals.icu",
+        "Full-page workout field with target power, interval timer and zone-colored workout chart",
+        "Jump forward or backward between intervals and pause without stopping ride recording",
+        "Remote button controls, interval countdown beeps and automatic laps",
+        "Bluetooth smart-trainer ERG control with optional power-meter matching",
+        "Free-ride view with large power and configurable lap and ride metrics"
+      ],
+      "tags": [
+        "workouts",
+        "training",
+        "power",
+        "indoor-training",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "DDB SmallerFields",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://github.com/Dubadai/karoo-smallerfields",
+      "manifest": "https://github.com/Dubadai/karoo-smallerfields/releases/latest/download/manifest.json",
+      "features": [
+        "Show two metrics in one Karoo tile with native-style icons and labels",
+        "Configure up to ten independent paired data fields",
+        "Choose power, heart rate, cadence, speed, distance, time, ascent or grade",
+        "Side-by-side or stacked layouts with separate or combined tiles",
+        "Power and heart-rate zone colors with configurable text and backgrounds"
+      ],
+      "tags": [
+        "data-fields",
+        "customization",
+        "power",
+        "heart-rate"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "DDB PartnerETA",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://github.com/Dubadai/karoo-partnereta",
+      "manifest": "https://github.com/Dubadai/karoo-partnereta/releases/latest/download/manifest.json",
+      "features": [
+        "Follow up to four riding partners through their Karoo live-tracking links",
+        "Show partner positions, routes and finish flags on the map",
+        "Per-partner data fields with estimated arrival and remaining distance",
+        "Show ahead/behind gap when riding the same route",
+        "Fetch tracking updates through Karoo Wi-Fi or the phone connection"
+      ],
+      "tags": [
+        "group-riding",
+        "location",
+        "maps",
+        "eta",
+        "data-fields"
+      ],
+      "featuredInHammerheadLibrary": false
+    },
+    {
+      "name": "DDB ClearWind",
+      "compatibility": "k3",
+      "addedAt": "2026-11-13",
+      "homepage": "https://github.com/Dubadai/karoo-clearwind",
+      "manifest": "https://github.com/Dubadai/karoo-clearwind/releases/latest/download/manifest.json",
+      "features": [
+        "Show wind direction relative to riding heading with a large arrow",
+        "Display wind speed and optional gusts from Open-Meteo without an API key",
+        "Configurable arrow and tile colors based on wind strength",
+        "Support knots, m/s, km/h and mph",
+        "Remote button actions to switch units and arrow color"
+      ],
+      "tags": [
+        "weather",
+        "wind",
+        "data-fields",
+        "customization"
+      ],
+      "featuredInHammerheadLibrary": false
     }
   ]
 }
