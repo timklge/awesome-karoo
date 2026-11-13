@@ -318,7 +318,7 @@
         "components",
         "bike-tracking"
       ],
-      "featuredInHammerheadLibrary": false
+      "featuredInHammerheadLibrary": true
     },
     {
       "name": "karoo-routegraph",
@@ -341,7 +341,7 @@
         "pois",
         "maps"
       ],
-      "featuredInHammerheadLibrary": false
+      "featuredInHammerheadLibrary": true
     },
     {
       "name": "Waypoints",
@@ -521,7 +521,7 @@
         "offline",
         "resupply"
       ],
-      "featuredInHammerheadLibrary": false
+      "featuredInHammerheadLibrary": true
     },
     {
       "name": "eiRadar",
@@ -560,7 +560,7 @@
         "w-prime",
         "power"
       ],
-      "featuredInHammerheadLibrary": false
+      "featuredInHammerheadLibrary": true
     },
     {
       "name": "karoo-wattspeed",
@@ -577,7 +577,7 @@
         "power",
         "virtual-sensors"
       ],
-      "featuredInHammerheadLibrary": false
+      "featuredInHammerheadLibrary": true
     },
     {
       "name": "k-breathe",
@@ -739,7 +739,7 @@
         "alerts",
         "messaging"
       ],
-      "featuredInHammerheadLibrary": false
+      "featuredInHammerheadLibrary": true
     },
     {
       "name": "karoo-gearbeeper",
@@ -1014,7 +1014,7 @@
         "fit-recording",
         "alerts"
       ],
-      "featuredInHammerheadLibrary": false
+      "featuredInHammerheadLibrary": true
     },
     {
       "name": "Miefquirl",
@@ -1099,7 +1099,7 @@
         "discovery",
         "offline"
       ],
-      "featuredInHammerheadLibrary": false
+      "featuredInHammerheadLibrary": true
     },
     {
       "name": "Workout+",
@@ -1596,7 +1596,7 @@
         "data-fields",
         "fit-recording"
       ],
-      "featuredInHammerheadLibrary": false
+      "featuredInHammerheadLibrary": true
     },
     {
       "name": "KarooFireFly",
@@ -1642,7 +1642,7 @@
         "bluetooth",
         "automation"
       ],
-      "featuredInHammerheadLibrary": false
+      "featuredInHammerheadLibrary": true
     },
     {
       "name": "karoo-camera-control",
@@ -1888,7 +1888,7 @@
         "components",
         "bike-tracking"
       ],
-      "featuredInHammerheadLibrary": false
+      "featuredInHammerheadLibrary": true
     },
     {
       "name": "PartnerRide",
