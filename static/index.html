@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="A community-driven list of known extensions and resources for the Karoo cycling computer">
   <title>awesome-karoo</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg">
   <script>
     (() => {
       const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
@@ -101,7 +102,7 @@
   <header class="border-b border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-950">
     <nav aria-label="Main navigation" class="mx-auto flex max-w-[1480px] items-center justify-between gap-4 px-5 py-4 sm:px-8 lg:px-12">
       <a href="https://github.com/timklge/awesome-karoo" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3  focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange-500">
-        <span aria-hidden="true" class="flex size-9 shrink-0 items-center justify-center bg-[#f15a35] text-[22px] font-bold leading-none text-white">a</span>
+        <img src="favicon.svg" alt="" aria-hidden="true" width="36" height="36" class="size-9 shrink-0">
         <span class="text-[17px] font-bold tracking-tight">awesome<span class="text-[#e9522c]">-karoo</span></span>
       </a>
       <div class="flex items-center gap-2 sm:gap-4">
@@ -223,14 +224,16 @@
     <button type="button" id="closeScreenshot" class="screenshot-close" aria-label="Close screenshot">×</button>
   </dialog>
 
+  <script id="catalogue" type="application/json"><!-- CATALOGUE_JSON --></script>
   <script>
-    (async () => {
-      'use strict';
-      const response = await fetch('catalogue.json');
-      if (!response.ok) throw new Error('Unable to load catalogue: HTTP ' + response.status);
-      const catalogue = await response.json();
+    'use strict';
+    try {
+      const catalogue = JSON.parse(document.getElementById('catalogue').textContent);
       // Keep supporting catalogue snapshots generated before build metadata was added.
-      const entries = Array.isArray(catalogue) ? catalogue : catalogue.entries;
+      const entries = (Array.isArray(catalogue) ? catalogue : catalogue.entries).map(entry => ({
+        ...entry,
+        license: entry.license?.trim() || 'Proprietary',
+      }));
       const $ = (id) => document.getElementById(id);
       const builtAt = catalogue.builtAt ? new Date(catalogue.builtAt) : null;
       if (builtAt && !Number.isNaN(builtAt.getTime())) {
@@ -259,7 +262,7 @@
       $('authorStat').textContent = new Set(entries.map(e => e.author)).size;
 
       // Dynamic options make the same page work with future CI-generated JSON.
-      const licenses = [...new Set(entries.map(e => e.license).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
+      const licenses = [...new Set(['Proprietary', ...entries.map(e => e.license)])].sort((a,b)=>a.localeCompare(b));
       for (const license of licenses) $('licenseFilter').add(new Option(license, license));
       const authors = [...new Set(entries.map(e => e.author).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
       for (const author of authors) $('authorFilter').add(new Option(author, author));
@@ -356,7 +359,7 @@
           <td class="px-5 py-5 sm:pl-6"><a href="${url}" target="_blank" rel="noopener noreferrer" class="break-words font-semibold leading-5 text-slate-900 decoration-[#f15a35] underline-offset-4 hover:text-[#d34c28] hover:underline focus-visible:outline-2 focus-visible:outline-orange-500 dark:text-slate-100 dark:hover:text-orange-300">${key}&nbsp;<img src="external-link.svg" alt="" aria-hidden="true" class="size-3" style="display: inline;"></a><div class="mt-1.5 break-all text-xs text-slate-400 dark:text-slate-400">${escapeHtml(e.author)}</div></td>
           <td class="px-4 py-5"><p class="extension-description line-clamp-2 text-[13px] leading-5 text-slate-600 dark:text-slate-300">${escapeHtml(e.description)}</p><button type="button" data-detail="${index}" aria-expanded="${open}" aria-label="${open ? 'Hide' : 'Show'} features for ${key}" class="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-[#c54624] hover:text-orange-700 focus-visible:outline-2 focus-visible:outline-orange-500 dark:text-orange-400 dark:hover:text-orange-300">${open ? 'Hide details' : 'View features'} <span aria-hidden="true">${open ? '↑' : '↓'}</span></button></td>
           <td class="px-4 py-5"><div class="flex flex-wrap gap-1.5">${tags}</div></td>
-          <td class="px-4 py-5"><span class="inline-flex max-w-full break-words border border-slate-200 bg-white px-2 py-1 text-[11px] font-medium leading-4 text-slate-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300">${escapeHtml(e.license || 'Not listed')}</span></td>
+          <td class="px-4 py-5"><span class="inline-flex max-w-full break-words border border-slate-200 bg-white px-2 py-1 text-[11px] font-medium leading-4 text-slate-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300">${escapeHtml(e.license)}</span></td>
           <td class="px-4 py-5">${e.featured ? '<span class="inline-flex items-center gap-1.5 text-xs font-medium text-emerald-700 dark:text-emerald-400"><svg aria-hidden="true" class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12 5 5L20 7"/></svg> Featured</span>' : '<span class="text-xs text-slate-400 dark:text-slate-400">—</span>'}</td>
           <td class="px-4 py-5 text-xs text-slate-500 dark:text-slate-400">${formatCount(e.stars)}</td>
           <td class="px-4 py-5 text-xs text-slate-500 dark:text-slate-400">${formatCount(e.downloads)}</td>
@@ -366,7 +369,7 @@
         </tr>`;
         const otherDetails = [
           ['Tags', tags ? `<div class="flex flex-wrap gap-1.5">${tags}</div>` : 'Not listed'],
-          ['License', escapeHtml(e.license || 'Not listed')],
+          ['License', escapeHtml(e.license)],
           ['HH library', e.featured ? 'Featured' : 'Not listed'],
           ['Stars', formatCount(e.stars)],
           ['Downloads', formatCount(e.downloads)],
@@ -465,10 +468,10 @@
         if (event.key === 'Escape' && document.activeElement === $('searchInput')) $('searchInput').blur();
       });
       render();
-    })().catch(error => {
+    } catch (error) {
       console.error(error);
       document.getElementById('resultsCount').textContent = 'Unable to load the extension catalogue. Please reload the page.';
-    });
+    }
   </script>
 </body>
 </html>

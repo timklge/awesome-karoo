@@ -7,4 +7,5 @@ export GITHUB_TOKEN=... # Read-only token; public repository access is sufficien
 go run .
 ```
 
-The generator reads `../extensions.json` and writes `../static/catalogue.json`.
+The generator reads `../extensions.json` and copies the source assets from
+`../static/` into the ignored build directory `output/` inside `generator/`.

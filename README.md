@@ -104,9 +104,10 @@ Please ensure that your contribution includes:
 
 ## Building the website
 
-The Go application in [`generator/`](generator/README.md) builds the catalogue in
-`static/` from `extensions.json`, resolving extension versions and GitHub statistics
-at build time. See the [generator documentation](generator/README.md).
+The Go application in [`generator/`](generator/README.md) builds the website in
+`generator/output/` from `static/` and `extensions.json`, resolving extension versions
+and GitHub statistics at build time. The catalogue is both embedded in `index.html`
+and available as `catalogue.json`. See the [generator documentation](generator/README.md).
 
 ## License
 

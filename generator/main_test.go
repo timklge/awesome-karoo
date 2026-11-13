@@ -276,14 +276,25 @@ func TestGenerateAndWrite(t *testing.T) {
 			t.Fatal("parallel generation reordered entries")
 		}
 	}
-	dir := t.TempDir()
-	asset := filepath.Join(dir, "index.html")
-	if err := os.WriteFile(asset, []byte("keep me"), 0o644); err != nil {
+	source := t.TempDir()
+	template := `<script id="catalogue" type="application/json">` + cataloguePlaceholder + `</script>`
+	asset := filepath.Join(source, "index.html")
+	if err := os.WriteFile(asset, []byte(template), 0o644); err != nil {
 		t.Fatal(err)
 	}
+	if err := os.Mkdir(filepath.Join(source, "images"), 0o755); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.WriteFile(filepath.Join(source, "images", "icon.svg"), []byte("keep me"), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.WriteFile(filepath.Join(source, "catalogue.json"), []byte("stale catalogue"), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	dir := filepath.Join(t.TempDir(), "output")
 	builtAt := time.Date(2026, time.November, 12, 15, 4, 5, 0, time.FixedZone("UTC+2", 2*60*60))
 	for range 2 {
-		if err := writeCatalogue(dir, entries, builtAt); err != nil {
+		if err := writeSite(source, dir, entries, builtAt); err != nil {
 			t.Fatal(err)
 		}
 	}
@@ -307,14 +318,92 @@ func TestGenerateAndWrite(t *testing.T) {
 	if !strings.Contains(string(data), `"screenshots": []`) {
 		t.Error("missing screenshots should be serialized as an empty array")
 	}
-	if data, _ := os.ReadFile(asset); string(data) != "keep me" {
-		t.Fatal("existing site asset was overwritten")
+	index, err := os.ReadFile(filepath.Join(dir, "index.html"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if want := strings.Replace(template, cataloguePlaceholder, strings.TrimSuffix(string(data), "\n"), 1); string(index) != want {
+		t.Fatal("index.html must embed the same catalogue as catalogue.json")
+	}
+	if data, _ := os.ReadFile(asset); string(data) != template {
+		t.Fatal("source index.html was modified")
+	}
+	if data, _ := os.ReadFile(filepath.Join(source, "catalogue.json")); string(data) != "stale catalogue" {
+		t.Fatal("source catalogue.json was modified")
+	}
+	if data, _ := os.ReadFile(filepath.Join(dir, "images", "icon.svg")); string(data) != "keep me" {
+		t.Fatal("nested site asset was not copied")
 	}
 	if _, err := os.Stat(filepath.Join(dir, ".nojekyll")); err != nil {
 		t.Fatal(err)
 	}
 	if files, _ := filepath.Glob(filepath.Join(dir, ".catalogue-*")); len(files) != 0 {
 		t.Fatal("temporary output files were not cleaned up")
+	}
+}
+
+func TestWriteSiteEmbedsSafeJSON(t *testing.T) {
+	dir := t.TempDir()
+	entries := []entry{{Name: "</script><script>alert('test')</script>&\u2028\u2029"}}
+	if err := writeSite("../static", dir, entries, time.Now()); err != nil {
+		t.Fatal(err)
+	}
+	index, err := os.ReadFile(filepath.Join(dir, "index.html"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	const start = `<script id="catalogue" type="application/json">`
+	_, inline, ok := strings.Cut(string(index), start)
+	if !ok {
+		t.Fatal("missing inline catalogue")
+	}
+	inline, _, ok = strings.Cut(inline, "</script>")
+	if !ok {
+		t.Fatal("missing closing script element")
+	}
+	var got generatedCatalogue
+	if err := json.Unmarshal([]byte(inline), &got); err != nil {
+		t.Fatalf("inline catalogue is not valid JSON: %v", err)
+	}
+	if !reflect.DeepEqual(got.Entries, entries) {
+		t.Fatal("HTML escaping changed the catalogue data")
+	}
+	if strings.Contains(inline, "<") || strings.Contains(inline, "&") {
+		t.Fatal("inline JSON contains unescaped HTML")
+	}
+	if strings.Contains(string(index), "fetch(") || strings.Contains(string(index), cataloguePlaceholder) {
+		t.Fatal("generated index still fetches the catalogue or contains an unresolved placeholder")
+	}
+	for _, asset := range []string{"tailwind.css", "favicon.svg", "external-link.svg", ".nojekyll"} {
+		if _, err := os.Stat(filepath.Join(dir, asset)); err != nil {
+			t.Fatalf("missing site asset %s: %v", asset, err)
+		}
+	}
+}
+
+func TestWriteSiteRejectsInvalidTemplate(t *testing.T) {
+	for _, template := range []string{"no placeholder", cataloguePlaceholder + cataloguePlaceholder} {
+		t.Run(template, func(t *testing.T) {
+			source := t.TempDir()
+			if err := os.WriteFile(filepath.Join(source, "index.html"), []byte(template), 0o644); err != nil {
+				t.Fatal(err)
+			}
+			dir := filepath.Join(t.TempDir(), "output")
+			if err := writeSite(source, dir, nil, time.Now()); err == nil {
+				t.Fatal("invalid template was accepted")
+			}
+			if _, err := os.Stat(dir); !os.IsNotExist(err) {
+				t.Fatal("invalid template should not produce output")
+			}
+		})
+	}
+}
+
+func TestWriteSiteRejectsOutputInsideSource(t *testing.T) {
+	for _, output := range []string{"../static", "../static/output"} {
+		if err := writeSite("../static", output, nil, time.Now()); err == nil {
+			t.Fatalf("output %s must not be allowed inside the source directory", output)
+		}
 	}
 }
 
