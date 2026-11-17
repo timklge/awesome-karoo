@@ -2591,6 +2591,49 @@
         "customization"
       ],
       "featuredInHammerheadLibrary": false
+    },
+    {
+        "name": "Road Ahead",
+        "compatibility": "k3",
+        "addedAt": "2026-11-16",
+        "homepage": "https://github.com/gsq480/karoo-roadahead",
+        "manifest": "https://github.com/gsq480/karoo-roadahead/releases/latest/download/manifest.json",
+        "features": [
+            "Elevation profile of the road ahead with no route loaded",
+            "Follow the road you are on and guess the way through junctions, drawn dimmer past the first guess",
+            "Tap to step between 2, 5 and 10 km",
+            "Graph-only mode for small tiles",
+            "Runs on the Karoo: roads from the offline map, elevation fetched once over Wi-Fi"
+        ],
+        "tags": [
+            "elevation",
+            "navigation",
+            "climbs",
+            "data-fields",
+            "offline"
+        ],
+        "featuredInHammerheadLibrary": false
+    },
+    {
+        "name": "Swoop Ahead",
+        "compatibility": "k3",
+        "addedAt": "2026-11-16",
+        "homepage": "https://github.com/gsq480/karoo-swoopahead",
+        "manifest": "https://github.com/gsq480/karoo-swoopahead/releases/latest/download/manifest.json",
+        "features": [
+            "Warn about 250 m before a known magpie swooping spot with a banner and beeps",
+            "Mark a swoop with one tap, and cancel it within 15 seconds",
+            "Shared map of spots with no account",
+            "Show spots as caution pins on the map",
+            "Data field with the distance to the nearest spot"
+        ],
+        "tags": [
+            "safety",
+            "alerts",
+            "maps",
+            "data-fields"
+        ],
+        "featuredInHammerheadLibrary": false
     }
   ]
 }
