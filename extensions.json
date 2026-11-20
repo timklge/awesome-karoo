@@ -2634,6 +2634,28 @@
             "data-fields"
         ],
         "featuredInHammerheadLibrary": false
+    },
+    {
+        "name": "Karoo Fun",
+        "compatibility": "k3",
+        "addedAt": "2026-11-18",
+        "homepage": "https://github.com/HannoP1983/karooFun",
+        "manifest": null,
+        "features": [
+            "Comic-style ride page with speed, temperature, heart rate, distance and a live elevation profile coloured by gradient",
+            "Real sky with sun position and moon phase, live Open-Meteo weather and a windsock",
+            "Full-screen comic actions for fast descents, all-out efforts and steady riding",
+            "Comic-style single data fields for custom pages, made for 2 x 4 layouts",
+            "Rain radar tile with DWD radar for Germany, zoom and a one-hour forecast"
+        ],
+        "tags": [
+            "data-fields",
+            "customization",
+            "weather",
+            "radar",
+            "elevation"
+        ],
+        "featuredInHammerheadLibrary": false
     }
   ]
 }
