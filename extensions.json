@@ -2656,6 +2656,28 @@
             "elevation"
         ],
         "featuredInHammerheadLibrary": false
+    },
+    {
+        "name": "BiciCAM",
+        "compatibility": "k3",
+        "addedAt": "2026-11-24",
+        "homepage": "https://github.com/apradoperez/bicicam",
+        "manifest": "https://github.com/apradoperez/bicicam/releases/latest/download/manifest.json",
+        "features": [
+            "Start and stop recording on DJI Osmo Action cameras from a data field or from AXS buttons",
+            "Camera battery, time left on the card and highlight markers",
+            "Karoo GPS position and time stored in every clip",
+            "Red frame around the screen while recording, plus in-ride alerts",
+            "Warns when the camera is not in video mode and can switch it back",
+            "Tested with the Osmo Action 6; English and Spanish"
+        ],
+        "tags": [
+            "dji",
+            "camera",
+            "bluetooth",
+            "remote-control"
+        ],
+        "featuredInHammerheadLibrary": false
     }
   ]
 }
